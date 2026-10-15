@@ -1,0 +1,69 @@
+{
+  "raw_sha256": "eed9cbd094af1e189507d2f8132a0dc9653b90e65480125c7cdccd601e0592d1",
+  "revision": "dd6f3a19eef5866e346c3270e098baa641a44948",
+  "files": {
+    "train.npz": "c614cad818b5b471dc92e783042741d322bdc2edbdac88e342a14179d544a978",
+    "policy_val.npz": "716e72647a2acc204be8b91d9433cb9c80d8e31c2733b461af7da786ca3dc5e2",
+    "catalog.npz": "bc307840f6075df63057e7f011a226a858a54968a50473ccd5a09492ee27b39f",
+    "reward_select.npz": "3b34ca6ac6dd46f6db572b7160fbec9a026a8f01474cc8fcab60573385a2c4ea",
+    "reward_calibrate.npz": "fcd2353204875230831320c3fac6169e9baee83e39dd006245072baa1ef53316",
+    "reward_baselines.npz": "d426da4e07144455e64b0bde19cce7d758c47cb4b3037c92c4ba9d58d592c39c",
+    "holdout_reservation.json": "150a67ea77849784ca42063c74c23d3b18988eb35a835dd223d01ec660592b5a",
+    "locked_protocol.json": "e9354c0dca8622d3d3028051c435621cd79497eef6525e3ba189c1485ce6ec83"
+  },
+  "catalog_items": 5000,
+  "history_length": 64,
+  "duration_cap_seconds": 290.0,
+  "cuts": {
+    "A_end": 18199991,
+    "B1_end": 19499990,
+    "B_end": 20799989,
+    "C_end": 23399987,
+    "D_end_exclusive": 25999986
+  },
+  "splits": {
+    "train": {
+      "examples": 140005,
+      "users": 817,
+      "known_fraction": 1.0,
+      "timestamp_min": 1975,
+      "timestamp_max": 18199800
+    },
+    "reward_select": {
+      "examples": 8136,
+      "users": 691,
+      "known_fraction": 1.0,
+      "timestamp_min": 18200015,
+      "timestamp_max": 19499750
+    },
+    "reward_calibrate": {
+      "examples": 8147,
+      "users": 707,
+      "known_fraction": 1.0,
+      "timestamp_min": 19500060,
+      "timestamp_max": 20799675
+    },
+    "policy_val": {
+      "examples": 17803,
+      "users": 768,
+      "known_fraction": 0.33943717351008257,
+      "timestamp_min": 20800190,
+      "timestamp_max": 23399940
+    }
+  },
+  "B1_crossing_outcomes_removed": 1,
+  "new_cohort_reserved": 512,
+  "new_cohort_eligible": 434,
+  "source_footer_timestamp_max": 26000000,
+  "unused_later_seconds": 15,
+  "new_holdout_kind": "unseen users, same D time window; no new temporal replication",
+  "old_D_accessed_by_v2": false,
+  "preparation_sources": {
+    "experiment.py": "a956f2d71025a50331d8a89c659e01515be8587bc335537df00836e50fb9fe86",
+    "requirements.txt": "e1d87d7146177f3c9b373c307a16c44ab0f5dbe1503ee5b05b65060e701b4d88",
+    "research_v2/__init__.py": "4bff1bbb6aef75582d6b5d1613fd94a0dfc53b532f8c8f990f32a633ba1e5de7",
+    "research_v2/core.py": "68e9b3339d97502ac90a6ad4716828018a82f9d5abb6351873289431c4a2e879",
+    "research_v2/data.py": "dc3b68f6a3cf97a16ba64bfe53518073e5dd97c9d5f9affac3e0cd3ede311be4",
+    "research_v2/protocol.json": "4d87b1a7d2acabdde4099cd36010b70cb5b2c71ea1c78d8ddfae359bab5fa27f"
+  }
+}

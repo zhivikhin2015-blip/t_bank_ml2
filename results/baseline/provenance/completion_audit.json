@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "test_prediction_models_checked": [
+    "baseline_s11",
+    "baseline_s22",
+    "baseline_s33",
+    "rl_ratio_b0_h1_s11",
+    "rl_ratio_b0.1_h1_s11",
+    "rl_ratio_b1_h1_s11",
+    "rl_time_b0_h1_s11",
+    "rl_time_b0.1_h1_s11",
+    "rl_time_b1_h1_s11",
+    "rl_ratio_b0.1_h5_s11",
+    "rl_time_b0.1_h5_s11",
+    "rl_balanced_b0.1_h5_s11",
+    "rl_ratio_b0.1_h1_s22",
+    "rl_time_b1_h1_s22",
+    "rl_ratio_b0.1_h1_s33",
+    "rl_time_b1_h1_s33",
+    "sft_extra_s11",
+    "rerank_weight3",
+    "popularity"
+  ],
+  "metrics_independently_recomputed": [
+    "Recall@10",
+    "Recall@20",
+    "NDCG@10",
+    "NDCG@20"
+  ],
+  "data_hashes": "passed",
+  "source_hashes": "passed",
+  "checkpoint_hashes": "passed",
+  "future_candidates": "passed",
+  "rl_max_parameter_changes": {
+    "rl_ratio_b0_h1_s11": 0.028366386890411377,
+    "rl_ratio_b0.1_h1_s11": 0.02357897162437439,
+    "rl_ratio_b1_h1_s11": 0.009696299210190773,
+    "rl_time_b0_h1_s11": 0.03461628407239914,
+    "rl_time_b0.1_h1_s11": 0.017190834507346153,
+    "rl_time_b1_h1_s11": 0.010501846671104431,
+    "rl_ratio_b0.1_h5_s11": 0.02004760503768921,
+    "rl_time_b0.1_h5_s11": 0.022869959473609924,
+    "rl_balanced_b0.1_h5_s11": 0.018854215741157532,
+    "rl_ratio_b0.1_h1_s22": 0.02524697780609131,
+    "rl_time_b1_h1_s22": 0.012737125158309937,
+    "rl_ratio_b0.1_h1_s33": 0.025053277611732483,
+    "rl_time_b1_h1_s33": 0.00903550535440445
+  },
+  "reward_test_quality": "present",
+  "five_step_rollouts": "present"
+}

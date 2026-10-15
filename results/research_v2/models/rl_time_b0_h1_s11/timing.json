@@ -1,0 +1,7 @@
+{
+  "training_seconds": 38.207242217613384,
+  "evaluation_seconds": 0.0,
+  "checkpoint_seconds": 0.5583909171400592,
+  "step": 1000,
+  "identity": "73b2b80e9b87187b4a9f38f440ae193d0f9b384ee8a11e84f6e174f5c3fc50dd"
+}

@@ -1,4 +1,20 @@
+# Environment and caches
 .venv/
+.cache/
 .tmp/
-output/
 __pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Large local data and model artifacts
+*.parquet
+*.npz
+*.npy
+*.pt
+*.safetensors
+*.zip
+*.download

@@ -1,0 +1,11 @@
+{
+  "slope": 0.5198638440346677,
+  "intercept": 0.3562507940066589,
+  "fit_split": "B2",
+  "raw_checkpoint_sha256": "b84c82b3e9c43e701be8c3e8aa92487ce860f93d02ec346d5685c4c7d84e219e",
+  "calibrated_checkpoint_sha256": "95ee7854f4d5b435dd7fb60366bb12b472075f0d90fcd3c9bd7eb7b38d034ddb",
+  "fit_examples": 8147,
+  "fit_users": 707,
+  "fit_mse_before": 0.15795844010619822,
+  "fit_mse_after": 0.15334691948299994
+}

@@ -1,0 +1,192 @@
+{
+  "1800": {
+    "gap_seconds": 1800,
+    "train_negative_users": 554,
+    "periods": {
+      "A": {
+        "constant": {
+          "examples": 175571,
+          "users": 806,
+          "macro_return_rate": 0.9146037960705569,
+          "brier": 0.07810369228388407,
+          "logloss": 0.29175488331917054,
+          "negative_AP_user_weighted": 0.08539620392944312,
+          "negative_rate_user_weighted": 0.08539620392944312
+        },
+        "user_train_rate": {
+          "examples": 175571,
+          "users": 806,
+          "macro_return_rate": 0.9146037960705569,
+          "brier": 0.06378946242940448,
+          "logloss": 0.20443032773238884,
+          "negative_AP_user_weighted": 0.4420624909040759,
+          "negative_rate_user_weighted": 0.08539620392944312
+        },
+        "past_activity_logistic": {
+          "examples": 175571,
+          "users": 806,
+          "macro_return_rate": 0.9146037960705569,
+          "brier": 0.06445272031372735,
+          "logloss": 0.22290584242139835,
+          "negative_AP_user_weighted": 0.3520841855914377,
+          "negative_rate_user_weighted": 0.08539620392944312
+        }
+      },
+      "B": {
+        "constant": {
+          "examples": 23536,
+          "users": 749,
+          "macro_return_rate": 0.9022928619235298,
+          "brier": 0.08831201234494833,
+          "logloss": 0.3209464387943741,
+          "negative_AP_user_weighted": 0.0977071380764703,
+          "negative_rate_user_weighted": 0.09770713807647032
+        },
+        "user_train_rate": {
+          "examples": 23536,
+          "users": 749,
+          "macro_return_rate": 0.9022928619235298,
+          "brier": 0.07798736238542416,
+          "logloss": 0.26123052030496796,
+          "negative_AP_user_weighted": 0.41158496616619283,
+          "negative_rate_user_weighted": 0.09770713807647032
+        },
+        "past_activity_logistic": {
+          "examples": 23536,
+          "users": 749,
+          "macro_return_rate": 0.9022928619235298,
+          "brier": 0.07118017044687587,
+          "logloss": 0.2397613224811108,
+          "negative_AP_user_weighted": 0.3831421773470993,
+          "negative_rate_user_weighted": 0.09770713807647032
+        }
+      },
+      "C": {
+        "constant": {
+          "examples": 25198,
+          "users": 761,
+          "macro_return_rate": 0.9034675201690978,
+          "brier": 0.08733797680955196,
+          "logloss": 0.31816110171674955,
+          "negative_AP_user_weighted": 0.09653247983090206,
+          "negative_rate_user_weighted": 0.09653247983090207
+        },
+        "user_train_rate": {
+          "examples": 25198,
+          "users": 761,
+          "macro_return_rate": 0.9034675201690978,
+          "brier": 0.07927153993768331,
+          "logloss": 0.2717850057665156,
+          "negative_AP_user_weighted": 0.31672747795854256,
+          "negative_rate_user_weighted": 0.09653247983090207
+        },
+        "past_activity_logistic": {
+          "examples": 25198,
+          "users": 761,
+          "macro_return_rate": 0.9034675201690978,
+          "brier": 0.07071571486884712,
+          "logloss": 0.23915735103734442,
+          "negative_AP_user_weighted": 0.3808315177828819,
+          "negative_rate_user_weighted": 0.09653247983090207
+        }
+      }
+    },
+    "logistic_model_trained": true,
+    "interpretation": "Development description in future-activity-selected cohort; predictive associations do not identify recommendation effects. No retention signal is used as an RL reward."
+  },
+  "3600": {
+    "gap_seconds": 3600,
+    "train_negative_users": 554,
+    "periods": {
+      "A": {
+        "constant": {
+          "examples": 146716,
+          "users": 805,
+          "macro_return_rate": 0.9072479425403462,
+          "brier": 0.0841491132966548,
+          "logloss": 0.3088592593840009,
+          "negative_AP_user_weighted": 0.09275205745965366,
+          "negative_rate_user_weighted": 0.09275205745965365
+        },
+        "user_train_rate": {
+          "examples": 146716,
+          "users": 805,
+          "macro_return_rate": 0.9072479425403462,
+          "brier": 0.06827631815404554,
+          "logloss": 0.21708239033168594,
+          "negative_AP_user_weighted": 0.45852686593604286,
+          "negative_rate_user_weighted": 0.09275205745965365
+        },
+        "past_activity_logistic": {
+          "examples": 146716,
+          "users": 805,
+          "macro_return_rate": 0.9072479425403462,
+          "brier": 0.06842918869480466,
+          "logloss": 0.23486377064627487,
+          "negative_AP_user_weighted": 0.37542126058924263,
+          "negative_rate_user_weighted": 0.09275205745965365
+        }
+      },
+      "B": {
+        "constant": {
+          "examples": 19636,
+          "users": 749,
+          "macro_return_rate": 0.8963854236181912,
+          "brier": 0.09299659026036129,
+          "logloss": 0.33363108056143215,
+          "negative_AP_user_weighted": 0.1036145763818088,
+          "negative_rate_user_weighted": 0.10361457638180882
+        },
+        "user_train_rate": {
+          "examples": 19636,
+          "users": 749,
+          "macro_return_rate": 0.8963854236181912,
+          "brier": 0.081466675105308,
+          "logloss": 0.26959998288433307,
+          "negative_AP_user_weighted": 0.4262998148656556,
+          "negative_rate_user_weighted": 0.10361457638180882
+        },
+        "past_activity_logistic": {
+          "examples": 19636,
+          "users": 749,
+          "macro_return_rate": 0.8963854236181912,
+          "brier": 0.07426939870411135,
+          "logloss": 0.24901539413535054,
+          "negative_AP_user_weighted": 0.397657868225549,
+          "negative_rate_user_weighted": 0.10361457638180882
+        }
+      },
+      "C": {
+        "constant": {
+          "examples": 21182,
+          "users": 761,
+          "macro_return_rate": 0.8970772584603459,
+          "brier": 0.09243309362827078,
+          "logloss": 0.3320533609627836,
+          "negative_AP_user_weighted": 0.10292274153965403,
+          "negative_rate_user_weighted": 0.10292274153965401
+        },
+        "user_train_rate": {
+          "examples": 21182,
+          "users": 761,
+          "macro_return_rate": 0.8970772584603459,
+          "brier": 0.08275979232544145,
+          "logloss": 0.2790062089791051,
+          "negative_AP_user_weighted": 0.349716462037439,
+          "negative_rate_user_weighted": 0.10292274153965401
+        },
+        "past_activity_logistic": {
+          "examples": 21182,
+          "users": 761,
+          "macro_return_rate": 0.8970772584603459,
+          "brier": 0.07411421801226246,
+          "logloss": 0.24865904288820756,
+          "negative_AP_user_weighted": 0.39700828026734564,
+          "negative_rate_user_weighted": 0.10292274153965401
+        }
+      }
+    },
+    "logistic_model_trained": true,
+    "interpretation": "Development description in future-activity-selected cohort; predictive associations do not identify recommendation effects. No retention signal is used as an RL reward."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "fingerprint": {
+    "driver_sha256": "c3ce25e91c5dd1a81b0868607c2296e24a7c707d4309ff8916915a90fede61f6",
+    "frozen_sha256": "9185818108772fb30171f584b3c144dcf0f893c29d0c288325a367d1e7fa3ad8",
+    "integer_adapter_sha256": "56a23c0b1d04ea88bf32b278dfb4cee35fe9ea1b1816e2491ecc03b8d9ede813",
+    "holdout_sha256": "7d7ad1111fd7b6a47f08b6ea0690d0783f5c761e591b85847e7290a3dc687daf",
+    "change": "Only move duplicate final-log reason keyword into technical_repair_reason; no numerical model changes",
+    "original_observed_failure": "TypeError in final log_access after all 32 policies and 17 rollout sets had been saved"
+  },
+  "self_check_passed": true,
+  "created_at_utc": "2026-10-14T21:03:57.174705+00:00"
+}

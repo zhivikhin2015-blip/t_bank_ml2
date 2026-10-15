@@ -1,0 +1,39 @@
+{
+  "device": "mps",
+  "torch": "2.14.1",
+  "threads": 4,
+  "equivalence": {
+    "loss_abs_error": 0.0,
+    "gradient_max_error": 1.6443664208054543e-09,
+    "tolerance": 2e-05,
+    "status": "passed"
+  },
+  "timings": {
+    "repeated_history": {
+      "median_seconds": 0.06577716604806483,
+      "min_seconds": 0.059775207890197635,
+      "max_seconds": 0.06835362501442432,
+      "measured_steps": 15,
+      "warmup_steps": 5
+    },
+    "shared_history": {
+      "median_seconds": 0.026525208028033376,
+      "min_seconds": 0.023853749968111515,
+      "max_seconds": 0.030658167088404298,
+      "measured_steps": 15,
+      "warmup_steps": 5
+    },
+    "sft": {
+      "median_seconds": 0.026870937552303076,
+      "min_seconds": 0.023268541088327765,
+      "max_seconds": 0.03652199998032302,
+      "measured_steps": 20,
+      "warmup_steps": 5
+    }
+  },
+  "rl_speedup": 2.479798310292146,
+  "interpretation": "Technical warm-cache measurement on fixed train contexts. Reward head randomly initialized for equivalence and cost checks; not an experimental policy result.",
+  "heldout_outcomes_read": false,
+  "mps_current_allocated_bytes": 74492160,
+  "mps_driver_allocated_bytes": 1348403200
+}

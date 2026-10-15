@@ -1,0 +1,2 @@
+{"script": "experiment.py", "arguments": ["baseline", "--name", "baseline_s22", "--seed", 22, "--steps", 6000, "--batch", 32, "--lr", 0.001, "--save-every", 250, "--eval-every", 1000], "seconds": 132.2239482079167}
+{"script": "experiment.py", "arguments": ["baseline", "--name", "baseline_s33", "--seed", 33, "--steps", 6000, "--batch", 32, "--lr", 0.001, "--save-every", 250, "--eval-every", 1000], "seconds": 175.60343329200987}

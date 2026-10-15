@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "original_snapshot": "unchanged",
+  "frozen_inputs": "passed",
+  "independently_recomputed_relevance_models": [
+    "baseline_s11",
+    "rl_ratio_b0_h1_s11",
+    "rl_ratio_b0.1_h1_s11",
+    "rl_ratio_b1_h1_s11",
+    "analytic_ratio_b0.1",
+    "analytic_ratio_b1",
+    "rl_time_b0_h1_s11",
+    "rl_time_b0.1_h1_s11",
+    "rl_time_b1_h1_s11",
+    "analytic_time_b0.1",
+    "analytic_time_b1",
+    "popularity",
+    "rerank_ratio_w10",
+    "rerank_time_w3",
+    "baseline_s22",
+    "rl_ratio_b0.1_h1_s22",
+    "rl_time_b1_h1_s22",
+    "baseline_s33",
+    "rl_ratio_b0.1_h1_s33",
+    "rl_time_b1_h1_s33",
+    "sft_s11",
+    "sft_s22",
+    "sft_s33",
+    "rl_ratio_b0.1_h5_s11",
+    "rl_ratio_b0.1_h5_s11_budget_step00200",
+    "rl_ratio_b0.1_h5_s11_budget_step00100",
+    "rl_time_b1_h5_s11",
+    "rl_time_b1_h5_s11_budget_step00200",
+    "rl_time_b1_h5_s11_budget_step00100",
+    "rl_balanced_b1_h5_s11",
+    "rl_balanced_b1_h5_s11_budget_step00200",
+    "rl_balanced_b1_h5_s11_budget_step00100"
+  ],
+  "cpu_inference": {
+    "baseline_s11": {
+      "rows": 64,
+      "top_positions_matching": 1.0,
+      "max_quantity_errors": {
+        "policy_expected_ratio": 7.152557373046875e-07,
+        "policy_expected_time_reward": 5.364418029785156e-07,
+        "kl_to_reference": 0.0
+      }
+    },
+    "rl_ratio_b0.1_h1_s11": {
+      "rows": 64,
+      "top_positions_matching": 1.0,
+      "max_quantity_errors": {
+        "policy_expected_ratio": 6.556510925292969e-07,
+        "policy_expected_time_reward": 4.172325134277344e-07,
+        "kl_to_reference": 1.3597309589385986e-06
+      }
+    },
+    "rl_time_b1_h1_s11": {
+      "rows": 64,
+      "top_positions_matching": 1.0,
+      "max_quantity_errors": {
+        "policy_expected_ratio": 6.556510925292969e-07,
+        "policy_expected_time_reward": 4.172325134277344e-07,
+        "kl_to_reference": 1.705717295408249e-06
+      }
+    }
+  },
+  "cpu_reward_prediction_max_error": 5.960464477539063e-08,
+  "rollout_models": 17,
+  "new_cohort_disjoint_from_training": true,
+  "scope": "unseen users, same D time window; no new temporal replication"
+}

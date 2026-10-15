@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "requirements": {
+    "original_and_protocol": {
+      "status": "complete",
+      "evidence": [
+        "original_snapshot/manifest.json",
+        "locked_protocol.json",
+        "data_manifest.json",
+        "holdout_reservation.json"
+      ]
+    },
+    "reproduction_and_resume": {
+      "status": "complete",
+      "evidence": [
+        "scientific_checks.json",
+        "technical_retry.json",
+        "runtime_driver.json",
+        "preflight.json"
+      ],
+      "note": "Canonical integer and logging compatibility adapters recorded separately; original frozen sources preserved"
+    },
+    "metrics_and_denominators": {
+      "status": "complete",
+      "evidence": [
+        "evaluations/holdout/results.json",
+        "completion_audit.json"
+      ]
+    },
+    "reward_model_and_calibration": {
+      "status": "complete",
+      "evidence": [
+        "reward_selection.json",
+        "evaluations/holdout/results.json"
+      ],
+      "note": "Test MSE superiority over global mean not established"
+    },
+    "h1_analytical_and_other_controls": {
+      "status": "complete",
+      "evidence": [
+        "evaluations/validation_grid/results.json",
+        "evaluations/holdout/results.json",
+        "serving_benchmark.json"
+      ]
+    },
+    "compute_optimization": {
+      "status": "complete",
+      "evidence": [
+        "benchmark.json",
+        "serving_benchmark.json",
+        "budget_audit.json"
+      ],
+      "note": "Wall-time controls approximate, deviations disclosed"
+    },
+    "rl_grid_and_seed_repeats": {
+      "status": "complete",
+      "evidence": [
+        "training_selection.json",
+        "models",
+        "summary.json"
+      ]
+    },
+    "multistep_and_retention": {
+      "status": "complete",
+      "evidence": [
+        "rollouts/holdout/results.json",
+        "retention_diagnostics.json",
+        "rollout_repeat_diagnostic.json"
+      ],
+      "note": "Synthetic process and descriptive retention associations; no causal effect claim"
+    },
+    "final_evaluation_and_delivery": {
+      "status": "complete",
+      "evidence": [
+        "frozen.json",
+        "holdout_manifest.json",
+        "completion_audit.json",
+        "summary.json",
+        "research_v2_submission.zip"
+      ],
+      "report": "research_v2/README.md"
+    }
+  },
+  "archive_checked": true,
+  "report_links_checked": true,
+  "original_artifacts_unchanged": true,
+  "new_time_period_available": false,
+  "new_user_replication_completed": true
+}

@@ -1,0 +1,11 @@
+{
+  "access_seconds": [
+    22.69915050000418
+  ],
+  "compute_seconds": 22.69915050000418,
+  "fingerprint": {
+    "data": "c614cad818b5b471dc92e783042741d322bdc2edbdac88e342a14179d544a978",
+    "backbone": "b9ce963177f06ca6fc992d376026931edd59d0ba276c1858df58bf7cc7196a4c",
+    "encoding_code": "68e9b3339d97502ac90a6ad4716828018a82f9d5abb6351873289431c4a2e879"
+  }
+}

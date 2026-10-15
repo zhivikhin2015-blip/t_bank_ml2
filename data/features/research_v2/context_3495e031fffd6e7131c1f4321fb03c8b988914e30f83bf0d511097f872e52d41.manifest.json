@@ -1,0 +1,13 @@
+{
+  "fingerprint": {
+    "data": "c614cad818b5b471dc92e783042741d322bdc2edbdac88e342a14179d544a978",
+    "backbone": "a72566288ffc89db4d420db951fbde10fd8214e2c1d274b430d1654466462d3b",
+    "encoding_code": "68e9b3339d97502ac90a6ad4716828018a82f9d5abb6351873289431c4a2e879"
+  },
+  "sha256": "74f91cb59b5864a7a1d9d43a4dcf0401feafb462f9a48b1239d3ec6e1db74283",
+  "shape": [
+    140005,
+    128
+  ],
+  "dtype": "float32"
+}

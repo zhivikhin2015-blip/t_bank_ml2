@@ -1,0 +1,50 @@
+{
+  "status": "Зафиксирован до основных запусков и до оценки test",
+  "dataset_revision": "dd6f3a19eef5866e346c3270e098baa641a44948",
+  "primary_relevance_metric": "macro-user NDCG@10, все выбранные цели, включая объекты вне каталога",
+  "secondary_metrics": ["Recall@10", "Recall@20", "NDCG@20", "условные метрики для известных объектов"],
+  "training_seeds": [11, 22, 33],
+  "baseline": {"steps": 6000, "batch": 32, "lr": 0.001, "checkpoint": "final"},
+  "reward_model": {"steps": 4000, "batch": 256, "lr": 0.001, "checkpoint": "minimum reward_val MAE"},
+  "rl": {"steps": 1000, "batch": 16, "samples_per_history": 4, "lr": 0.00005, "checkpoint": "final", "gamma": 0.9},
+  "seed11_grid": [
+    {"reward": "ratio", "beta": 0, "horizon": 1},
+    {"reward": "ratio", "beta": 0.1, "horizon": 1},
+    {"reward": "ratio", "beta": 1, "horizon": 1},
+    {"reward": "time", "beta": 0, "horizon": 1},
+    {"reward": "time", "beta": 0.1, "horizon": 1},
+    {"reward": "time", "beta": 1, "horizon": 1},
+    {"reward": "ratio", "beta": 0.1, "horizon": 5},
+    {"reward": "time", "beta": 0.1, "horizon": 5},
+    {"reward": "balanced", "beta": 0.1, "horizon": 5, "repeat_penalty": 0.1}
+  ],
+  "validation": {
+    "reward_selection": "reward_val, отдельный период B",
+    "policy_selection": "policy_val, отдельный период C",
+    "reranking_weights": [0, 1, 3, 10],
+    "selection_rule": "Для ratio и time, horizon=1: максимальная соответствующая предсказанная награда при NDCG@10 >= 0.95 * baseline. Если ни один вариант не проходит, выбрать максимальный NDCG и явно сообщить нарушение ограничения.",
+    "additional_seed_runs": "Повторить выбранные ratio и time на seeds 22 и 33 с соответствующими базовыми моделями; reward_s11 заморожена для всех политик.",
+    "auditor": "reward_s22, не используется для выбора или обучения RL"
+  },
+  "test": {
+    "freeze_before_access": true,
+    "models": "Все seed11 варианты плюс baseline и выбранные повторения seeds22/33, контроль дополнительного SFT и заранее выбранная пересортировка",
+    "bootstrap": "2000 парных пересэмплирований пользователей, фиксированный период",
+    "no_equivalence_claim_from_nonsignificance": true
+  },
+  "rollout": {
+    "steps": 5,
+    "users": 512,
+    "temperature": 1,
+    "sampling": "полное распределение по доступным объектам без top-p",
+    "history_update": "добавить предложенный объект; это допущение, а не подтверждённое взаимодействие",
+    "repeats": "разрешены и измеряются для обеих политик"
+  },
+  "retention": "Описательная активность между первым и седьмым днём при полном окне; ограничения исходного отбора активных пользователей и отсутствие причинной идентификации обязательны в отчёте.",
+  "limitations": [
+    "Урезанный популярный каталог, неизвестные объекты в истории представлены UNK",
+    "Нет известных вероятностей показов и подтверждённых откликов на новую политику",
+    "Замороженная reward model оценивается на логированных прослушиваниях",
+    "Нельзя приравнивать суммарную модельную награду к удовлетворённости или возвращаемости"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "recall@10": 0.029281670580690183,
+  "ndcg@10": 0.016486421954506204,
+  "recall@20": 0.044395875094404506,
+  "ndcg@20": 0.020271680225315624,
+  "examples": 9868,
+  "users": 432,
+  "slices": {
+    "known": {
+      "examples": 3008,
+      "users": 407,
+      "recall@10": 0.11062624246828655,
+      "ndcg@10": 0.06227481005128334,
+      "recall@20": 0.1573991699124777,
+      "ndcg@20": 0.07401017807844973
+    },
+    "positive_ratio_gt50": {
+      "examples": 6553,
+      "users": 424,
+      "recall@10": 0.02971118407308602,
+      "ndcg@10": 0.01641841337797533,
+      "recall@20": 0.046481982252492615,
+      "ndcg@20": 0.02064895110341509
+    },
+    "nonpositive_ratio_le50": {
+      "examples": 3315,
+      "users": 401,
+      "recall@10": 0.030441543108694888,
+      "ndcg@10": 0.016911628199119795,
+      "recall@20": 0.043326960541508475,
+      "ndcg@20": 0.020075630834522157
+    },
+    "organic": {
+      "examples": 4894,
+      "users": 382,
+      "recall@10": 0.04775467059076062,
+      "ndcg@10": 0.027715763199777838,
+      "recall@20": 0.06568837833444258,
+      "ndcg@20": 0.032266658998108086
+    },
+    "nonorganic": {
+      "examples": 4974,
+      "users": 367,
+      "recall@10": 0.015508050059047457,
+      "ndcg@10": 0.00781910859293994,
+      "recall@20": 0.025623689099883173,
+      "ndcg@20": 0.01029717734145052
+    },
+    "short": {
+      "examples": 1291,
+      "users": 339,
+      "recall@10": 0.0977212070132424,
+      "ndcg@10": 0.058111573509055395,
+      "recall@20": 0.15031009632779546,
+      "ndcg@20": 0.07121728473838398
+    },
+    "long": {
+      "examples": 87,
+      "users": 70,
+      "recall@10": 0.11952380952380953,
+      "ndcg@10": 0.06960562572815905,
+      "recall@20": 0.14095238095238097,
+      "ndcg@20": 0.07546659305915514
+    },
+    "popular": {
+      "examples": 939,
+      "users": 282,
+      "recall@10": 0.13551651264417222,
+      "ndcg@10": 0.07953501231073687,
+      "recall@20": 0.21056058303398728,
+      "ndcg@20": 0.09835373616129583
+    },
+    "rare": {
+      "examples": 862,
+      "users": 344,
+      "recall@10": 0.08089354928017718,
+      "ndcg@10": 0.04396946770183243,
+      "recall@20": 0.1124826965669989,
+      "ndcg@20": 0.05191826252860057
+    }
+  },
+  "oracle_catalog_recall_ceiling": 0.30353371966934056,
+  "predicted_ratio_at10": 0.7261486931859363,
+  "duration_limited_seconds_at10": 142.46480614751823,
+  "mean_duration_seconds_at10": 198.40007571338504,
+  "mean_popularity_at10": 593.7162621245434,
+  "seen_in_history_at10": 0.1593864027146299,
+  "catalog_coverage_at10": 0.8452,
+  "top10_items_exposure_share": 0.06404539927036887,
+  "recommendation_entropy": 7.455178221716171,
+  "between_user_overlap_at10": 0.012775842044134728,
+  "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+  "policy_expected_ratio": 0.7213371586662303,
+  "policy_expected_time_reward": 0.4893540737137085,
+  "policy_expected_auditor_ratio": 0.720322075280422,
+  "kl_to_reference": 0.006733636116235742,
+  "regularized_J": 0.482620437417746,
+  "policy_expected_duration_limited_seconds": 141.91268137697546,
+  "descriptor": {
+    "name": "rl_balanced_b1_h5_s11_budget_step00200",
+    "kind": "actor",
+    "seed": 11,
+    "reward_type": "balanced",
+    "beta": 1,
+    "actor": "output/research_v2/models/rl_balanced_b1_h5_s11/stages/step00200.pt",
+    "budget_role": [
+      "action_matched"
+    ],
+    "h1_target_training_seconds": 39.52944349311292,
+    "h5_training_seconds": 61.51995195355266
+  },
+  "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+  "inference_and_metrics_seconds": 9.362896374892443
+}

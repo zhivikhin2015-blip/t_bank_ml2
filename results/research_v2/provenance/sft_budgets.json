@@ -1,0 +1,23 @@
+{
+  "11": {
+    "steps": 1400,
+    "target_training_seconds": 37.7964263742324,
+    "target_run": "models/rl_ratio_b0.1_h1_s11/completed.json",
+    "benchmark_step_seconds": 0.026870937552303076,
+    "fallback_diagnostic": false
+  },
+  "22": {
+    "steps": 1500,
+    "target_training_seconds": 39.41499867243692,
+    "target_run": "models/rl_ratio_b0.1_h1_s22/completed.json",
+    "benchmark_step_seconds": 0.026870937552303076,
+    "fallback_diagnostic": false
+  },
+  "33": {
+    "steps": 1400,
+    "target_training_seconds": 38.46636223886162,
+    "target_run": "models/rl_ratio_b0.1_h1_s33/completed.json",
+    "benchmark_step_seconds": 0.026870937552303076,
+    "fallback_diagnostic": false
+  }
+}

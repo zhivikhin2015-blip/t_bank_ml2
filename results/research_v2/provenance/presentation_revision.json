@@ -1,0 +1,8 @@
+{
+  "source_sha256": "cf9ffa858ce8025d7183317ca68c2b2bedac663f73db7eee70088a04cdd0e2da",
+  "reason": "Technical replay disclosure, corrected commands, separate serving benchmark, qualified diagnostics",
+  "generated_readme_sha256": "9b7a03c160969b6ed67a59a4539f7173b2eda98111a04a1ddd2fd28fdd3f7ef0",
+  "final_readme_sha256": "fc1cd4c8bfd64f3a5df2630d1fd32357d5c4cea78fa654746022173b88cfc989",
+  "model_results_sha256_unchanged": "1e52fa09c4eaa1a2e265c502ffa58bf5f3fdb92edf24b96ebd5a35a042f54eab",
+  "frozen_sha256_unchanged": "9185818108772fb30171f584b3c144dcf0f893c29d0c288325a367d1e7fa3ad8"
+}

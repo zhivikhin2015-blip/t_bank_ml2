@@ -1,0 +1,9 @@
+{
+  "steps": 4000,
+  "chosen_step": 500,
+  "checkpoint_sha256": "3f4d804de7c86860a6fe23d32242180b4d5e317697d9533327f54f78d41fd966",
+  "identity": "86c3d8b9a0efbbb6b44ace94d1e383f4eb765ec44400007ab85921ee329a2799",
+  "training_seconds": 14.941607360728085,
+  "evaluation_seconds": 0.13705145684070885,
+  "checkpoint_seconds": 0.8316764591727406
+}

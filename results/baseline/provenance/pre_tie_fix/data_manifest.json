@@ -1,0 +1,89 @@
+{
+  "dataset": "yandex/yambda",
+  "revision": "dd6f3a19eef5866e346c3270e098baa641a44948",
+  "raw_sha256": "eed9cbd094af1e189507d2f8132a0dc9653b90e65480125c7cdccd601e0592d1",
+  "raw_rows": 46467212,
+  "selected_rows": 5477694,
+  "requested_users": 1024,
+  "eligible_users": 826,
+  "excluded_cold_users": 198,
+  "catalog_items": 5000,
+  "history_length": 64,
+  "timestamp_min": 5,
+  "timestamp_max": 25999985,
+  "timestamp_unit_seconds": 1,
+  "timestamp_resolution_seconds": 5,
+  "temporal_cuts": [
+    18199991,
+    20799989,
+    23399987
+  ],
+  "splits": {
+    "train": {
+      "examples": 140005,
+      "users": 817,
+      "known_target_fraction": 1.0,
+      "timestamp_min": 1975,
+      "timestamp_max": 18199800
+    },
+    "reward_val": {
+      "examples": 16284,
+      "users": 748,
+      "known_target_fraction": 1.0,
+      "timestamp_min": 18200015,
+      "timestamp_max": 20799675
+    },
+    "policy_val": {
+      "examples": 17803,
+      "users": 768,
+      "known_target_fraction": 0.33943717351008257,
+      "timestamp_min": 20800190,
+      "timestamp_max": 23399940
+    },
+    "test": {
+      "examples": 18618,
+      "users": 821,
+      "known_target_fraction": 0.3072832742507251,
+      "timestamp_min": 23400010,
+      "timestamp_max": 25999985
+    }
+  },
+  "train_catalog_event_coverage": 0.4193601848248801,
+  "duration_cap_seconds": 290.0,
+  "global_ratio_mean": 0.7156738638877869,
+  "train_ratio_above100_fraction": 0.004724312207715949,
+  "tied_target_events_excluded": 1374831,
+  "items_with_variable_train_duration": 0,
+  "return_proxy": {
+    "train": {
+      "complete_windows": 33414,
+      "active_between_day1_and_day7": 32598,
+      "fraction": 0.9755790985814329
+    },
+    "reward_val": {
+      "complete_windows": 4870,
+      "active_between_day1_and_day7": 4695,
+      "fraction": 0.9640657084188912
+    },
+    "policy_val": {
+      "complete_windows": 4957,
+      "active_between_day1_and_day7": 4804,
+      "fraction": 0.9691345571918499
+    }
+  },
+  "preparation": {
+    "users": 1024,
+    "items": 5000,
+    "history": 64,
+    "train_per_user": 200,
+    "eval_per_user": 24
+  },
+  "raw_train_global_ratio_mean": 0.6470857262611389,
+  "prepared_sha256": {
+    "train.npz": "bd92554fcbfcc7ec8d87bf0188e8ef1ec40e030f43ab369351e3d1b1c0db771a",
+    "reward_val.npz": "6b2bc5c4cc26743d588c5f92c916df985f00ed08abd75b2ed00f53c2bc2824eb",
+    "policy_val.npz": "6188d1f7bf7805698e1d511334538f7a721586d0d1eb3a2741cbdc988f6ae269",
+    "test.npz": "143ceef61b629a71ab19148b6a3ca8c4f25d6ca5196593575ee01df559aeb7c7",
+    "catalog.npz": "bc307840f6075df63057e7f011a226a858a54968a50473ccd5a09492ee27b39f"
+  }
+}

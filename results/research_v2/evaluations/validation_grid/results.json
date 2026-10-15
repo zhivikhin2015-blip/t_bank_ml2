@@ -1,0 +1,4021 @@
+{
+  "split": "policy_val",
+  "models": {
+    "baseline_s11": {
+      "recall@10": 0.04658064945379913,
+      "ndcg@10": 0.027025631315612985,
+      "recall@20": 0.06457893292288851,
+      "ndcg@20": 0.03158432375285089,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13714181061591985,
+          "ndcg@10": 0.0793164071601636,
+          "recall@20": 0.19091130888482372,
+          "ndcg@20": 0.09290836715506177
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.052158089920621396,
+          "ndcg@10": 0.030400759371218198,
+          "recall@20": 0.07141456320704123,
+          "ndcg@20": 0.03527076565662949
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03804493948915619,
+          "ndcg@10": 0.02258372613830889,
+          "recall@20": 0.054272660751482044,
+          "ndcg@20": 0.02669847290339891
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06857612036655601,
+          "ndcg@10": 0.04115826095658284,
+          "recall@20": 0.08925646881944309,
+          "ndcg@20": 0.04638178778972093
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.01807274806310238,
+          "ndcg@10": 0.008244677818330527,
+          "recall@20": 0.030131029705994863,
+          "ndcg@20": 0.0112751735077277
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.13808091450722196,
+          "ndcg@10": 0.07869199030742019,
+          "recall@20": 0.1980734620195793,
+          "ndcg@20": 0.09386851985676568
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.09171597633136094,
+          "ndcg@10": 0.052215716952199634,
+          "recall@20": 0.15088757396449703,
+          "ndcg@20": 0.06748658508216754
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15925212410212944,
+          "ndcg@10": 0.09212895237881764,
+          "recall@20": 0.22063370451595068,
+          "ndcg@20": 0.10749816444865272
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11640535843967217,
+          "ndcg@10": 0.06708139894563327,
+          "recall@20": 0.15818225438323477,
+          "ndcg@20": 0.077620128897313
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7340187266819601,
+      "duration_limited_seconds_at10": 140.40768294890532,
+      "mean_duration_seconds_at10": 193.33875123222978,
+      "mean_popularity_at10": 590.0177795906058,
+      "seen_in_history_at10": 0.19414845915887288,
+      "catalog_coverage_at10": 0.906,
+      "top10_items_exposure_share": 0.06661236870190418,
+      "recommendation_entropy": 7.520465230413185,
+      "between_user_overlap_at10": 0.011668839634941329,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.729409325670808,
+      "policy_expected_time_reward": 0.48996262762233594,
+      "policy_expected_auditor_ratio": 0.7260627686988158,
+      "kl_to_reference": 0.0,
+      "regularized_J": 0.729409325670808,
+      "policy_expected_duration_limited_seconds": 142.08916201047742,
+      "descriptor": {
+        "name": "baseline_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "actor": "output/baseline_s11/best.pt"
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 17.11952516704332,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0013512815657806508,
+          "ci95": [
+            0.001182589443664218,
+            0.0015391984732352109
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0012061731087091702,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rl_ratio_b0_h1_s11": {
+      "recall@10": 0.0005967881944444444,
+      "ndcg@10": 0.00029611215610977437,
+      "recall@20": 0.0013020833333333333,
+      "ndcg@20": 0.0004712052678549168,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.001699920299611557,
+          "ndcg@10": 0.0007969353724202498,
+          "recall@20": 0.0036811162603330298,
+          "ndcg@20": 0.0012813462039291072
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.0007439867191669743,
+          "ndcg@10": 0.00036991232043734925,
+          "recall@20": 0.0013183510355751459,
+          "ndcg@20": 0.0005123996248088763
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.0,
+          "ndcg@10": 0.0,
+          "recall@20": 0.0007441850239634173,
+          "ndcg@20": 0.0001880143239686063
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.0,
+          "ndcg@10": 0.0,
+          "recall@20": 0.0,
+          "ndcg@20": 0.0
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.0011005684147273101,
+          "ndcg@10": 0.0005852484643127267,
+          "recall@20": 0.002144051211093192,
+          "ndcg@20": 0.0008441431941830098
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.0041632649794297975,
+          "ndcg@10": 0.0019012390265020643,
+          "recall@20": 0.00857613947946753,
+          "ndcg@20": 0.002981841063668432
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.0,
+          "ndcg@10": 0.0,
+          "recall@20": 0.0,
+          "ndcg@20": 0.0
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.0,
+          "ndcg@10": 0.0,
+          "recall@20": 0.0,
+          "ndcg@20": 0.0
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.00497004357298475,
+          "ndcg@10": 0.002592422507842361,
+          "recall@20": 0.010988562091503265,
+          "ndcg@20": 0.004056517567643085
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.8083758659115025,
+      "duration_limited_seconds_at10": 85.56704391604573,
+      "mean_duration_seconds_at10": 105.92380482985277,
+      "mean_popularity_at10": 195.0947498193735,
+      "seen_in_history_at10": 0.004636346726190476,
+      "catalog_coverage_at10": 0.0096,
+      "top10_items_exposure_share": 0.9489580407796439,
+      "recommendation_entropy": 2.446984401174297,
+      "between_user_overlap_at10": 0.9142112125162974,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.8131360410849341,
+      "policy_expected_time_reward": 0.29364394494702245,
+      "policy_expected_auditor_ratio": 0.8106118620529851,
+      "kl_to_reference": 10.809962025123424,
+      "regularized_J": 0.8131360410849341,
+      "policy_expected_duration_limited_seconds": 85.15674403463652,
+      "descriptor": {
+        "name": "rl_ratio_b0_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0,
+        "actor": "output/research_v2/models/rl_ratio_b0_h1_s11/best.pt"
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 16.933669041958638,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.026729519159503213,
+          "ci95": [
+            -0.03053185182543208,
+            -0.02337182912044208
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.045983861259354684,
+          "ci95": [
+            -0.05197944052988769,
+            -0.04063681166181681
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.08372671541412612,
+          "ci95": [
+            0.08224994207370545,
+            0.08522658257910554
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.1963186826769304,
+          "ci95": [
+            -0.19941244916471332,
+            -0.19339244207363107
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": -0.02537823759372256,
+          "ci95": [
+            -0.028994117395862568,
+            -0.022186033562913984
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.02844073799262138,
+          "noninferiority_supported": false
+        }
+      }
+    },
+    "rl_ratio_b0.1_h1_s11": {
+      "recall@10": 0.04712318417602135,
+      "ndcg@10": 0.026753666021814004,
+      "recall@20": 0.06324429750622185,
+      "ndcg@20": 0.030813721246919043,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13893562145239488,
+          "ndcg@10": 0.07886509347839571,
+          "recall@20": 0.18614266307761504,
+          "ndcg@20": 0.0907558194627836
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.05222421025718184,
+          "ndcg@10": 0.02950169626032288,
+          "recall@20": 0.07053886399390816,
+          "ndcg@20": 0.034120308074621034
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03975994487023362,
+          "ndcg@10": 0.02298371877618807,
+          "recall@20": 0.05316838316948734,
+          "ndcg@20": 0.026328956672038925
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.0684535425860179,
+          "ndcg@10": 0.04025625665837973,
+          "recall@20": 0.08805367261997821,
+          "ndcg@20": 0.045204133382830115
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.01831771047667561,
+          "ndcg@10": 0.008401953877966759,
+          "recall@20": 0.02965744364078728,
+          "ndcg@20": 0.011239467195320084
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.14999583529694463,
+          "ndcg@10": 0.08221061300992558,
+          "recall@20": 0.19588190027968158,
+          "ndcg@20": 0.09369670956370657
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.07988165680473373,
+          "ndcg@10": 0.05139267332437976,
+          "recall@20": 0.14694280078895464,
+          "ndcg@20": 0.06810151813938276
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.1586791522416589,
+          "ndcg@10": 0.0890591794898699,
+          "recall@20": 0.22016691657985563,
+          "ndcg@20": 0.10439990389386276
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.12083073970328873,
+          "ndcg@10": 0.0685084509065507,
+          "recall@20": 0.15699502023031434,
+          "ndcg@20": 0.07756860311616982
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7464752444491675,
+      "duration_limited_seconds_at10": 139.6046896096913,
+      "mean_duration_seconds_at10": 188.7338158787045,
+      "mean_popularity_at10": 560.6813901780359,
+      "seen_in_history_at10": 0.18938298351363062,
+      "catalog_coverage_at10": 0.892,
+      "top10_items_exposure_share": 0.06311857552097962,
+      "recommendation_entropy": 7.45112199229936,
+      "between_user_overlap_at10": 0.012972620599739243,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7354309769603974,
+      "policy_expected_time_reward": 0.4869333094431558,
+      "policy_expected_auditor_ratio": 0.7309871538724405,
+      "kl_to_reference": 0.02628610489106172,
+      "regularized_J": 0.7328023663084942,
+      "policy_expected_duration_limited_seconds": 141.21065973851518,
+      "descriptor": {
+        "name": "rl_ratio_b0.1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.1,
+        "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 17.077217250014655,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.00027196529379898204,
+          "ci95": [
+            -0.0008749031703618277,
+            0.00030730087259420386
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0005425347222222222,
+          "ci95": [
+            -0.0005425347222222221,
+            0.0016818576388888888
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.0060216512895893805,
+          "ci95": [
+            0.0058660444132355265,
+            0.006170006836462389
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.0030293181791801473,
+          "ci95": [
+            -0.0032324736589937255,
+            -0.0028237200879050292
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.001079316271981669,
+          "ci95": [
+            0.000510162240861828,
+            0.0016767985849597444
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0005831890418912865,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rl_ratio_b1_h1_s11": {
+      "recall@10": 0.04761146542602134,
+      "ndcg@10": 0.027247775131602574,
+      "recall@20": 0.06457893292288852,
+      "ndcg@20": 0.031532908033815144,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.139431602983304,
+          "ndcg@10": 0.08004563239073641,
+          "recall@20": 0.18985836462501143,
+          "ndcg@20": 0.09279199815457778
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.05312857569591369,
+          "ndcg@10": 0.030664810082874274,
+          "recall@20": 0.070905929822275,
+          "ndcg@20": 0.03516078917998394
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.039642708832770414,
+          "ndcg@10": 0.0229618321980878,
+          "recall@20": 0.054159843232969566,
+          "ndcg@20": 0.026629525408200953
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06970238475361232,
+          "ndcg@10": 0.04135442780250238,
+          "recall@20": 0.0896258308059603,
+          "ndcg@20": 0.046393281200994944
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.018564594661028607,
+          "ndcg@10": 0.00842328062087481,
+          "recall@20": 0.02989534698719555,
+          "ndcg@20": 0.011265066698778022
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.1404794756221064,
+          "ndcg@10": 0.07949799221954089,
+          "recall@20": 0.19798101616643612,
+          "ndcg@20": 0.0940702549658985
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.09467455621301775,
+          "ndcg@10": 0.05294009597097366,
+          "recall@20": 0.15877712031558186,
+          "ndcg@20": 0.06892094396688654
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.16160642940561804,
+          "ndcg@10": 0.09178486477539184,
+          "recall@20": 0.21763993482526628,
+          "ndcg@20": 0.10583569914646868
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.12056294740118269,
+          "ndcg@10": 0.06862367145722817,
+          "recall@20": 0.15801885569042431,
+          "ndcg@20": 0.07812421834731433
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7362996550405323,
+      "duration_limited_seconds_at10": 140.73708747231208,
+      "mean_duration_seconds_at10": 193.11992279601972,
+      "mean_popularity_at10": 581.9019176907764,
+      "seen_in_history_at10": 0.19387569753910303,
+      "catalog_coverage_at10": 0.9052,
+      "top10_items_exposure_share": 0.06542717519519183,
+      "recommendation_entropy": 7.520060281174874,
+      "between_user_overlap_at10": 0.012190352020860495,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7305208214766005,
+      "policy_expected_time_reward": 0.48988569593772113,
+      "policy_expected_auditor_ratio": 0.7268561522438315,
+      "kl_to_reference": 0.0014726568630932784,
+      "regularized_J": 0.7290481647480712,
+      "policy_expected_duration_limited_seconds": 142.06685182193914,
+      "descriptor": {
+        "name": "rl_ratio_b1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 1,
+        "actor": "output/research_v2/models/rl_ratio_b1_h1_s11/best.pt"
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 16.996176333981566,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": 0.00022214381598958314,
+          "ci95": [
+            -4.1220031290733346e-05,
+            0.00047010568937974964
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0010308159722222222,
+          "ci95": [
+            0.0003797743055555555,
+            0.0016818576388888888
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.001111495805792692,
+          "ci95": [
+            0.0010777100217796828,
+            0.0011443330212438743
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -7.693168461484063e-05,
+          "ci95": [
+            -0.00011424335372744661,
+            -4.126202937009649e-05
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.001573425381770234,
+          "ci95": [
+            0.0012792044372863785,
+            0.0018798618621660291
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0013326591731875389,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "analytic_ratio_b0.1": {
+      "recall@10": 0.04572687112777574,
+      "ndcg@10": 0.026029694573718554,
+      "recall@20": 0.06391342366362925,
+      "ndcg@20": 0.030625737048155965,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13457692410598524,
+          "ndcg@10": 0.07701993188767864,
+          "recall@20": 0.18837294132327911,
+          "ndcg@20": 0.0906205825628218
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.05021242710029673,
+          "ndcg@10": 0.028871630627548817,
+          "recall@20": 0.07064169808170757,
+          "ndcg@20": 0.03402383462511051
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03766943915439237,
+          "ndcg@10": 0.02157998954321428,
+          "recall@20": 0.053783984096722616,
+          "ndcg@20": 0.02569538779829724
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06702798278521585,
+          "ndcg@10": 0.039135491196129274,
+          "recall@20": 0.08851139304196491,
+          "ndcg@20": 0.04461617871325448
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.017589091177550236,
+          "ndcg@10": 0.00815681034024597,
+          "recall@20": 0.029721474253044868,
+          "ndcg@20": 0.011167668375598142
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.14071168750249574,
+          "ndcg@10": 0.07745667328021916,
+          "recall@20": 0.20160359538331013,
+          "ndcg@20": 0.09271343575198009
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.07248520710059171,
+          "ndcg@10": 0.04450974599036899,
+          "recall@20": 0.126232741617357,
+          "ndcg@20": 0.05847563216018373
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.14521445601834196,
+          "ndcg@10": 0.08312018589257372,
+          "recall@20": 0.22110034995430533,
+          "ndcg@20": 0.10235356062567035
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11868126880381782,
+          "ndcg@10": 0.06785935893398898,
+          "recall@20": 0.15792353978628487,
+          "ndcg@20": 0.07770777089532897
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7561342703627328,
+      "duration_limited_seconds_at10": 141.08818873823475,
+      "mean_duration_seconds_at10": 188.0961856357741,
+      "mean_popularity_at10": 567.4809610208415,
+      "seen_in_history_at10": 0.18482312298374406,
+      "catalog_coverage_at10": 0.862,
+      "top10_items_exposure_share": 0.0703870134247037,
+      "recommendation_entropy": 7.378790812295193,
+      "between_user_overlap_at10": 0.014015645371577574,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.743810041999895,
+      "policy_expected_time_reward": 0.49139281525580936,
+      "policy_expected_auditor_ratio": 0.7359052890430045,
+      "kl_to_reference": 0.0674705807738844,
+      "regularized_J": 0.7370629842964617,
+      "policy_expected_duration_limited_seconds": 142.50391642418472,
+      "descriptor": {
+        "name": "analytic_ratio_b0.1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.1
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 13.730333833955228,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.0009959367418944322,
+          "ci95": [
+            -0.001690908672412,
+            -0.0003350807227870485
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.0008537783260233918,
+          "ci95": [
+            -0.0023331848501461994,
+            0.0007052951388888887
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.014400716329087071,
+          "ci95": [
+            0.013870382549015807,
+            0.014914646579749958
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.0014301876334734621,
+          "ci95": [
+            0.0011307146272720085,
+            0.0017286067686964155
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.00035534482388621864,
+          "ci95": [
+            -0.0003330713864240745,
+            0.0010288849678458663
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.00021582932589949704,
+          "noninferiority_supported": false
+        }
+      }
+    },
+    "analytic_ratio_b1": {
+      "recall@10": 0.0470146772315769,
+      "ndcg@10": 0.02709144075222079,
+      "recall@20": 0.06457893292288852,
+      "ndcg@20": 0.0315319822004401,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13795263653033693,
+          "ndcg@10": 0.07951300731691116,
+          "recall@20": 0.19111083830315392,
+          "ndcg@20": 0.09292978960741331
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.052583016220661485,
+          "ndcg@10": 0.030448923950721626,
+          "recall@20": 0.07156461902570269,
+          "ndcg@20": 0.03523276887114464
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03848301134343303,
+          "ndcg@10": 0.022734880731185934,
+          "recall@20": 0.053895421800835897,
+          "ndcg@20": 0.026665297849409082
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06875098853399747,
+          "ndcg@10": 0.040992203001443704,
+          "recall@20": 0.08926711993303538,
+          "ndcg@20": 0.0461872569087474
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.018325603270225883,
+          "ndcg@10": 0.008361750907340251,
+          "recall@20": 0.03023427031790043,
+          "ndcg@20": 0.011334435296187585
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.14071279134670575,
+          "ndcg@10": 0.07945925450860945,
+          "recall@20": 0.19700561808327263,
+          "ndcg@20": 0.09370627466801154
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.09171597633136094,
+          "ndcg@10": 0.052065619249496695,
+          "recall@20": 0.15285996055226825,
+          "ndcg@20": 0.06737616652611686
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15986301576672024,
+          "ndcg@10": 0.09161103978804634,
+          "recall@20": 0.21740813721704078,
+          "ndcg@20": 0.10609022543340205
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11844784209980289,
+          "ndcg@10": 0.0676081254342935,
+          "recall@20": 0.16022473804336548,
+          "ndcg@20": 0.07807205944074101
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7373171067219711,
+      "duration_limited_seconds_at10": 140.8952442146937,
+      "mean_duration_seconds_at10": 193.05879883671255,
+      "mean_popularity_at10": 581.2211472466162,
+      "seen_in_history_at10": 0.19359990225662602,
+      "catalog_coverage_at10": 0.906,
+      "top10_items_exposure_share": 0.0656125372128293,
+      "recommendation_entropy": 7.516045693685138,
+      "between_user_overlap_at10": 0.012255541069100392,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7311268903579324,
+      "policy_expected_time_reward": 0.49025030614660503,
+      "policy_expected_auditor_ratio": 0.7272228033383801,
+      "kl_to_reference": 0.0008519781407986673,
+      "regularized_J": 0.7302749119099262,
+      "policy_expected_duration_limited_seconds": 142.17258878251545,
+      "descriptor": {
+        "name": "analytic_ratio_b1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 1
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 13.81305420899298,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": 6.580943660780325e-05,
+          "ci95": [
+            -9.687912343664546e-05,
+            0.00023672028526437947
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.00043402777777777775,
+          "ci95": [
+            0.0,
+            0.0009223090277777776
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.001717564687124572,
+          "ci95": [
+            0.0016420715909297014,
+            0.0017913316170383715
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.00028767852426909236,
+          "ci95": [
+            0.0002472749955805816,
+            0.00032665312328989906
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.001417091002388454,
+          "ci95": [
+            0.001174612098858595,
+            0.0016857574654216454
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0012196369973437318,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_ratio_w0": {
+      "recall@10": 0.04658064945379913,
+      "ndcg@10": 0.027025631315612985,
+      "recall@20": 0.06457893292288851,
+      "ndcg@20": 0.03158432375285089,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13714181061591985,
+          "ndcg@10": 0.0793164071601636,
+          "recall@20": 0.19091130888482372,
+          "ndcg@20": 0.09290836715506177
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.052158089920621396,
+          "ndcg@10": 0.030400759371218198,
+          "recall@20": 0.07141456320704123,
+          "ndcg@20": 0.03527076565662949
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03804493948915619,
+          "ndcg@10": 0.02258372613830889,
+          "recall@20": 0.054272660751482044,
+          "ndcg@20": 0.02669847290339891
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06857612036655601,
+          "ndcg@10": 0.04115826095658284,
+          "recall@20": 0.08925646881944309,
+          "ndcg@20": 0.04638178778972093
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.01807274806310238,
+          "ndcg@10": 0.008244677818330527,
+          "recall@20": 0.030131029705994863,
+          "ndcg@20": 0.0112751735077277
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.13808091450722196,
+          "ndcg@10": 0.07869199030742019,
+          "recall@20": 0.1980734620195793,
+          "ndcg@20": 0.09386851985676568
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.09171597633136094,
+          "ndcg@10": 0.052215716952199634,
+          "recall@20": 0.15088757396449703,
+          "ndcg@20": 0.06748658508216754
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15925212410212944,
+          "ndcg@10": 0.09212895237881764,
+          "recall@20": 0.22063370451595068,
+          "ndcg@20": 0.10749816444865272
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11640535843967217,
+          "ndcg@10": 0.06708139894563327,
+          "recall@20": 0.15818225438323477,
+          "ndcg@20": 0.077620128897313
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7340187266819601,
+      "duration_limited_seconds_at10": 140.40768294890532,
+      "mean_duration_seconds_at10": 193.33875123222978,
+      "mean_popularity_at10": 590.0177795906058,
+      "seen_in_history_at10": 0.19414845915887288,
+      "catalog_coverage_at10": 0.906,
+      "top10_items_exposure_share": 0.06661236870190418,
+      "recommendation_entropy": 7.520465230413185,
+      "between_user_overlap_at10": 0.011668839634941329,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7324928064967146,
+      "policy_expected_time_reward": 0.48564705138333064,
+      "policy_expected_auditor_ratio": 0.7299925553837406,
+      "kl_to_reference": 0.837392113275567,
+      "regularized_J": 0.7324928064967146,
+      "policy_expected_duration_limited_seconds": 140.83764490116587,
+      "descriptor": {
+        "name": "rerank_ratio_w0",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 0
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 6.786011958029121,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.0030834808259067406,
+          "ci95": [
+            0.0028298796630716666,
+            0.00334625296466357
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.004315576239005335,
+          "ci95": [
+            -0.005172833013865879,
+            -0.003485915927740265
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0013512815657806508,
+          "ci95": [
+            0.001182589443664218,
+            0.0015391984732352109
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0012061731087091702,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_ratio_w1": {
+      "recall@10": 0.0470146772315769,
+      "ndcg@10": 0.02709144075222079,
+      "recall@20": 0.06457893292288852,
+      "ndcg@20": 0.0315319822004401,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13795263653033693,
+          "ndcg@10": 0.07951300731691116,
+          "recall@20": 0.19111083830315392,
+          "ndcg@20": 0.09292978960741331
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.052583016220661485,
+          "ndcg@10": 0.030448923950721626,
+          "recall@20": 0.07156461902570269,
+          "ndcg@20": 0.03523276887114464
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03848301134343303,
+          "ndcg@10": 0.022734880731185934,
+          "recall@20": 0.053895421800835897,
+          "ndcg@20": 0.026665297849409082
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06875098853399747,
+          "ndcg@10": 0.040992203001443704,
+          "recall@20": 0.08926711993303538,
+          "ndcg@20": 0.0461872569087474
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.018325603270225883,
+          "ndcg@10": 0.008361750907340251,
+          "recall@20": 0.03023427031790043,
+          "ndcg@20": 0.011334435296187585
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.14071279134670575,
+          "ndcg@10": 0.07945925450860945,
+          "recall@20": 0.19700561808327263,
+          "ndcg@20": 0.09370627466801154
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.09171597633136094,
+          "ndcg@10": 0.052065619249496695,
+          "recall@20": 0.15285996055226825,
+          "ndcg@20": 0.06737616652611686
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15986301576672024,
+          "ndcg@10": 0.09161103978804634,
+          "recall@20": 0.21740813721704078,
+          "ndcg@20": 0.10609022543340205
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11844784209980289,
+          "ndcg@10": 0.0676081254342935,
+          "recall@20": 0.16022473804336548,
+          "ndcg@20": 0.07807205944074101
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7373171067219711,
+      "duration_limited_seconds_at10": 140.8952442146937,
+      "mean_duration_seconds_at10": 193.05879883671255,
+      "mean_popularity_at10": 581.2211472466162,
+      "seen_in_history_at10": 0.19359990225662602,
+      "catalog_coverage_at10": 0.906,
+      "top10_items_exposure_share": 0.0656125372128293,
+      "recommendation_entropy": 7.516045693685138,
+      "between_user_overlap_at10": 0.012255541069100392,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7340413256210488,
+      "policy_expected_time_reward": 0.48594043106466805,
+      "policy_expected_auditor_ratio": 0.7310720107005025,
+      "kl_to_reference": 0.8381597873394836,
+      "regularized_J": 0.7340413256210488,
+      "policy_expected_duration_limited_seconds": 140.92272500875373,
+      "descriptor": {
+        "name": "rerank_ratio_w1",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 1
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 7.4283740419195965,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": 6.580943660780325e-05,
+          "ci95": [
+            -9.687912343664546e-05,
+            0.00023672028526437947
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.00043402777777777775,
+          "ci95": [
+            0.0,
+            0.0009223090277777776
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.004631999950240947,
+          "ci95": [
+            0.0043450440645855905,
+            0.004933400840390334
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.0040221965576678976,
+          "ci95": [
+            -0.004896026446182306,
+            -0.003186088374353516
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.001417091002388454,
+          "ci95": [
+            0.001174612098858595,
+            0.0016857574654216454
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0012196369973437318,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_ratio_w3": {
+      "recall@10": 0.047285944592688006,
+      "ndcg@10": 0.027176611278531198,
+      "recall@20": 0.06453210361002301,
+      "ndcg@20": 0.031520952060463674,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13771495158923913,
+          "ndcg@10": 0.07932524293216549,
+          "recall@20": 0.1904823850615629,
+          "ndcg@20": 0.09261224261204282
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.053201638618867626,
+          "ndcg@10": 0.03054780697202364,
+          "recall@20": 0.07202086293398073,
+          "ndcg@20": 0.03525703999772496
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03890309123638241,
+          "ndcg@10": 0.02285804451064313,
+          "recall@20": 0.054283202099403224,
+          "ndcg@20": 0.026742561144086602
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06885028519394502,
+          "ndcg@10": 0.04089651710228807,
+          "recall@20": 0.09042639456088948,
+          "ndcg@20": 0.04633671623951111
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.0184624294095043,
+          "ndcg@10": 0.008506232939527073,
+          "recall@20": 0.029640807521859425,
+          "ndcg@20": 0.011289664480524141
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.14008648069662333,
+          "ndcg@10": 0.07877232513034355,
+          "recall@20": 0.1981836705291539,
+          "ndcg@20": 0.09343894955682187
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.08579881656804733,
+          "ndcg@10": 0.05024226601455605,
+          "recall@20": 0.14990138067061143,
+          "ndcg@20": 0.0661852758933191
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.1565530166309498,
+          "ndcg@10": 0.09059716062564593,
+          "recall@20": 0.2194729910967767,
+          "ndcg@20": 0.1064150610320422
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11968694885361551,
+          "ndcg@10": 0.06743176522086185,
+          "recall@20": 0.16089194937234155,
+          "ndcg@20": 0.07767435499816021
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7428785516040168,
+      "duration_limited_seconds_at10": 140.83577809827287,
+      "mean_duration_seconds_at10": 191.44833414054983,
+      "mean_popularity_at10": 581.9362893118257,
+      "seen_in_history_at10": 0.19242222680495888,
+      "catalog_coverage_at10": 0.901,
+      "top10_items_exposure_share": 0.06657304948604167,
+      "recommendation_entropy": 7.494428904638274,
+      "between_user_overlap_at10": 0.012255541069100392,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7369240187512182,
+      "policy_expected_time_reward": 0.48641724036231565,
+      "policy_expected_auditor_ratio": 0.7330665594345591,
+      "kl_to_reference": 0.8438812502692175,
+      "regularized_J": 0.7369240187512182,
+      "policy_expected_duration_limited_seconds": 141.06099970507154,
+      "descriptor": {
+        "name": "rerank_ratio_w3",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 3
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 7.183383667026646,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": 0.00015097996291821037,
+          "ci95": [
+            -0.00015592270823835928,
+            0.0004791496916545611
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0007052951388888889,
+          "ci95": [
+            -5.425347222222221e-05,
+            0.00146484375
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.0075146930804102325,
+          "ci95": [
+            0.007136338585691676,
+            0.007883534737533095
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.0035453872600203786,
+          "ci95": [
+            -0.004442572724453616,
+            -0.0026787102973567078
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0015022615286988613,
+          "ci95": [
+            0.0011523366230855967,
+            0.0018623561952315509
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.001215044925360493,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_ratio_w10": {
+      "recall@10": 0.04572687112777574,
+      "ndcg@10": 0.026029694573718554,
+      "recall@20": 0.06385917019140704,
+      "ndcg@20": 0.030610603424802495,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13457692410598524,
+          "ndcg@10": 0.07701993188767864,
+          "recall@20": 0.18821947293776653,
+          "ndcg@20": 0.09057777363930257
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.05021242710029673,
+          "ndcg@10": 0.028871630627548817,
+          "recall@20": 0.07056840579205644,
+          "ndcg@20": 0.034003390257941704
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03766943915439237,
+          "ndcg@10": 0.02157998954321428,
+          "recall@20": 0.053783984096722616,
+          "ndcg@20": 0.02569538779829724
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06702798278521585,
+          "ndcg@10": 0.039135491196129274,
+          "recall@20": 0.08844415259010907,
+          "ndcg@20": 0.0445974224635469
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.017589091177550236,
+          "ndcg@10": 0.00815681034024597,
+          "recall@20": 0.029721474253044868,
+          "ndcg@20": 0.011167668375598142
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.14071168750249574,
+          "ndcg@10": 0.07745667328021916,
+          "recall@20": 0.2012866381725336,
+          "ndcg@20": 0.09262502277396072
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.07248520710059171,
+          "ndcg@10": 0.04450974599036899,
+          "recall@20": 0.126232741617357,
+          "ndcg@20": 0.05847563216018373
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.14521445601834196,
+          "ndcg@10": 0.08312018589257372,
+          "recall@20": 0.22110034995430533,
+          "ndcg@20": 0.10235356062567035
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11868126880381782,
+          "ndcg@10": 0.06785935893398898,
+          "recall@20": 0.15751504305425873,
+          "ndcg@20": 0.07759382361360874
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7560919849935411,
+      "duration_limited_seconds_at10": 141.0848896501209,
+      "mean_duration_seconds_at10": 188.1032114604269,
+      "mean_popularity_at10": 567.5122218556413,
+      "seen_in_history_at10": 0.18486652576152185,
+      "catalog_coverage_at10": 0.8622,
+      "top10_items_exposure_share": 0.0703813963938662,
+      "recommendation_entropy": 7.3791217876792015,
+      "between_user_overlap_at10": 0.014015645371577574,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7454302018348941,
+      "policy_expected_time_reward": 0.4873704455254684,
+      "policy_expected_auditor_ratio": 0.7388960229028996,
+      "kl_to_reference": 0.897987028223719,
+      "regularized_J": 0.7454302018348941,
+      "policy_expected_duration_limited_seconds": 141.33742920238583,
+      "descriptor": {
+        "name": "rerank_ratio_w10",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 10
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 7.388468333054334,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.0009959367418944322,
+          "ci95": [
+            -0.001690908672412,
+            -0.0003350807227870485
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.0008537783260233918,
+          "ci95": [
+            -0.0023331848501461994,
+            0.0007052951388888887
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.01602087616408612,
+          "ci95": [
+            0.015420753277861968,
+            0.01659647687695166
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.002592182096867622,
+          "ci95": [
+            -0.0036117094015291175,
+            -0.0015907520636049902
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.00035534482388621864,
+          "ci95": [
+            -0.0003330713864240745,
+            0.0010288849678458663
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.00021582932589949704,
+          "noninferiority_supported": false
+        }
+      }
+    },
+    "rl_time_b0_h1_s11": {
+      "recall@10": 0.002007378472222222,
+      "ndcg@10": 0.0009297430414648143,
+      "recall@20": 0.00341796875,
+      "ndcg@20": 0.00128254451899293,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.005916800719336084,
+          "ndcg@10": 0.0028454073359473865,
+          "recall@20": 0.011144045828536448,
+          "ndcg@20": 0.004170538892951997
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.0017943794298363371,
+          "ndcg@10": 0.0008202090084216948,
+          "recall@20": 0.0031721393238033965,
+          "ndcg@20": 0.0011649490615543473
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.0016064537186420845,
+          "ndcg@10": 0.0007423696483827803,
+          "recall@20": 0.002831947841510203,
+          "ndcg@20": 0.0010527832503013116
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.00281688908994861,
+          "ndcg@10": 0.0013697292897934925,
+          "recall@20": 0.004598739090124401,
+          "ndcg@20": 0.0018135681138113707
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.0011109154741511579,
+          "ndcg@10": 0.0003718841459675688,
+          "recall@20": 0.0018542651123178693,
+          "ndcg@20": 0.000555083242919346
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.00013206550449022716,
+          "ndcg@10": 4.402183483007571e-05,
+          "recall@20": 0.00013206550449022716,
+          "ndcg@20": 4.402183483007571e-05
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.061637080867850094,
+          "ndcg@10": 0.02118408497912271,
+          "recall@20": 0.11785009861932938,
+          "ndcg@20": 0.03532539431971146
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.010843920145190563,
+          "ndcg@10": 0.006094608830256837,
+          "recall@20": 0.01705851619644723,
+          "ndcg@20": 0.007695878665278359
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.0038126361655773417,
+          "ndcg@10": 0.0016867697403977653,
+          "recall@20": 0.006263616557734204,
+          "ndcg@20": 0.0023158135412087236
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7174422891424223,
+      "duration_limited_seconds_at10": 203.51731573006532,
+      "mean_duration_seconds_at10": 298.96431162730124,
+      "mean_popularity_at10": 403.4979453534845,
+      "seen_in_history_at10": 0.00946420838998964,
+      "catalog_coverage_at10": 0.0108,
+      "top10_items_exposure_share": 0.8420659439420323,
+      "recommendation_entropy": 2.657314120830967,
+      "between_user_overlap_at10": 0.8043024771838332,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7588020274814739,
+      "policy_expected_time_reward": 0.7587325746334104,
+      "policy_expected_auditor_ratio": 0.7283491972207558,
+      "kl_to_reference": 8.75574195605272,
+      "regularized_J": 0.7587325746355661,
+      "policy_expected_duration_limited_seconds": 220.032446643689,
+      "descriptor": {
+        "name": "rl_time_b0_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0,
+        "actor": "output/research_v2/models/rl_time_b0_h1_s11/best.pt"
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 17.29169450001791,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.02609588827414817,
+          "ci95": [
+            -0.02991082725938075,
+            -0.02270390791971908
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.0445732709815769,
+          "ci95": [
+            -0.05053529726509783,
+            -0.03921552444437416
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.029392701810665934,
+          "ci95": [
+            0.028697535994426124,
+            0.030110026195701394
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.2687699470110743,
+          "ci95": [
+            0.2662209254000799,
+            0.2713505981716045
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": -0.02474460670836752,
+          "ci95": [
+            -0.028370396033649138,
+            -0.02152659135798266
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.027851180485295307,
+          "noninferiority_supported": false
+        }
+      }
+    },
+    "rl_time_b0.1_h1_s11": {
+      "recall@10": 0.04364490494733093,
+      "ndcg@10": 0.02478674671817376,
+      "recall@20": 0.05983454897928583,
+      "ndcg@20": 0.028877096278724673,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.12434235338556233,
+          "ndcg@10": 0.0712613089260277,
+          "recall@20": 0.1717125481799502,
+          "ndcg@20": 0.08325258505711404
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.04857672731064365,
+          "ndcg@10": 0.0273655759344807,
+          "recall@20": 0.0647244498461148,
+          "ndcg@20": 0.03143395468880044
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.037207543746719404,
+          "ndcg@10": 0.02116658711835252,
+          "recall@20": 0.053994325590896855,
+          "ndcg@20": 0.025447422959286745
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.0661175069272738,
+          "ndcg@10": 0.03868880608414537,
+          "recall@20": 0.08663893480058252,
+          "ndcg@20": 0.043912590145733225
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.012851990388797672,
+          "ndcg@10": 0.005601490834585719,
+          "recall@20": 0.022093293039774916,
+          "ndcg@20": 0.007894923955788816
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.0931674022403024,
+          "ndcg@10": 0.05067278888198426,
+          "recall@20": 0.1377599333225324,
+          "ndcg@20": 0.061844696469699985
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.16173570019723865,
+          "ndcg@10": 0.09546782749472074,
+          "recall@20": 0.23076923076923078,
+          "ndcg@20": 0.11252247330370113
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.13961910685781723,
+          "ndcg@10": 0.08011500846709141,
+          "recall@20": 0.18876304590514048,
+          "ndcg@20": 0.09240374805458904
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.10438193796036933,
+          "ndcg@10": 0.06054554643108898,
+          "recall@20": 0.13971366324307502,
+          "ndcg@20": 0.06943736520500299
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7326990405490897,
+      "duration_limited_seconds_at10": 167.1533350503008,
+      "mean_duration_seconds_at10": 234.1740304557126,
+      "mean_popularity_at10": 516.1731687992501,
+      "seen_in_history_at10": 0.16400280016149046,
+      "catalog_coverage_at10": 0.8496,
+      "top10_items_exposure_share": 0.0767904285794529,
+      "recommendation_entropy": 7.234269584601817,
+      "between_user_overlap_at10": 0.015710560625814864,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7270759279026052,
+      "policy_expected_time_reward": 0.5414783238305739,
+      "policy_expected_auditor_ratio": 0.7221609715305477,
+      "kl_to_reference": 0.22459864076728953,
+      "regularized_J": 0.5190184594320494,
+      "policy_expected_duration_limited_seconds": 157.02871391086643,
+      "descriptor": {
+        "name": "rl_time_b0.1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.1,
+        "actor": "output/research_v2/models/rl_time_b0.1_h1_s11/best.pt"
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 16.99950141692534,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.0022388845974392235,
+          "ci95": [
+            -0.0032501834854474854,
+            -0.001167071905022057
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.002935744506468191,
+          "ci95": [
+            -0.004874592276936027,
+            -0.0010646854544623878
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": -0.002333397768202634,
+          "ci95": [
+            -0.0024729385212829158,
+            -0.002193699720538553
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.051515696208237954,
+          "ci95": [
+            0.050553883169793985,
+            0.052488276074296646
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": -0.0008876030316585726,
+          "ci95": [
+            -0.001834487042899086,
+            0.00012843789147966485
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.0016807358657849887,
+          "noninferiority_supported": false
+        }
+      }
+    },
+    "rl_time_b1_h1_s11": {
+      "recall@10": 0.046689156398243566,
+      "ndcg@10": 0.0268573062439738,
+      "recall@20": 0.06495870722844407,
+      "ndcg@20": 0.03147026410364056,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.1380014559409749,
+          "ndcg@10": 0.0789476182716705,
+          "recall@20": 0.19154267057382016,
+          "ndcg@20": 0.0924336446305788
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.05239011699760304,
+          "ndcg@10": 0.03031227167177419,
+          "recall@20": 0.07163364244691486,
+          "ndcg@20": 0.03516306587843755
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.0389988767330045,
+          "ndcg@10": 0.022698967214485704,
+          "recall@20": 0.054857096706416614,
+          "ndcg@20": 0.026709980087881283
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06909829566560076,
+          "ndcg@10": 0.04099212735593269,
+          "recall@20": 0.08934589775586217,
+          "ndcg@20": 0.04613388227434093
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.017494918545786473,
+          "ndcg@10": 0.007918896839937774,
+          "recall@20": 0.030386862829640742,
+          "ndcg@20": 0.01113471477086518
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.13553267915391531,
+          "ndcg@10": 0.07469927978871604,
+          "recall@20": 0.18752325768966022,
+          "ndcg@20": 0.08777381326011144
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.11242603550295859,
+          "ndcg@10": 0.05977625741889295,
+          "recall@20": 0.1794871794871795,
+          "ndcg@20": 0.07686827591329778
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15649639199868728,
+          "ndcg@10": 0.0902421783717868,
+          "recall@20": 0.21804629216554058,
+          "ndcg@20": 0.10579095379243249
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.12079183525261955,
+          "ndcg@10": 0.06792871852001428,
+          "recall@20": 0.16036090362070754,
+          "ndcg@20": 0.0777180729814981
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7344673385948584,
+      "duration_limited_seconds_at10": 145.98296841943304,
+      "mean_duration_seconds_at10": 201.1710422314392,
+      "mean_popularity_at10": 566.8215168471975,
+      "seen_in_history_at10": 0.1918781270909261,
+      "catalog_coverage_at10": 0.9044,
+      "top10_items_exposure_share": 0.05985508060439252,
+      "recommendation_entropy": 7.54247330364328,
+      "between_user_overlap_at10": 0.010821382007822686,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7292933935735193,
+      "policy_expected_time_reward": 0.4981701503295244,
+      "policy_expected_auditor_ratio": 0.7256178915290898,
+      "kl_to_reference": 0.005539921007916504,
+      "regularized_J": 0.49263022991162364,
+      "policy_expected_duration_limited_seconds": 144.46934359556207,
+      "descriptor": {
+        "name": "rl_time_b1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 1,
+        "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 17.110678541008383,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.00016832507163918808,
+          "ci95": [
+            -0.0005389147969335088,
+            0.00021398021365987577
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.00010850694444444442,
+          "ci95": [
+            -0.000759548611111111,
+            0.0009765625
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": -0.00011593209728860553,
+          "ci95": [
+            -0.00014183015998912757,
+            -8.956691654323226e-05
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.008207522707188393,
+          "ci95": [
+            0.008051070711839674,
+            0.008373965894797294
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0011829564941414628,
+          "ci95": [
+            0.0007919759850000358,
+            0.0015962034068210875
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0008487918249009475,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "analytic_time_b0.1": {
+      "recall@10": 0.03845084884352976,
+      "ndcg@10": 0.02200415153201203,
+      "recall@20": 0.05300984289985112,
+      "ndcg@20": 0.02570431160907903,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.10796491335058463,
+          "ndcg@10": 0.06217736555291874,
+          "recall@20": 0.14767385333052935,
+          "ndcg@20": 0.07228792584689836
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.04220996453650273,
+          "ndcg@10": 0.02340451912465858,
+          "recall@20": 0.05707834550019014,
+          "ndcg@20": 0.02718765453411989
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.034691210840945404,
+          "ndcg@10": 0.019808318195134168,
+          "recall@20": 0.047939589396659536,
+          "ndcg@20": 0.023159033837752824
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.05822123582426791,
+          "ndcg@10": 0.03419958189127573,
+          "recall@20": 0.0764485635920799,
+          "ndcg@20": 0.038823343313151314
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.008907039299341508,
+          "ndcg@10": 0.004242570456466367,
+          "recall@20": 0.019407009055000896,
+          "ndcg@20": 0.006953925475010301
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.05328470613732103,
+          "ndcg@10": 0.027437702517501515,
+          "recall@20": 0.07764021504116592,
+          "ndcg@20": 0.033714134967823384
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.23076923076923078,
+          "ndcg@10": 0.14241511474570817,
+          "recall@20": 0.2988165680473373,
+          "ndcg@20": 0.1600892752271491
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.11744376254091209,
+          "ndcg@10": 0.06908128712301344,
+          "recall@20": 0.16445412913599097,
+          "ndcg@20": 0.08100435428449052
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.09869994294013902,
+          "ndcg@10": 0.057500038116864736,
+          "recall@20": 0.13170453366531798,
+          "ndcg@20": 0.06588354314473911
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7415152232215999,
+      "duration_limited_seconds_at10": 190.39221939551544,
+      "mean_duration_seconds_at10": 267.7919638420099,
+      "mean_popularity_at10": 473.41644321959575,
+      "seen_in_history_at10": 0.13049431683845344,
+      "catalog_coverage_at10": 0.6658,
+      "top10_items_exposure_share": 0.096051227321238,
+      "recommendation_entropy": 6.701709723526465,
+      "between_user_overlap_at10": 0.025880052151238595,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7339932512489362,
+      "policy_expected_time_reward": 0.6047079344820175,
+      "policy_expected_auditor_ratio": 0.7253487829384495,
+      "kl_to_reference": 0.5617710644633418,
+      "regularized_J": 0.5485308285306036,
+      "policy_expected_duration_limited_seconds": 175.3653009997851,
+      "descriptor": {
+        "name": "analytic_time_b0.1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.1
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 13.793129583005793,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.005021479783600956,
+          "ci95": [
+            -0.006446986170821558,
+            -0.0036184304791161393
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.00812980061026936,
+          "ci95": [
+            -0.010760094606979888,
+            -0.005465323464912281
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.004583925578128211,
+          "ci95": [
+            0.004147574271899146,
+            0.005025233421710516
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.11474530685968165,
+          "ci95": [
+            0.11287779757809437,
+            0.11663225908910735
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": -0.003670198217820306,
+          "ci95": [
+            -0.005036431886973641,
+            -0.0022980879059290703
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.004810492338538929,
+          "noninferiority_supported": false
+        }
+      }
+    },
+    "analytic_time_b1": {
+      "recall@10": 0.046906170287132454,
+      "ndcg@10": 0.02684802465461185,
+      "recall@20": 0.06485020028399963,
+      "ndcg@20": 0.031391906658211795,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13799818883479656,
+          "ndcg@10": 0.0792306623468338,
+          "recall@20": 0.19156952393387144,
+          "ndcg@20": 0.09278969486075263
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.05187908925116317,
+          "ndcg@10": 0.030102339810692,
+          "recall@20": 0.07101910143581945,
+          "ndcg@20": 0.034973211259762965
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03947347594193087,
+          "ndcg@10": 0.022579431479204753,
+          "recall@20": 0.05566538736927792,
+          "ndcg@20": 0.026664730614586764
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06933856603268705,
+          "ndcg@10": 0.04097278669805865,
+          "recall@20": 0.09089484780316069,
+          "ndcg@20": 0.046393004352290636
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.01763081119311205,
+          "ndcg@10": 0.007861765838655185,
+          "recall@20": 0.030062472577670824,
+          "ndcg@20": 0.010989622509187601
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.12939147927262032,
+          "ndcg@10": 0.0720483335482483,
+          "recall@20": 0.18663407379730676,
+          "ndcg@20": 0.08659156582174155
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.11834319526627218,
+          "ndcg@10": 0.06468413194939543,
+          "recall@20": 0.1794871794871795,
+          "ndcg@20": 0.08033285513198445
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15766735755259295,
+          "ndcg@10": 0.09046547204799509,
+          "recall@20": 0.2185186721751257,
+          "ndcg@20": 0.10579007084454596
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11521877269426288,
+          "ndcg@10": 0.067028724084067,
+          "recall@20": 0.15924434588650274,
+          "ndcg@20": 0.07821352065338678
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.735075347244971,
+      "duration_limited_seconds_at10": 147.27374832159575,
+      "mean_duration_seconds_at10": 202.94623881138364,
+      "mean_popularity_at10": 567.6019796825972,
+      "seen_in_history_at10": 0.19159796513095376,
+      "catalog_coverage_at10": 0.9032,
+      "top10_items_exposure_share": 0.0616469134415548,
+      "recommendation_entropy": 7.529952146451986,
+      "between_user_overlap_at10": 0.010821382007822686,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7297333827833778,
+      "policy_expected_time_reward": 0.5017164427019066,
+      "policy_expected_auditor_ratio": 0.7258502549744285,
+      "kl_to_reference": 0.0058872048315558355,
+      "regularized_J": 0.49582923828658565,
+      "policy_expected_duration_limited_seconds": 145.4977683835529,
+      "descriptor": {
+        "name": "analytic_time_b1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 1
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 13.801079083001241,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.00017760666100113853,
+          "ci95": [
+            -0.0005490182469468068,
+            0.00024408508939817108
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0003255208333333333,
+          "ci95": [
+            -0.0004340277777777778,
+            0.001193576388888889
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.00032405711256986754,
+          "ci95": [
+            0.00028102041898989604,
+            0.00036553877868751355
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.011753815079570656,
+          "ci95": [
+            0.01154130254692192,
+            0.011964304888935818
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0011736749047795124,
+          "ci95": [
+            0.0007804644422408162,
+            0.0015900715470635088
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0008512471474808881,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_time_w0": {
+      "recall@10": 0.04658064945379913,
+      "ndcg@10": 0.027025631315612985,
+      "recall@20": 0.06457893292288851,
+      "ndcg@20": 0.03158432375285089,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13714181061591985,
+          "ndcg@10": 0.0793164071601636,
+          "recall@20": 0.19091130888482372,
+          "ndcg@20": 0.09290836715506177
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.052158089920621396,
+          "ndcg@10": 0.030400759371218198,
+          "recall@20": 0.07141456320704123,
+          "ndcg@20": 0.03527076565662949
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03804493948915619,
+          "ndcg@10": 0.02258372613830889,
+          "recall@20": 0.054272660751482044,
+          "ndcg@20": 0.02669847290339891
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06857612036655601,
+          "ndcg@10": 0.04115826095658284,
+          "recall@20": 0.08925646881944309,
+          "ndcg@20": 0.04638178778972093
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.01807274806310238,
+          "ndcg@10": 0.008244677818330527,
+          "recall@20": 0.030131029705994863,
+          "ndcg@20": 0.0112751735077277
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.13808091450722196,
+          "ndcg@10": 0.07869199030742019,
+          "recall@20": 0.1980734620195793,
+          "ndcg@20": 0.09386851985676568
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.09171597633136094,
+          "ndcg@10": 0.052215716952199634,
+          "recall@20": 0.15088757396449703,
+          "ndcg@20": 0.06748658508216754
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15925212410212944,
+          "ndcg@10": 0.09212895237881764,
+          "recall@20": 0.22063370451595068,
+          "ndcg@20": 0.10749816444865272
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11640535843967217,
+          "ndcg@10": 0.06708139894563327,
+          "recall@20": 0.15818225438323477,
+          "ndcg@20": 0.077620128897313
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7340187266819601,
+      "duration_limited_seconds_at10": 140.40768294890532,
+      "mean_duration_seconds_at10": 193.33875123222978,
+      "mean_popularity_at10": 590.0177795906058,
+      "seen_in_history_at10": 0.19414845915887288,
+      "catalog_coverage_at10": 0.906,
+      "top10_items_exposure_share": 0.06661236870190418,
+      "recommendation_entropy": 7.520465230413185,
+      "between_user_overlap_at10": 0.011668839634941329,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7324928064967146,
+      "policy_expected_time_reward": 0.48564705138333064,
+      "policy_expected_auditor_ratio": 0.7299925553837406,
+      "kl_to_reference": 0.837392113275567,
+      "regularized_J": 0.4856470512835635,
+      "policy_expected_duration_limited_seconds": 140.83764490116587,
+      "descriptor": {
+        "name": "rerank_time_w0",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 0
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 7.191105458070524,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.0030834808259067406,
+          "ci95": [
+            0.0028298796630716666,
+            0.00334625296466357
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.004315576239005335,
+          "ci95": [
+            -0.005172833013865879,
+            -0.003485915927740265
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0013512815657806508,
+          "ci95": [
+            0.001182589443664218,
+            0.0015391984732352109
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0012061731087091702,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_time_w1": {
+      "recall@10": 0.046906170287132454,
+      "ndcg@10": 0.02684802465461185,
+      "recall@20": 0.06485020028399963,
+      "ndcg@20": 0.031391906658211795,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13799818883479656,
+          "ndcg@10": 0.0792306623468338,
+          "recall@20": 0.19156952393387144,
+          "ndcg@20": 0.09278969486075263
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.05187908925116317,
+          "ndcg@10": 0.030102339810692,
+          "recall@20": 0.07101910143581945,
+          "ndcg@20": 0.034973211259762965
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03947347594193087,
+          "ndcg@10": 0.022579431479204753,
+          "recall@20": 0.05566538736927792,
+          "ndcg@20": 0.026664730614586764
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.06933856603268705,
+          "ndcg@10": 0.04097278669805865,
+          "recall@20": 0.09089484780316069,
+          "ndcg@20": 0.046393004352290636
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.01763081119311205,
+          "ndcg@10": 0.007861765838655185,
+          "recall@20": 0.030062472577670824,
+          "ndcg@20": 0.010989622509187601
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.12939147927262032,
+          "ndcg@10": 0.0720483335482483,
+          "recall@20": 0.18663407379730676,
+          "ndcg@20": 0.08659156582174155
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.11834319526627218,
+          "ndcg@10": 0.06468413194939543,
+          "recall@20": 0.1794871794871795,
+          "ndcg@20": 0.08033285513198445
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.15766735755259295,
+          "ndcg@10": 0.09046547204799509,
+          "recall@20": 0.2185186721751257,
+          "ndcg@20": 0.10579007084454596
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11521877269426288,
+          "ndcg@10": 0.067028724084067,
+          "recall@20": 0.15924434588650274,
+          "ndcg@20": 0.07821352065338678
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.735075347244971,
+      "duration_limited_seconds_at10": 147.27374832159575,
+      "mean_duration_seconds_at10": 202.94623881138364,
+      "mean_popularity_at10": 567.6019796825972,
+      "seen_in_history_at10": 0.19159796513095376,
+      "catalog_coverage_at10": 0.9032,
+      "top10_items_exposure_share": 0.0616469134415548,
+      "recommendation_entropy": 7.529952146451986,
+      "between_user_overlap_at10": 0.010821382007822686,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7328201322441569,
+      "policy_expected_time_reward": 0.4963189462671969,
+      "policy_expected_auditor_ratio": 0.729828456147899,
+      "kl_to_reference": 0.842740395474174,
+      "regularized_J": 0.49631894640660645,
+      "policy_expected_duration_limited_seconds": 143.9324944174871,
+      "descriptor": {
+        "name": "rerank_time_w1",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 1
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 7.33298345899675,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.00017760666100113853,
+          "ci95": [
+            -0.0005490182469468068,
+            0.00024408508939817108
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0003255208333333333,
+          "ci95": [
+            -0.0004340277777777778,
+            0.001193576388888889
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.003410806573348893,
+          "ci95": [
+            0.0031521482329673074,
+            0.003678380252702071
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.006356318644860927,
+          "ci95": [
+            0.005495182860950962,
+            0.007188802108055821
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0011736749047795124,
+          "ci95": [
+            0.0007804644422408162,
+            0.0015900715470635088
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0008512471474808881,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_time_w3": {
+      "recall@10": 0.047394451537132454,
+      "ndcg@10": 0.026660296330323602,
+      "recall@20": 0.06366043115631932,
+      "ndcg@20": 0.03074806819355774,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.13906200067673943,
+          "ndcg@10": 0.0776458104722727,
+          "recall@20": 0.18255447939395433,
+          "ndcg@20": 0.08858722753497618
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.052189757013910716,
+          "ndcg@10": 0.029766189005748102,
+          "recall@20": 0.06948580920873283,
+          "ndcg@20": 0.034107227059539315
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.040665618429912655,
+          "ndcg@10": 0.022970022980539358,
+          "recall@20": 0.054879950122621826,
+          "ndcg@20": 0.026557362977941694
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.07118579744017219,
+          "ndcg@10": 0.04086447750907087,
+          "recall@20": 0.09003392382762203,
+          "ndcg@20": 0.045582915628773854
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.016660704714683807,
+          "ndcg@10": 0.007435790768704115,
+          "recall@20": 0.025870365316322613,
+          "ndcg@20": 0.009772385087926114
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.11384809502876063,
+          "ndcg@10": 0.0598067469947463,
+          "recall@20": 0.15830810323678787,
+          "ndcg@20": 0.0710214473772179
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.15680473372781065,
+          "ndcg@10": 0.08883347756176548,
+          "recall@20": 0.2149901380670611,
+          "ndcg@20": 0.10356891619897726
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.1611405512627889,
+          "ndcg@10": 0.08950720051577957,
+          "recall@20": 0.21291115204854927,
+          "ndcg@20": 0.10252442987978093
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.11539578794480755,
+          "ndcg@10": 0.06609469681301096,
+          "recall@20": 0.1513078379499948,
+          "ndcg@20": 0.0750994180666372
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7365615818020036,
+      "duration_limited_seconds_at10": 159.916410040137,
+      "mean_duration_seconds_at10": 221.46683192060542,
+      "mean_popularity_at10": 546.7795348285775,
+      "seen_in_history_at10": 0.18332450377980092,
+      "catalog_coverage_at10": 0.8814,
+      "top10_items_exposure_share": 0.06423074762680447,
+      "recommendation_entropy": 7.444517054946771,
+      "between_user_overlap_at10": 0.011342894393741853,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7335568042429171,
+      "policy_expected_time_reward": 0.5179769715181116,
+      "policy_expected_auditor_ratio": 0.729560251629238,
+      "kl_to_reference": 0.8861016699038672,
+      "regularized_J": 0.5179769714743567,
+      "policy_expected_duration_limited_seconds": 150.21332174025238,
+      "descriptor": {
+        "name": "rerank_time_w3",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 3
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 7.382437624968588,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.0003653349852893843,
+          "ci95": [
+            -0.001105213093755289,
+            0.00038670095810853323
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": 0.0008138020833333334,
+          "ci95": [
+            -0.0007595486111111111,
+            0.0023328993055555555
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.004147478572109212,
+          "ci95": [
+            0.003850401048042899,
+            0.004435739150650116
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.028014343895775704,
+          "ci95": [
+            0.02700774390899059,
+            0.029021236987312474
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": 0.0009859465804912665,
+          "ci95": [
+            0.0002735488421189718,
+            0.0017108130414872187
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": 0.0003669039667287577,
+          "noninferiority_supported": true
+        }
+      }
+    },
+    "rerank_time_w10": {
+      "recall@10": 0.03939124236204828,
+      "ndcg@10": 0.022390885063381105,
+      "recall@20": 0.05599378387207334,
+      "ndcg@20": 0.026592050971340025,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.11029149496256896,
+          "ndcg@10": 0.06313581485511904,
+          "recall@20": 0.15566390664825738,
+          "ndcg@20": 0.07464693489749966
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.04329201549779752,
+          "ndcg@10": 0.023839560084557707,
+          "recall@20": 0.06032755383737557,
+          "ndcg@20": 0.028143735132963223
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.03487395937895711,
+          "ndcg@10": 0.019956308660627493,
+          "recall@20": 0.050125442736374703,
+          "ndcg@20": 0.023824060255706932
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.05880991539299209,
+          "ndcg@10": 0.03447628002206409,
+          "recall@20": 0.07997754038749327,
+          "ndcg@20": 0.03982351302493545
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.009684884620766457,
+          "ndcg@10": 0.00458995077223537,
+          "recall@20": 0.02201716004569758,
+          "ndcg@20": 0.007751743878656736
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.05429029062151091,
+          "ndcg@10": 0.02786961319414217,
+          "recall@20": 0.08313410044788809,
+          "ndcg@20": 0.03527553654191755
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.22189349112426035,
+          "ndcg@10": 0.13950940012010937,
+          "recall@20": 0.2761341222879684,
+          "ndcg@20": 0.15347804163041256
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.1208324319832807,
+          "ndcg@10": 0.07060292798453588,
+          "recall@20": 0.18031280665528557,
+          "ndcg@20": 0.08553807767427986
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.09965310198153336,
+          "ndcg@10": 0.05786055129243376,
+          "recall@20": 0.12914267558875403,
+          "ndcg@20": 0.06545180214862417
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7386317094386209,
+      "duration_limited_seconds_at10": 184.18655341510453,
+      "mean_duration_seconds_at10": 258.49362987266323,
+      "mean_popularity_at10": 498.0945523652361,
+      "seen_in_history_at10": 0.13750231648974187,
+      "catalog_coverage_at10": 0.6944,
+      "top10_items_exposure_share": 0.08304218390158961,
+      "recommendation_entropy": 6.879199173939945,
+      "between_user_overlap_at10": 0.01949152542372881,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7369407417149016,
+      "policy_expected_time_reward": 0.5903763095155902,
+      "policy_expected_auditor_ratio": 0.7294728341709291,
+      "kl_to_reference": 1.3501455771118271,
+      "regularized_J": 0.5903763120593918,
+      "policy_expected_duration_limited_seconds": 171.20912975952115,
+      "descriptor": {
+        "name": "rerank_time_w10",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 10
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 7.2216895839665085,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.004634746252231881,
+          "ci95": [
+            -0.0060659989622340316,
+            -0.0032319346019960057
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.007189407091750841,
+          "ci95": [
+            -0.009852296436126614,
+            -0.0045127921380748275
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": 0.007531416044093772,
+          "ci95": [
+            0.0069477520068582386,
+            0.008120944934766575
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": 0.10041368189325418,
+          "ci95": [
+            0.09806343465062363,
+            0.10264056828158372
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": -0.0032834646864512303,
+          "ci95": [
+            -0.004659376877145265,
+            -0.0019413703611932418
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.004438483181390851,
+          "noninferiority_supported": false
+        }
+      }
+    },
+    "popularity": {
+      "recall@10": 0.007544088084795321,
+      "ndcg@10": 0.003121105427134143,
+      "recall@20": 0.01195670382553606,
+      "ndcg@20": 0.004220604185926651,
+      "examples": 17803,
+      "users": 768,
+      "slices": {
+        "known": {
+          "examples": 6043,
+          "users": 724,
+          "recall@10": 0.018861172857450415,
+          "ndcg@10": 0.00783336647824645,
+          "recall@20": 0.029134744671227147,
+          "ndcg@20": 0.010380490953215431
+        },
+        "positive_ratio_gt50": {
+          "examples": 12329,
+          "users": 758,
+          "recall@10": 0.008467027791107975,
+          "ndcg@10": 0.003443947760847692,
+          "recall@20": 0.013198842745010849,
+          "ndcg@20": 0.004618193559895002
+        },
+        "nonpositive_ratio_le50": {
+          "examples": 5474,
+          "users": 722,
+          "recall@10": 0.005318236944835317,
+          "ndcg@10": 0.00245980551664475,
+          "recall@20": 0.010460750045226862,
+          "ndcg@20": 0.0037347362671102066
+        },
+        "organic": {
+          "examples": 8938,
+          "users": 676,
+          "recall@10": 0.010847154330512766,
+          "ndcg@10": 0.004556984228457386,
+          "recall@20": 0.01571841808758934,
+          "ndcg@20": 0.005764747153289696
+        },
+        "nonorganic": {
+          "examples": 8865,
+          "users": 656,
+          "recall@10": 0.002996367975246275,
+          "ndcg@10": 0.0012809566819052608,
+          "recall@20": 0.0066254640358494234,
+          "ndcg@20": 0.002183594391150532
+        },
+        "short": {
+          "examples": 2513,
+          "users": 631,
+          "recall@10": 0.022486990910128787,
+          "ndcg@10": 0.010623287731498872,
+          "recall@20": 0.03742737276810176,
+          "ndcg@20": 0.014211136868120885
+        },
+        "long": {
+          "examples": 222,
+          "users": 169,
+          "recall@10": 0.0,
+          "ndcg@10": 0.0,
+          "recall@20": 0.0,
+          "ndcg@20": 0.0
+        },
+        "popular": {
+          "examples": 1883,
+          "users": 551,
+          "recall@10": 0.06551860947611989,
+          "ndcg@10": 0.02663067687093879,
+          "recall@20": 0.1037725515413142,
+          "ndcg@20": 0.03606888777306614
+        },
+        "rare": {
+          "examples": 1609,
+          "users": 612,
+          "recall@10": 0.0,
+          "ndcg@10": 0.0,
+          "recall@20": 0.0,
+          "ndcg@20": 0.0
+        }
+      },
+      "oracle_catalog_recall_ceiling": 0.3363690618742808,
+      "predicted_ratio_at10": 0.7390477854913552,
+      "duration_limited_seconds_at10": 124.43453327071633,
+      "mean_duration_seconds_at10": 168.5,
+      "mean_popularity_at10": 2670.5,
+      "seen_in_history_at10": 0.03805923129319511,
+      "catalog_coverage_at10": 0.002,
+      "top10_items_exposure_share": 1.0,
+      "recommendation_entropy": 2.3025850929940455,
+      "between_user_overlap_at10": 1.0,
+      "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+      "policy_expected_ratio": 0.7243605857166587,
+      "policy_expected_time_reward": 0.4845952759386655,
+      "policy_expected_auditor_ratio": 0.7197138747023321,
+      "kl_to_reference": 2.070673717123546,
+      "regularized_J": 0.7243605857166587,
+      "policy_expected_duration_limited_seconds": 140.532630022213,
+      "descriptor": {
+        "name": "popularity",
+        "kind": "popularity",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0
+      },
+      "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+      "inference_and_metrics_seconds": 6.661932167015038,
+      "paired_vs_own_baseline": {
+        "ndcg@10": {
+          "difference": -0.023904525888478842,
+          "ci95": [
+            -0.027779481313591408,
+            -0.02058919570191008
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "recall@10": {
+          "difference": -0.039036561369003804,
+          "ci95": [
+            -0.04498123632580869,
+            -0.03374296252392983
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_ratio": {
+          "difference": -0.005048739954149114,
+          "ci95": [
+            -0.005450930963132837,
+            -0.0046587090061001825
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "policy_expected_time_reward": {
+          "difference": -0.005367351683670415,
+          "ci95": [
+            -0.007915813977086093,
+            -0.002906025647848214
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 1.0,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights"
+        },
+        "noninferiority_ndcg10": {
+          "difference": -0.02255324432269819,
+          "ci95": [
+            -0.02626235706438143,
+            -0.019405729109384182
+          ],
+          "users": 768,
+          "unit": "user",
+          "factor": 0.95,
+          "resamples": 2000,
+          "scope": "fixed period and fitted weights",
+          "lower_one_sided95": -0.02549737812922782,
+          "noninferiority_supported": false
+        }
+      }
+    }
+  },
+  "scope": "development diagnostics",
+  "model_reward_is_not_user_response": true,
+  "reward_quality": {
+    "calibrated": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.3531301321588959,
+      "mse": 0.16240091781942909,
+      "rmse": 0.4029899723559249,
+      "predicted_mean": 0.7264809743165179,
+      "observed_mean": 0.711304874159043
+    },
+    "raw": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.347785976795624,
+      "mse": 0.1659779625997132,
+      "rmse": 0.4074039305157882,
+      "predicted_mean": 0.7162569323977394,
+      "observed_mean": 0.711304874159043
+    },
+    "global_mean": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.3741102976839825,
+      "mse": 0.16788171416412642,
+      "rmse": 0.4097337112859112,
+      "predicted_mean": 0.7008957266807556,
+      "observed_mean": 0.711304874159043
+    },
+    "item_mean": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.36566518278079,
+      "mse": 0.16587725318042176,
+      "rmse": 0.4072803127827587,
+      "predicted_mean": 0.7040225534396503,
+      "observed_mean": 0.711304874159043
+    },
+    "calibration": {
+      "bins": [
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "examples": 29,
+          "users": 21,
+          "weight_mass": 0.004521995310506847,
+          "predicted_mean": 0.48063258148670235,
+          "observed_mean": 0.27475012867762094
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "examples": 317,
+          "users": 170,
+          "weight_mass": 0.049883184374571635,
+          "predicted_mean": 0.5653778853498924,
+          "observed_mean": 0.6056395921980023
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "examples": 2001,
+          "users": 506,
+          "weight_mass": 0.30104797321754595,
+          "predicted_mean": 0.6595481635799948,
+          "observed_mean": 0.6456714291603131
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "examples": 2788,
+          "users": 639,
+          "weight_mass": 0.45608744452717864,
+          "predicted_mean": 0.7477706099458343,
+          "observed_mean": 0.7180549863279126
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "examples": 908,
+          "users": 327,
+          "weight_mass": 0.188459402570197,
+          "predicted_mean": 0.8304190724292144,
+          "observed_mean": 0.8382563189285328
+        }
+      ],
+      "weighted_mean_response_calibration_error": 0.022146870035467163,
+      "weight_definition": "Full known-target population: 1/(number_users * events_of_user); kept fixed across bins"
+    },
+    "raw_calibration": {
+      "bins": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "examples": 2,
+          "users": 2,
+          "weight_mass": 0.00017332900010833061,
+          "predicted_mean": 0.17738228151574734,
+          "observed_mean": 0.019374999566935003
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "examples": 23,
+          "users": 17,
+          "weight_mass": 0.003980342185168314,
+          "predicted_mean": 0.28004237309529717,
+          "observed_mean": 0.26387038637850335
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "examples": 89,
+          "users": 60,
+          "weight_mass": 0.013809544139197084,
+          "predicted_mean": 0.36312898176900654,
+          "observed_mean": 0.5874673652606642
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "examples": 269,
+          "users": 164,
+          "weight_mass": 0.04181561023230067,
+          "predicted_mean": 0.4586371317561537,
+          "observed_mean": 0.6020474056540926
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "examples": 886,
+          "users": 362,
+          "weight_mass": 0.13377782761866222,
+          "predicted_mean": 0.5550357747950077,
+          "observed_mean": 0.6300167961859465
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "examples": 1658,
+          "users": 514,
+          "weight_mass": 0.25127809732915557,
+          "predicted_mean": 0.6529582650185315,
+          "observed_mean": 0.6775979580969937
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "examples": 1577,
+          "users": 544,
+          "weight_mass": 0.2566241858526779,
+          "predicted_mean": 0.7487663023312049,
+          "observed_mean": 0.7164834342137947
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "examples": 1139,
+          "users": 427,
+          "weight_mass": 0.20727075905166062,
+          "predicted_mean": 0.8460573825539572,
+          "observed_mean": 0.7697610717738608
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "examples": 400,
+          "users": 193,
+          "weight_mass": 0.09127030459106944,
+          "predicted_mean": 0.9321607535750897,
+          "observed_mean": 0.8655590887691081
+        }
+      ],
+      "weighted_mean_response_calibration_error": 0.05558608278950933,
+      "weight_definition": "Full known-target population: 1/(number_users * events_of_user); kept fixed across bins"
+    },
+    "mse_difference_vs_global": {
+      "difference": -0.005480796322534366,
+      "ci95": [
+        -0.008056823754550801,
+        -0.0028117877198284976
+      ],
+      "users": 724,
+      "unit": "user",
+      "factor": 1.0,
+      "resamples": 2000,
+      "scope": "fixed period and fitted weights"
+    },
+    "slices": {
+      "known": {
+        "examples": 6043,
+        "users": 724,
+        "mae": 0.3531301321588959,
+        "mse": 0.16240091781942909,
+        "rmse": 0.4029899723559249,
+        "predicted_mean": 0.7264809743165179,
+        "observed_mean": 0.711304874159043
+      },
+      "positive_ratio_gt50": {
+        "examples": 4267,
+        "users": 683,
+        "mae": 0.24878566038603425,
+        "mse": 0.06962251566379402,
+        "rmse": 0.26386078841653227,
+        "predicted_mean": 0.7303372170286826,
+        "observed_mean": 0.9663281706540905
+      },
+      "nonpositive_ratio_le50": {
+        "examples": 1776,
+        "users": 535,
+        "mae": 0.5976768421974052,
+        "mse": 0.3807924272535467,
+        "rmse": 0.6170838089380944,
+        "predicted_mean": 0.7105454462071669,
+        "observed_mean": 0.11286860749523513
+      },
+      "organic": {
+        "examples": 3138,
+        "users": 564,
+        "mae": 0.36491223078545165,
+        "mse": 0.16990922189554006,
+        "rmse": 0.4122004632403269,
+        "predicted_mean": 0.7142790065336472,
+        "observed_mean": 0.6876753007827995
+      },
+      "nonorganic": {
+        "examples": 2905,
+        "users": 555,
+        "mae": 0.34785947304999026,
+        "mse": 0.15891985386052682,
+        "rmse": 0.3986475308596892,
+        "predicted_mean": 0.7343962680398644,
+        "observed_mean": 0.7201372008032444
+      },
+      "short": {
+        "examples": 2513,
+        "users": 631,
+        "mae": 0.3421671779158202,
+        "mse": 0.15196574336648788,
+        "rmse": 0.3898278381112461,
+        "predicted_mean": 0.7307514858565651,
+        "observed_mean": 0.7377382441765771
+      },
+      "long": {
+        "examples": 222,
+        "users": 169,
+        "mae": 0.41657127034382,
+        "mse": 0.21403442532590816,
+        "rmse": 0.4626385471682058,
+        "predicted_mean": 0.6881752870609539,
+        "observed_mean": 0.5570167653268125
+      },
+      "popular": {
+        "examples": 1883,
+        "users": 551,
+        "mae": 0.35836351512171877,
+        "mse": 0.162665872674164,
+        "rmse": 0.4033185746704012,
+        "predicted_mean": 0.7159223626160675,
+        "observed_mean": 0.7049268885440182
+      },
+      "rare": {
+        "examples": 1609,
+        "users": 612,
+        "mae": 0.34786833540033746,
+        "mse": 0.15812848174652164,
+        "rmse": 0.3976537209011399,
+        "predicted_mean": 0.7286892631799308,
+        "observed_mean": 0.7178716288469107
+      }
+    },
+    "tail_ge0.8": {
+      "examples": 908,
+      "users": 327,
+      "weight_mass": 0.188459402570197,
+      "predicted_mean": 0.8304190724292144,
+      "observed_mean": 0.8382563189285328
+    },
+    "tail_ge0.9": null
+  },
+  "auditor_quality": {
+    "calibrated": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.3551941328859643,
+      "mse": 0.16323913692245845,
+      "rmse": 0.4040286337903026,
+      "predicted_mean": 0.72505605048297,
+      "observed_mean": 0.711304874159043
+    },
+    "raw": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.35168939633034274,
+      "mse": 0.1681947024832052,
+      "rmse": 0.410115474571742,
+      "predicted_mean": 0.7094266355663486,
+      "observed_mean": 0.711304874159043
+    },
+    "global_mean": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.3741102976839825,
+      "mse": 0.16788171416412642,
+      "rmse": 0.4097337112859112,
+      "predicted_mean": 0.7008957266807556,
+      "observed_mean": 0.711304874159043
+    },
+    "item_mean": {
+      "examples": 6043,
+      "users": 724,
+      "mae": 0.36566518278079,
+      "mse": 0.16587725318042176,
+      "rmse": 0.4072803127827587,
+      "predicted_mean": 0.7040225534396503,
+      "observed_mean": 0.711304874159043
+    },
+    "calibration": {
+      "bins": [
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "examples": 32,
+          "users": 26,
+          "weight_mass": 0.008966373513822328,
+          "predicted_mean": 0.4752144617687611,
+          "observed_mean": 0.6708096361587605
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "examples": 284,
+          "users": 167,
+          "weight_mass": 0.04943306389049851,
+          "predicted_mean": 0.5694824648161644,
+          "observed_mean": 0.539143588324681
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "examples": 1735,
+          "users": 511,
+          "weight_mass": 0.2741231898101809,
+          "predicted_mean": 0.661085731981355,
+          "observed_mean": 0.6605743487229979
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "examples": 3200,
+          "users": 649,
+          "weight_mass": 0.5163430375362541,
+          "predicted_mean": 0.7492725014813763,
+          "observed_mean": 0.714898435822773
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "examples": 792,
+          "users": 313,
+          "weight_mass": 0.15113433524924416,
+          "predicted_mean": 0.8240567432966517,
+          "observed_mean": 0.8497542751194886
+        }
+      ],
+      "weighted_mean_response_calibration_error": 0.025026293885272357,
+      "weight_definition": "Full known-target population: 1/(number_users * events_of_user); kept fixed across bins"
+    },
+    "raw_calibration": {
+      "bins": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "examples": 9,
+          "users": 7,
+          "weight_mass": 0.0017858139405100733,
+          "predicted_mean": 0.1355758778459858,
+          "observed_mean": 0.8773437502793968
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "examples": 33,
+          "users": 29,
+          "weight_mass": 0.008947090310837466,
+          "predicted_mean": 0.25914745262292144,
+          "observed_mean": 0.5917676143855327
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "examples": 85,
+          "users": 66,
+          "weight_mass": 0.015026514947886156,
+          "predicted_mean": 0.3641759827548193,
+          "observed_mean": 0.5012542282801751
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "examples": 319,
+          "users": 192,
+          "weight_mass": 0.054506447803650736,
+          "predicted_mean": 0.4565186254183352,
+          "observed_mean": 0.62323990630203
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "examples": 783,
+          "users": 363,
+          "weight_mass": 0.1219733029666212,
+          "predicted_mean": 0.5552591935969087,
+          "observed_mean": 0.6433383464785288
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "examples": 1438,
+          "users": 506,
+          "weight_mass": 0.223982319908973,
+          "predicted_mean": 0.6531361051754476,
+          "observed_mean": 0.6686303785037576
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "examples": 1792,
+          "users": 571,
+          "weight_mass": 0.288742031910614,
+          "predicted_mean": 0.7478408812233291,
+          "observed_mean": 0.718210903022429
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "examples": 1251,
+          "users": 461,
+          "weight_mass": 0.21791773398292325,
+          "predicted_mean": 0.844305547059851,
+          "observed_mean": 0.7671443299613687
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "examples": 333,
+          "users": 157,
+          "weight_mass": 0.06711874422798425,
+          "predicted_mean": 0.9322346203109051,
+          "observed_mean": 0.8962815142058348
+        }
+      ],
+      "weighted_mean_response_calibration_error": 0.05744492864375155,
+      "weight_definition": "Full known-target population: 1/(number_users * events_of_user); kept fixed across bins"
+    },
+    "mse_difference_vs_global": {
+      "difference": -0.004642577219910647,
+      "ci95": [
+        -0.0070701965640691256,
+        -0.00196164010444672
+      ],
+      "users": 724,
+      "unit": "user",
+      "factor": 1.0,
+      "resamples": 2000,
+      "scope": "fixed period and fitted weights"
+    },
+    "slices": {
+      "known": {
+        "examples": 6043,
+        "users": 724,
+        "mae": 0.3551941328859643,
+        "mse": 0.16323913692245845,
+        "rmse": 0.4040286337903026,
+        "predicted_mean": 0.72505605048297,
+        "observed_mean": 0.711304874159043
+      },
+      "positive_ratio_gt50": {
+        "examples": 4267,
+        "users": 683,
+        "mae": 0.2504999215304685,
+        "mse": 0.07012619575956623,
+        "rmse": 0.26481351128589764,
+        "predicted_mean": 0.7290432263871444,
+        "observed_mean": 0.9663281706540905
+      },
+      "nonpositive_ratio_le50": {
+        "examples": 1776,
+        "users": 535,
+        "mae": 0.6003199495150798,
+        "mse": 0.3828563848474992,
+        "rmse": 0.618753896834193,
+        "predicted_mean": 0.7131885534768618,
+        "observed_mean": 0.11286860749523513
+      },
+      "organic": {
+        "examples": 3138,
+        "users": 564,
+        "mae": 0.365456368817408,
+        "mse": 0.16960106145933482,
+        "rmse": 0.4118264943630203,
+        "predicted_mean": 0.7139370655275372,
+        "observed_mean": 0.6876753007827995
+      },
+      "nonorganic": {
+        "examples": 2905,
+        "users": 555,
+        "mae": 0.35152922598702935,
+        "mse": 0.16117675972596687,
+        "rmse": 0.40146825494174115,
+        "predicted_mean": 0.7329921762491451,
+        "observed_mean": 0.7201372008032444
+      },
+      "short": {
+        "examples": 2513,
+        "users": 631,
+        "mae": 0.3424225008372256,
+        "mse": 0.152422599132466,
+        "rmse": 0.39041336956163014,
+        "predicted_mean": 0.7340814594444659,
+        "observed_mean": 0.7377382441765771
+      },
+      "long": {
+        "examples": 222,
+        "users": 169,
+        "mae": 0.4238058786537991,
+        "mse": 0.21994393897386125,
+        "rmse": 0.46898181092006247,
+        "predicted_mean": 0.6939650701700583,
+        "observed_mean": 0.5570167653268125
+      },
+      "popular": {
+        "examples": 1883,
+        "users": 551,
+        "mae": 0.35959467988069554,
+        "mse": 0.16330647929634923,
+        "rmse": 0.40411196381244296,
+        "predicted_mean": 0.7166663951175,
+        "observed_mean": 0.7049268885440182
+      },
+      "rare": {
+        "examples": 1609,
+        "users": 612,
+        "mae": 0.34902990675296636,
+        "mse": 0.1581940454151434,
+        "rmse": 0.3977361505007351,
+        "predicted_mean": 0.7291949823205773,
+        "observed_mean": 0.7178716288469107
+      }
+    },
+    "tail_ge0.8": {
+      "examples": 792,
+      "users": 313,
+      "weight_mass": 0.15113433524924416,
+      "predicted_mean": 0.8240567432966517,
+      "observed_mean": 0.8497542751194886
+    },
+    "tail_ge0.9": null
+  },
+  "completed": true
+}

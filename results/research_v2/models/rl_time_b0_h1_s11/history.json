@@ -1,0 +1,92 @@
+[
+  {
+    "step": 100,
+    "loss": -0.021353155374526978,
+    "training_seconds": 4.363509292714298,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.0,
+    "sample_reward": 0.48771652579307556,
+    "discounted_kl_per_step": 0.10208655893802643
+  },
+  {
+    "step": 200,
+    "loss": 0.018572354689240456,
+    "training_seconds": 8.605385338305496,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.056736167054623365,
+    "sample_reward": 0.5245723724365234,
+    "discounted_kl_per_step": 0.49998992681503296
+  },
+  {
+    "step": 300,
+    "loss": -0.052532218396663666,
+    "training_seconds": 12.88981738453731,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.10461937601212412,
+    "sample_reward": 0.6142839193344116,
+    "discounted_kl_per_step": 2.1145730018615723
+  },
+  {
+    "step": 400,
+    "loss": -0.07953499257564545,
+    "training_seconds": 16.197725428501144,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.1692339590517804,
+    "sample_reward": 0.7017833590507507,
+    "discounted_kl_per_step": 6.5756449699401855
+  },
+  {
+    "step": 500,
+    "loss": -0.0020811748690903187,
+    "training_seconds": 19.84000442980323,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.20949783409014344,
+    "sample_reward": 0.7065140008926392,
+    "discounted_kl_per_step": 9.230209350585938
+  },
+  {
+    "step": 600,
+    "loss": -0.02252192236483097,
+    "training_seconds": 24.27412222546991,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.2687224590918049,
+    "sample_reward": 0.6760791540145874,
+    "discounted_kl_per_step": 8.368237495422363
+  },
+  {
+    "step": 700,
+    "loss": -0.0068069035187363625,
+    "training_seconds": 27.873434474808164,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.32618795905727893,
+    "sample_reward": 0.7001421451568604,
+    "discounted_kl_per_step": 7.426115036010742
+  },
+  {
+    "step": 800,
+    "loss": -0.009891308844089508,
+    "training_seconds": 32.4250445967773,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.3869378340896219,
+    "sample_reward": 0.7656577825546265,
+    "discounted_kl_per_step": 8.725589752197266
+  },
+  {
+    "step": 900,
+    "loss": -0.015886202454566956,
+    "training_seconds": 35.395989265991375,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.4441115000518039,
+    "sample_reward": 0.7446048259735107,
+    "discounted_kl_per_step": 9.54209041595459
+  },
+  {
+    "step": 1000,
+    "loss": -0.035490117967128754,
+    "training_seconds": 38.207242217613384,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.49630858411546797,
+    "sample_reward": 0.7607873678207397,
+    "discounted_kl_per_step": 9.612960815429688
+  }
+]

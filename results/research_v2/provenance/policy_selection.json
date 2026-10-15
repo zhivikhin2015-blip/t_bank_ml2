@@ -1,0 +1,218 @@
+{
+  "ratio": {
+    "descriptor": {
+      "name": "rl_ratio_b0.1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+    },
+    "constraint_satisfied": true,
+    "selection_metric": "policy_expected_ratio",
+    "selection_split": "C"
+  },
+  "time": {
+    "descriptor": {
+      "name": "rl_time_b1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+    },
+    "constraint_satisfied": true,
+    "selection_metric": "policy_expected_time_reward",
+    "selection_split": "C"
+  },
+  "rerank_ratio": {
+    "descriptor": {
+      "name": "rerank_ratio_w10",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "weight": 10
+    },
+    "constraint_satisfied": true,
+    "selection_split": "C"
+  },
+  "rerank_time": {
+    "descriptor": {
+      "name": "rerank_time_w3",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.0,
+      "weight": 3
+    },
+    "constraint_satisfied": true,
+    "selection_split": "C"
+  },
+  "reward_gate": {
+    "mse_improvement_supported_on_C": true,
+    "mse_difference_ci95": [
+      -0.008056823754550801,
+      -0.0028117877198284976
+    ],
+    "reward_changed_after_C": false,
+    "interpretation": "RL surrogate diagnostic if superiority unsupported"
+  },
+  "validation_descriptors": [
+    {
+      "name": "baseline_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/baseline_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0,
+      "actor": "output/research_v2/models/rl_ratio_b0_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0.1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_ratio_b1_h1_s11/best.pt"
+    },
+    {
+      "name": "analytic_ratio_b0.1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1
+    },
+    {
+      "name": "analytic_ratio_b1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 1
+    },
+    {
+      "name": "rerank_ratio_w0",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "weight": 0
+    },
+    {
+      "name": "rerank_ratio_w1",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "weight": 1
+    },
+    {
+      "name": "rerank_ratio_w3",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "weight": 3
+    },
+    {
+      "name": "rerank_ratio_w10",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "weight": 10
+    },
+    {
+      "name": "rl_time_b0_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0,
+      "actor": "output/research_v2/models/rl_time_b0_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_time_b0.1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_time_b0.1_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_time_b1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+    },
+    {
+      "name": "analytic_time_b0.1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.1
+    },
+    {
+      "name": "analytic_time_b1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1
+    },
+    {
+      "name": "rerank_time_w0",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.0,
+      "weight": 0
+    },
+    {
+      "name": "rerank_time_w1",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.0,
+      "weight": 1
+    },
+    {
+      "name": "rerank_time_w3",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.0,
+      "weight": 3
+    },
+    {
+      "name": "rerank_time_w10",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.0,
+      "weight": 10
+    },
+    {
+      "name": "popularity",
+      "kind": "popularity",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0
+    }
+  ]
+}

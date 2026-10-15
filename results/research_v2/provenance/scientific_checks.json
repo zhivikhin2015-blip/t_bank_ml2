@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "heldout_outcomes_read": false,
+  "sources": {
+    "research_v2/tests.py": "ec86005fe4210ec206a5491db0e81f3fab5d784248dcf10c72e15f82a5e6d5b1",
+    "research_v2/core.py": "68e9b3339d97502ac90a6ad4716828018a82f9d5abb6351873289431c4a2e879",
+    "research_v2/train.py": "e44f45de22fa8e1b28b1a18ffc8c8ee0822744dc76ee2e51572b3f508dd06966",
+    "research_v2/evaluate.py": "cb074f522eb518c5278c699b010a95d189747e393303e3331eb2b9deca756fdd",
+    "research_v2/metrics.py": "cd6396680beb3689a0e8b1b78f68d7ab94643880937b5947099340bd152220b9"
+  }
+}

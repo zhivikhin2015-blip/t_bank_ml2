@@ -1,0 +1,12 @@
+{
+  "device": "mps",
+  "torch": "2.14.1",
+  "parameters": 1045248,
+  "batch": 32,
+  "history": 64,
+  "vocab": 5002,
+  "median_seconds_per_step_after_warmup": 0.015148250036872923,
+  "estimated_minutes_2000_steps": 0.5049416678957641,
+  "mps_allocated_bytes": 59458304,
+  "mps_driver_allocated_bytes": 1236041728
+}

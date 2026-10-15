@@ -1,0 +1,33 @@
+{
+  "selected": "reward_history_duration_s11",
+  "variant": "history_duration",
+  "reward_path": "models/reward_history_duration_s11/calibrated.pt",
+  "reward_sha256": "55353ba928f9ef240a202e5a6592183a710f8b7a1188119a87c626a77710caee",
+  "auditor": "reward_history_duration_s22",
+  "auditor_path": "models/reward_history_duration_s22/calibrated.pt",
+  "auditor_sha256": "95ee7854f4d5b435dd7fb60366bb12b472075f0d90fcd3c9bd7eb7b38d034ddb",
+  "candidates": {
+    "reward_history_duration_s11": {
+      "variant": "history_duration",
+      "B1_mse": 0.15960111042038672,
+      "chosen_step": 500,
+      "checkpoint_sha256": "93562c9ad59d0e855b7e0461c090ccc522774b80a40b925915d0f7bb6e800318"
+    },
+    "reward_item_duration_s11": {
+      "variant": "item_duration",
+      "B1_mse": 0.1643481943269978,
+      "chosen_step": 500,
+      "checkpoint_sha256": "3f4d804de7c86860a6fe23d32242180b4d5e317697d9533327f54f78d41fd966"
+    },
+    "reward_history_no_duration_s11": {
+      "variant": "history_no_duration",
+      "B1_mse": 0.16022659953729776,
+      "chosen_step": 500,
+      "checkpoint_sha256": "04101af231999dccf1f669d4cd065b6f831f210e5fa233b815fba2898dda0d07"
+    }
+  },
+  "selection_split": "B1",
+  "calibration_fit_split": "B2",
+  "C_used_for_selection": false,
+  "holdout_accessed": false
+}

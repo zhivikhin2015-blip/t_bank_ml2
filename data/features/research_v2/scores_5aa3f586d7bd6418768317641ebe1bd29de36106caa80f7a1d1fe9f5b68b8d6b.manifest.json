@@ -1,0 +1,20 @@
+{
+  "fingerprint": {
+    "checkpoint": "95ee7854f4d5b435dd7fb60366bb12b472075f0d90fcd3c9bd7eb7b38d034ddb",
+    "data": "716e72647a2acc204be8b91d9433cb9c80d8e31c2733b461af7da786ca3dc5e2",
+    "catalog": "bc307840f6075df63057e7f011a226a858a54968a50473ccd5a09492ee27b39f",
+    "code": {
+      "research_v2/core.py": "68e9b3339d97502ac90a6ad4716828018a82f9d5abb6351873289431c4a2e879",
+      "research_v2/evaluate.py": "cb074f522eb518c5278c699b010a95d189747e393303e3331eb2b9deca756fdd",
+      "research_v2/metrics.py": "cd6396680beb3689a0e8b1b78f68d7ab94643880937b5947099340bd152220b9",
+      "research_v2/protocol.json": "4d87b1a7d2acabdde4099cd36010b70cb5b2c71ea1c78d8ddfae359bab5fa27f",
+      "experiment.py": "a956f2d71025a50331d8a89c659e01515be8587bc335537df00836e50fb9fe86"
+    }
+  },
+  "sha256": "36eec3d9f70852641ef152c8c5046840d468f4382100f1052767759b14703002",
+  "shape": [
+    17803,
+    5002
+  ],
+  "dtype": "float32"
+}

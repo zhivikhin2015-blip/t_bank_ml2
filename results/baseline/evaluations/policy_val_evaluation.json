@@ -1,0 +1,2380 @@
+{
+  "split": "policy_val",
+  "data_sha256": "eed9cbd094af1e189507d2f8132a0dc9653b90e65480125c7cdccd601e0592d1",
+  "models": {
+    "baseline_s11": {
+      "recall@10": 0.04658064945379913,
+      "recall@10_known": 0.13714181061591985,
+      "ndcg@10": 0.027025631315612985,
+      "ndcg@10_known": 0.0793164071601636,
+      "recall@20": 0.06457893292288851,
+      "recall@20_known": 0.19091130888482372,
+      "ndcg@20": 0.03158432375285089,
+      "ndcg@20_known": 0.09290836715506177,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.778251985676043,
+      "predicted_capped_seconds_at10": 148.1857254665659,
+      "normalized_time_reward_at10": 0.5109852616592394,
+      "mean_duration_seconds": 193.33875123222978,
+      "median_duration_seconds": 190.0,
+      "train_popularity": 590.0177795906058,
+      "previously_listened_fraction": 0.19414845915887288,
+      "catalog_coverage_at10": 0.906,
+      "top10_items_exposure_share": 0.06661236870190418,
+      "recommendation_entropy": 7.520465230413185,
+      "between_user_overlap_at10": 0.011668839634941329,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 2877
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1560
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 1255
+        },
+        {
+          "token": 15,
+          "item_id": 1846252,
+          "recommendations": 1120
+        },
+        {
+          "token": 3,
+          "item_id": 5463340,
+          "recommendations": 974
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 928
+        },
+        {
+          "token": 19,
+          "item_id": 5436843,
+          "recommendations": 876
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 788
+        },
+        {
+          "token": 60,
+          "item_id": 5252571,
+          "recommendations": 753
+        },
+        {
+          "token": 2677,
+          "item_id": 7641873,
+          "recommendations": 728
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7653888502555577,
+      "overlap_with_reference_at10": 1.0,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.7531902402552078,
+          "original_context_ratio": 0.7531902402552078,
+          "predicted_capped_seconds": 145.20583794638515,
+          "duration_seconds": 195.009765625,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.119140625,
+          "kl_to_reference": 0.0,
+          "auditor_ratio": 0.7487113976858382
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.7439295570075046,
+          "original_context_ratio": 0.7424438306152297,
+          "predicted_capped_seconds": 145.46461744979024,
+          "duration_seconds": 197.197265625,
+          "repeat_in_rollout": 0.0625,
+          "seen_in_real_history": 0.1015625,
+          "kl_to_reference": 0.0,
+          "auditor_ratio": 0.7468248621880775
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.746439946567989,
+          "original_context_ratio": 0.7376383855953463,
+          "predicted_capped_seconds": 143.02839854732156,
+          "duration_seconds": 194.423828125,
+          "repeat_in_rollout": 0.107421875,
+          "seen_in_real_history": 0.0859375,
+          "kl_to_reference": 0.0,
+          "auditor_ratio": 0.7477886916167336
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.7548749912675703,
+          "original_context_ratio": 0.7412294188397937,
+          "predicted_capped_seconds": 147.21801127120852,
+          "duration_seconds": 198.134765625,
+          "repeat_in_rollout": 0.103515625,
+          "seen_in_real_history": 0.080078125,
+          "kl_to_reference": 0.0,
+          "auditor_ratio": 0.7476375907135662
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.7557881366665242,
+          "original_context_ratio": 0.7289958221808774,
+          "predicted_capped_seconds": 147.08030937612057,
+          "duration_seconds": 197.8515625,
+          "repeat_in_rollout": 0.12109375,
+          "seen_in_real_history": 0.064453125,
+          "kl_to_reference": 0.0,
+          "auditor_ratio": 0.7503119255416095
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.0735196633829984,
+      "discounted_rollout_time_return": 2.054476957492795,
+      "step5_context_score_shift": 0.026792314485646784
+    },
+    "rl_ratio_b0_h1_s11": {
+      "recall@10": 0.032517554402834006,
+      "recall@10_known": 0.09307891373339774,
+      "ndcg@10": 0.018067667499603212,
+      "ndcg@10_known": 0.0516672951571135,
+      "recall@20": 0.045725704987629325,
+      "recall@20_known": 0.13389396897456435,
+      "ndcg@20": 0.021398858787289102,
+      "ndcg@20_known": 0.0619551535963857,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.8511512103167131,
+      "predicted_capped_seconds_at10": 130.37283697330557,
+      "normalized_time_reward_at10": 0.44956150771062536,
+      "mean_duration_seconds": 155.3736117065507,
+      "median_duration_seconds": 145.0,
+      "train_popularity": 397.54811574875595,
+      "previously_listened_fraction": 0.10730079079676165,
+      "catalog_coverage_at10": 0.635,
+      "top10_items_exposure_share": 0.17017356625287872,
+      "recommendation_entropy": 6.112126517454984,
+      "between_user_overlap_at10": 0.059256844850065195,
+      "top_items": [
+        {
+          "token": 3609,
+          "item_id": 9121637,
+          "recommendations": 4621
+        },
+        {
+          "token": 3860,
+          "item_id": 7378219,
+          "recommendations": 4158
+        },
+        {
+          "token": 1342,
+          "item_id": 1553522,
+          "recommendations": 3508
+        },
+        {
+          "token": 3481,
+          "item_id": 5917426,
+          "recommendations": 3178
+        },
+        {
+          "token": 3884,
+          "item_id": 1578126,
+          "recommendations": 2718
+        },
+        {
+          "token": 3787,
+          "item_id": 6184168,
+          "recommendations": 2582
+        },
+        {
+          "token": 3519,
+          "item_id": 8065020,
+          "recommendations": 2417
+        },
+        {
+          "token": 2698,
+          "item_id": 1637620,
+          "recommendations": 2392
+        },
+        {
+          "token": 2694,
+          "item_id": 390165,
+          "recommendations": 2372
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 2350
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.8362802822961837,
+      "overlap_with_reference_at10": 0.22341178453069707,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.014063095050965117,
+          "ci95": [
+            -0.016743966183213718,
+            -0.011569555547248807
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.008957963816009775,
+          "ci95": [
+            -0.010752797041465886,
+            -0.0074205946342738
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.018853227935259186,
+          "ci95": [
+            -0.022095641175231016,
+            -0.016042314889971147
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.010185464965561787,
+          "ci95": [
+            -0.01193521051767892,
+            -0.00865205154678297
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.8110685953870416,
+          "original_context_ratio": 0.8110685953870416,
+          "predicted_capped_seconds": 128.281109303236,
+          "duration_seconds": 160.810546875,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.10546875,
+          "kl_to_reference": 1.8552496900374535,
+          "auditor_ratio": 0.8079124843752652
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.8586975054931827,
+          "original_context_ratio": 0.8220095631841104,
+          "predicted_capped_seconds": 133.14125383272767,
+          "duration_seconds": 157.841796875,
+          "repeat_in_rollout": 0.171875,
+          "seen_in_real_history": 0.08984375,
+          "kl_to_reference": 1.382305543684197,
+          "auditor_ratio": 0.8381866710988106
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.8739971599425189,
+          "original_context_ratio": 0.8250168041267898,
+          "predicted_capped_seconds": 133.7816805690527,
+          "duration_seconds": 155.654296875,
+          "repeat_in_rollout": 0.267578125,
+          "seen_in_real_history": 0.0859375,
+          "kl_to_reference": 1.2563724735805408,
+          "auditor_ratio": 0.8679727875278331
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.8902261321491096,
+          "original_context_ratio": 0.8371087911946233,
+          "predicted_capped_seconds": 132.13642198592424,
+          "duration_seconds": 150.52734375,
+          "repeat_in_rollout": 0.34765625,
+          "seen_in_real_history": 0.068359375,
+          "kl_to_reference": 1.1588424168189704,
+          "auditor_ratio": 0.8728152936673723
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.892125831276644,
+          "original_context_ratio": 0.8304178275284357,
+          "predicted_capped_seconds": 131.94788572192192,
+          "duration_seconds": 150.17578125,
+          "repeat_in_rollout": 0.36328125,
+          "seen_in_real_history": 0.068359375,
+          "kl_to_reference": 1.0941963635686989,
+          "auditor_ratio": 0.8763993911852594
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.5261326581216537,
+      "discounted_rollout_time_return": 1.8598960636672943,
+      "step5_context_score_shift": 0.061708003748208284
+    },
+    "rl_ratio_b0.1_h1_s11": {
+      "recall@10": 0.045192683093587704,
+      "recall@10_known": 0.13665859742188954,
+      "ndcg@10": 0.025867666812086357,
+      "ndcg@10_known": 0.07732751283880462,
+      "recall@20": 0.0639638698746429,
+      "recall@20_known": 0.19050610025673267,
+      "ndcg@20": 0.030613154879803286,
+      "ndcg@20_known": 0.0908874108362218,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.8118384268963498,
+      "predicted_capped_seconds_at10": 149.60442555665614,
+      "normalized_time_reward_at10": 0.515877330858949,
+      "mean_duration_seconds": 186.77224179385667,
+      "median_duration_seconds": 185.0,
+      "train_popularity": 575.3909761120711,
+      "previously_listened_fraction": 0.18717444271093756,
+      "catalog_coverage_at10": 0.8788,
+      "top10_items_exposure_share": 0.06911756445542885,
+      "recommendation_entropy": 7.389695301496663,
+      "between_user_overlap_at10": 0.014146023468057368,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 2683
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1616
+        },
+        {
+          "token": 15,
+          "item_id": 1846252,
+          "recommendations": 1128
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 1100
+        },
+        {
+          "token": 19,
+          "item_id": 5436843,
+          "recommendations": 1091
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 995
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 946
+        },
+        {
+          "token": 890,
+          "item_id": 6678692,
+          "recommendations": 942
+        },
+        {
+          "token": 29,
+          "item_id": 6155741,
+          "recommendations": 916
+        },
+        {
+          "token": 30,
+          "item_id": 4557096,
+          "recommendations": 888
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7904201811994626,
+      "overlap_with_reference_at10": 0.7558726057406054,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.001387966360211426,
+          "ci95": [
+            -0.0030843098958333332,
+            0.00014576502228126216
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.0011579645035266286,
+          "ci95": [
+            -0.001932192863518377,
+            -0.0003927980358929541
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.000615063048245614,
+          "ci95": [
+            -0.0020401161595394735,
+            0.0007841197231359647
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.0009711688730476026,
+          "ci95": [
+            -0.0016300215343720407,
+            -0.00029123660658278324
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.7790627318463521,
+          "original_context_ratio": 0.7790627318463521,
+          "predicted_capped_seconds": 146.93947349116206,
+          "duration_seconds": 190.791015625,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.119140625,
+          "kl_to_reference": 0.08854454749962315,
+          "auditor_ratio": 0.7659286824600713
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.7839190460217651,
+          "original_context_ratio": 0.7695935368792561,
+          "predicted_capped_seconds": 147.1602040193975,
+          "duration_seconds": 190.390625,
+          "repeat_in_rollout": 0.10546875,
+          "seen_in_real_history": 0.11328125,
+          "kl_to_reference": 0.0747149396020177,
+          "auditor_ratio": 0.7715150349249598
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.7859795014373958,
+          "original_context_ratio": 0.7654607157892315,
+          "predicted_capped_seconds": 145.7824395596981,
+          "duration_seconds": 187.470703125,
+          "repeat_in_rollout": 0.134765625,
+          "seen_in_real_history": 0.08984375,
+          "kl_to_reference": 0.0718546706957568,
+          "auditor_ratio": 0.7788496864777699
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.7957550722057931,
+          "original_context_ratio": 0.7736242955143098,
+          "predicted_capped_seconds": 147.48363210260868,
+          "duration_seconds": 188.1640625,
+          "repeat_in_rollout": 0.140625,
+          "seen_in_real_history": 0.095703125,
+          "kl_to_reference": 0.07129723995603854,
+          "auditor_ratio": 0.7844789364316966
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.7927700616710354,
+          "original_context_ratio": 0.760522934506298,
+          "predicted_capped_seconds": 149.95349764451385,
+          "duration_seconds": 191.240234375,
+          "repeat_in_rollout": 0.1796875,
+          "seen_in_real_history": 0.08984375,
+          "kl_to_reference": 0.07070231289708317,
+          "auditor_ratio": 0.7837444607794168
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.221475154530621,
+      "discounted_rollout_time_return": 2.0805775543425606,
+      "step5_context_score_shift": 0.03224712716473732
+    },
+    "rl_ratio_b1_h1_s11": {
+      "recall@10": 0.046649180155553506,
+      "recall@10_known": 0.1368296917124483,
+      "ndcg@10": 0.026821869629417974,
+      "ndcg@10_known": 0.07905109497820319,
+      "recall@20": 0.06436191903399963,
+      "recall@20_known": 0.18976493746483908,
+      "ndcg@20": 0.03131340493783281,
+      "ndcg@20_known": 0.0924868242674455,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.7905886637733145,
+      "predicted_capped_seconds_at10": 150.26293658518617,
+      "normalized_time_reward_at10": 0.5181480566527242,
+      "mean_duration_seconds": 192.85456827653636,
+      "median_duration_seconds": 190.0,
+      "train_popularity": 586.6538600170246,
+      "previously_listened_fraction": 0.19342698628240365,
+      "catalog_coverage_at10": 0.9012,
+      "top10_items_exposure_share": 0.06674156041116666,
+      "recommendation_entropy": 7.500821522019887,
+      "between_user_overlap_at10": 0.011864406779661019,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 2918
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1583
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 1244
+        },
+        {
+          "token": 15,
+          "item_id": 1846252,
+          "recommendations": 1186
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 950
+        },
+        {
+          "token": 19,
+          "item_id": 5436843,
+          "recommendations": 921
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 842
+        },
+        {
+          "token": 4428,
+          "item_id": 546236,
+          "recommendations": 768
+        },
+        {
+          "token": 2677,
+          "item_id": 7641873,
+          "recommendations": 758
+        },
+        {
+          "token": 69,
+          "item_id": 4242661,
+          "recommendations": 712
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7732321021986469,
+      "overlap_with_reference_at10": 0.9201539066449475,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": 6.853070175438592e-05,
+          "ci95": [
+            -0.0007567645513523393,
+            0.0008823327850877192
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.0002037616861950141,
+          "ci95": [
+            -0.0005306791445830137,
+            0.00011120913885239132
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.00021701388888888896,
+          "ci95": [
+            -0.0009223090277777776,
+            0.0005425347222222221
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.0002709188150180776,
+          "ci95": [
+            -0.0005720640144872075,
+            5.8121866829576564e-05
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.7572825515089789,
+          "original_context_ratio": 0.7572825515089789,
+          "predicted_capped_seconds": 146.30982372537255,
+          "duration_seconds": 195.234375,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.115234375,
+          "kl_to_reference": 0.004886113349812149,
+          "auditor_ratio": 0.7524489876705047
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.7513215851504356,
+          "original_context_ratio": 0.7455767946048582,
+          "predicted_capped_seconds": 145.2046054713428,
+          "duration_seconds": 195.302734375,
+          "repeat_in_rollout": 0.078125,
+          "seen_in_real_history": 0.10546875,
+          "kl_to_reference": 0.005002460653486196,
+          "auditor_ratio": 0.7488009723165305
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.7561017160041956,
+          "original_context_ratio": 0.7440062019813922,
+          "predicted_capped_seconds": 144.7613922767341,
+          "duration_seconds": 194.53125,
+          "repeat_in_rollout": 0.119140625,
+          "seen_in_real_history": 0.083984375,
+          "kl_to_reference": 0.005002152602628485,
+          "auditor_ratio": 0.7505696293810615
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.7626094365405152,
+          "original_context_ratio": 0.7474859942885814,
+          "predicted_capped_seconds": 148.4944233931601,
+          "duration_seconds": 198.14453125,
+          "repeat_in_rollout": 0.119140625,
+          "seen_in_real_history": 0.08203125,
+          "kl_to_reference": 0.004926135583787072,
+          "auditor_ratio": 0.7593564858834725
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.7646981679863529,
+          "original_context_ratio": 0.7370457869110396,
+          "predicted_capped_seconds": 148.88357146736234,
+          "duration_seconds": 197.59765625,
+          "repeat_in_rollout": 0.126953125,
+          "seen_in_real_history": 0.06640625,
+          "kl_to_reference": 0.004912416479101012,
+          "auditor_ratio": 0.7621458244830137
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.103575115361651,
+      "discounted_rollout_time_return": 2.069605663058917,
+      "step5_context_score_shift": 0.027652381075313315
+    },
+    "rl_time_b0_h1_s11": {
+      "recall@10": 0.0033094618055555555,
+      "recall@10_known": 0.008233776074172992,
+      "ndcg@10": 0.0013478316059497592,
+      "ndcg@10_known": 0.003430934180879962,
+      "recall@20": 0.005880241720085469,
+      "recall@20_known": 0.0174382134202341,
+      "ndcg@20": 0.0020051652642356,
+      "ndcg@20_known": 0.005759824686879031,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.7150332078183821,
+      "predicted_capped_seconds_at10": 195.57406811316454,
+      "normalized_time_reward_at10": 0.674393339159887,
+      "mean_duration_seconds": 292.6264617493498,
+      "median_duration_seconds": 285.0,
+      "train_popularity": 363.76733518864006,
+      "previously_listened_fraction": 0.01195087139423077,
+      "catalog_coverage_at10": 0.0524,
+      "top10_items_exposure_share": 0.6211930573498848,
+      "recommendation_entropy": 3.413527011293996,
+      "between_user_overlap_at10": 0.5051499348109517,
+      "top_items": [
+        {
+          "token": 335,
+          "item_id": 3063085,
+          "recommendations": 17686
+        },
+        {
+          "token": 1691,
+          "item_id": 8943245,
+          "recommendations": 17655
+        },
+        {
+          "token": 3262,
+          "item_id": 1117789,
+          "recommendations": 15478
+        },
+        {
+          "token": 2044,
+          "item_id": 1094683,
+          "recommendations": 15008
+        },
+        {
+          "token": 849,
+          "item_id": 951729,
+          "recommendations": 9674
+        },
+        {
+          "token": 437,
+          "item_id": 387026,
+          "recommendations": 7489
+        },
+        {
+          "token": 2027,
+          "item_id": 472902,
+          "recommendations": 7473
+        },
+        {
+          "token": 1640,
+          "item_id": 2216983,
+          "recommendations": 6858
+        },
+        {
+          "token": 1472,
+          "item_id": 550503,
+          "recommendations": 6816
+        },
+        {
+          "token": 1498,
+          "item_id": 5638116,
+          "recommendations": 6454
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.6723271668960775,
+      "overlap_with_reference_at10": 0.016126495534460484,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.043271187648243566,
+          "ci95": [
+            -0.04860546012375783,
+            -0.03834728218658626
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.02567779970966323,
+          "ci95": [
+            -0.02912782460182259,
+            -0.022414777330215716
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.05869869120280304,
+          "ci95": [
+            -0.06503352497454573,
+            -0.0527606145082759
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.029579158488615292,
+          "ci95": [
+            -0.03317056565166684,
+            -0.02625189465565377
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.8063170979439747,
+          "original_context_ratio": 0.8063170979439747,
+          "predicted_capped_seconds": 228.6579263806343,
+          "duration_seconds": 320.263671875,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.01171875,
+          "kl_to_reference": 9.602908900007606,
+          "auditor_ratio": 0.7417293540856917
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.8263448704383336,
+          "original_context_ratio": 0.8064703805284807,
+          "predicted_capped_seconds": 235.05351017415524,
+          "duration_seconds": 321.38671875,
+          "repeat_in_rollout": 0.958984375,
+          "seen_in_real_history": 0.009765625,
+          "kl_to_reference": 4.519159418763593,
+          "auditor_ratio": 0.7626302128337556
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.8472032046702225,
+          "original_context_ratio": 0.8070084852806758,
+          "predicted_capped_seconds": 241.3439286276698,
+          "duration_seconds": 321.85546875,
+          "repeat_in_rollout": 0.978515625,
+          "seen_in_real_history": 0.009765625,
+          "kl_to_reference": 3.529352134442888,
+          "auditor_ratio": 0.7967613305081613
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.8589661173755303,
+          "original_context_ratio": 0.8049317267432343,
+          "predicted_capped_seconds": 245.1580254137516,
+          "duration_seconds": 322.861328125,
+          "repeat_in_rollout": 0.986328125,
+          "seen_in_real_history": 0.009765625,
+          "kl_to_reference": 3.040102556697093,
+          "auditor_ratio": 0.7991104981629178
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.8690526357968338,
+          "original_context_ratio": 0.8040187685401179,
+          "predicted_capped_seconds": 248.11589969694614,
+          "duration_seconds": 323.28125,
+          "repeat_in_rollout": 0.994140625,
+          "seen_in_real_history": 0.009765625,
+          "kl_to_reference": 2.7932618494378403,
+          "auditor_ratio": 0.8065931670134887
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.4326338110344192,
+      "discounted_rollout_time_return": 3.36966796566751,
+      "step5_context_score_shift": 0.0650338672567159
+    },
+    "rl_time_b0.1_h1_s11": {
+      "recall@10": 0.04389881998331833,
+      "recall@10_known": 0.12685628662268755,
+      "ndcg@10": 0.024880900595076794,
+      "ndcg@10_known": 0.07263504006902556,
+      "recall@20": 0.0606414340943535,
+      "recall@20_known": 0.1770856589440775,
+      "ndcg@20": 0.02909438545349689,
+      "ndcg@20_known": 0.08522099299107894,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.7913696122511382,
+      "predicted_capped_seconds_at10": 176.65212238175954,
+      "normalized_time_reward_at10": 0.6091452493504818,
+      "mean_duration_seconds": 228.46237012786753,
+      "median_duration_seconds": 225.0,
+      "train_popularity": 537.5311605383195,
+      "previously_listened_fraction": 0.16813589495801087,
+      "catalog_coverage_at10": 0.8422,
+      "top10_items_exposure_share": 0.07911587934617761,
+      "recommendation_entropy": 7.191511459851567,
+      "between_user_overlap_at10": 0.01642764015645372,
+      "top_items": [
+        {
+          "token": 33,
+          "item_id": 2766576,
+          "recommendations": 2619
+        },
+        {
+          "token": 849,
+          "item_id": 951729,
+          "recommendations": 1744
+        },
+        {
+          "token": 79,
+          "item_id": 2317630,
+          "recommendations": 1393
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1309
+        },
+        {
+          "token": 2795,
+          "item_id": 8125459,
+          "recommendations": 1303
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 1248
+        },
+        {
+          "token": 2821,
+          "item_id": 1019351,
+          "recommendations": 1186
+        },
+        {
+          "token": 2893,
+          "item_id": 368089,
+          "recommendations": 1131
+        },
+        {
+          "token": 4428,
+          "item_id": 546236,
+          "recommendations": 1097
+        },
+        {
+          "token": 102,
+          "item_id": 6210247,
+          "recommendations": 1055
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.761481281774988,
+      "overlap_with_reference_at10": 0.5610852103578049,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.002681829470480786,
+          "ci95": [
+            -0.004585398506296944,
+            -0.0007542845067259133
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.0021447307205361902,
+          "ci95": [
+            -0.0031412247940993403,
+            -0.0011160998320298933
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.0039374988285350125,
+          "ci95": [
+            -0.006066762009273317,
+            -0.0018262066528668096
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.0024899382993540022,
+          "ci95": [
+            -0.0034836284611306184,
+            -0.001538937574493114
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.763158405534341,
+          "original_context_ratio": 0.763158405534341,
+          "predicted_capped_seconds": 161.63955414667726,
+          "duration_seconds": 215.05859375,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.109375,
+          "kl_to_reference": 0.230415809652186,
+          "auditor_ratio": 0.755916175807215
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.7488852795795538,
+          "original_context_ratio": 0.745316785916657,
+          "predicted_capped_seconds": 162.20387244969606,
+          "duration_seconds": 219.501953125,
+          "repeat_in_rollout": 0.091796875,
+          "seen_in_real_history": 0.095703125,
+          "kl_to_reference": 0.21257148648510338,
+          "auditor_ratio": 0.7355597943096654
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.7446342220355291,
+          "original_context_ratio": 0.7412390587342088,
+          "predicted_capped_seconds": 160.25689510256052,
+          "duration_seconds": 220.849609375,
+          "repeat_in_rollout": 0.14453125,
+          "seen_in_real_history": 0.078125,
+          "kl_to_reference": 0.21391228051925282,
+          "auditor_ratio": 0.742684770913911
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.7434962718834868,
+          "original_context_ratio": 0.7443004534143256,
+          "predicted_capped_seconds": 163.1655875761062,
+          "duration_seconds": 225.859375,
+          "repeat_in_rollout": 0.134765625,
+          "seen_in_real_history": 0.08984375,
+          "kl_to_reference": 0.21498433120996197,
+          "auditor_ratio": 0.7365935481502675
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.75659682514015,
+          "original_context_ratio": 0.7491525428195018,
+          "predicted_capped_seconds": 169.5785402553156,
+          "duration_seconds": 231.943359375,
+          "repeat_in_rollout": 0.171875,
+          "seen_in_real_history": 0.07421875,
+          "kl_to_reference": 0.217009326635889,
+          "auditor_ratio": 0.7392378946897225
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.0787208361822325,
+      "discounted_rollout_time_return": 2.302204544789558,
+      "step5_context_score_shift": 0.007444282320648199
+    },
+    "rl_time_b1_h1_s11": {
+      "recall@10": 0.04690617028713246,
+      "recall@10_known": 0.13783832154459685,
+      "ndcg@10": 0.02679613142963143,
+      "ndcg@10_known": 0.07868430075811769,
+      "recall@20": 0.06521569736002301,
+      "recall@20_known": 0.19363301423874946,
+      "ndcg@20": 0.03143386925665376,
+      "ndcg@20_known": 0.09281718693733337,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.7850912949923479,
+      "predicted_capped_seconds_at10": 155.0675993224463,
+      "normalized_time_reward_at10": 0.5347158591348699,
+      "mean_duration_seconds": 200.6098069551972,
+      "median_duration_seconds": 200.0,
+      "train_popularity": 570.9449038638942,
+      "previously_listened_fraction": 0.19216234146190928,
+      "catalog_coverage_at10": 0.903,
+      "top10_items_exposure_share": 0.06229287198786721,
+      "recommendation_entropy": 7.520540751100062,
+      "between_user_overlap_at10": 0.010625814863103001,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 2146
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1639
+        },
+        {
+          "token": 15,
+          "item_id": 1846252,
+          "recommendations": 1156
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 1136
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 1036
+        },
+        {
+          "token": 19,
+          "item_id": 5436843,
+          "recommendations": 911
+        },
+        {
+          "token": 4428,
+          "item_id": 546236,
+          "recommendations": 816
+        },
+        {
+          "token": 60,
+          "item_id": 5252571,
+          "recommendations": 760
+        },
+        {
+          "token": 5,
+          "item_id": 2859641,
+          "recommendations": 746
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 744
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7672462783746212,
+      "overlap_with_reference_at10": 0.8961354827838006,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": 0.0003255208333333333,
+          "ci95": [
+            -0.0005425347222222221,
+            0.0011935763888888888
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.00022949988598155806,
+          "ci95": [
+            -0.0005987076824898441,
+            0.00013879713041878175
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": 0.0006367644371345029,
+          "ci95": [
+            -0.0003140990497076023,
+            0.0016136838678728052
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.00015045449619713105,
+          "ci95": [
+            -0.0005575945843721118,
+            0.0002672744249571475
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.7564754327468108,
+          "original_context_ratio": 0.7564754327468108,
+          "predicted_capped_seconds": 148.158872673288,
+          "duration_seconds": 198.583984375,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.109375,
+          "kl_to_reference": 0.00657505828576177,
+          "auditor_ratio": 0.7487629290444602
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.7458361789467745,
+          "original_context_ratio": 0.7412358105029853,
+          "predicted_capped_seconds": 149.12472308799624,
+          "duration_seconds": 201.357421875,
+          "repeat_in_rollout": 0.0703125,
+          "seen_in_real_history": 0.09375,
+          "kl_to_reference": 0.006938451301493842,
+          "auditor_ratio": 0.7482865442434559
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.7490586813510163,
+          "original_context_ratio": 0.7376453186225262,
+          "predicted_capped_seconds": 145.50611516460776,
+          "duration_seconds": 197.03125,
+          "repeat_in_rollout": 0.107421875,
+          "seen_in_real_history": 0.08203125,
+          "kl_to_reference": 0.00697403371702876,
+          "auditor_ratio": 0.7443378728785319
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.7540429801883874,
+          "original_context_ratio": 0.743285214950447,
+          "predicted_capped_seconds": 149.5392149053514,
+          "duration_seconds": 201.494140625,
+          "repeat_in_rollout": 0.099609375,
+          "seen_in_real_history": 0.078125,
+          "kl_to_reference": 0.006998661673264905,
+          "auditor_ratio": 0.7482217936776578
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.7564436515240232,
+          "original_context_ratio": 0.7356914195552235,
+          "predicted_capped_seconds": 151.04673664923757,
+          "duration_seconds": 203.291015625,
+          "repeat_in_rollout": 0.12109375,
+          "seen_in_real_history": 0.0703125,
+          "kl_to_reference": 0.006958864136777265,
+          "auditor_ratio": 0.7514311177801574
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.0804655380154773,
+      "discounted_rollout_time_return": 2.0977480286806305,
+      "step5_context_score_shift": 0.020752231968799606
+    },
+    "rl_ratio_b0.1_h5_s11": {
+      "recall@10": 0.04378951697516664,
+      "recall@10_known": 0.1327494758917197,
+      "ndcg@10": 0.02465555570180003,
+      "ndcg@10_known": 0.07342840508712307,
+      "recall@20": 0.06037566006727191,
+      "recall@20_known": 0.17867555338350924,
+      "ndcg@20": 0.02880200766508265,
+      "ndcg@20_known": 0.08483411417244943,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.8212555521713751,
+      "predicted_capped_seconds_at10": 144.46276847706852,
+      "normalized_time_reward_at10": 0.49814747750519456,
+      "mean_duration_seconds": 178.52868598514075,
+      "median_duration_seconds": 180.0,
+      "train_popularity": 455.1513487277587,
+      "previously_listened_fraction": 0.1676567822562911,
+      "catalog_coverage_at10": 0.857,
+      "top10_items_exposure_share": 0.07139246194461607,
+      "recommendation_entropy": 7.2880661901269805,
+      "between_user_overlap_at10": 0.013950456323337678,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 1652
+        },
+        {
+          "token": 890,
+          "item_id": 6678692,
+          "recommendations": 1503
+        },
+        {
+          "token": 3884,
+          "item_id": 1578126,
+          "recommendations": 1334
+        },
+        {
+          "token": 2398,
+          "item_id": 4057026,
+          "recommendations": 1300
+        },
+        {
+          "token": 1443,
+          "item_id": 2581708,
+          "recommendations": 1243
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1201
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 1200
+        },
+        {
+          "token": 3717,
+          "item_id": 4844188,
+          "recommendations": 1122
+        },
+        {
+          "token": 666,
+          "item_id": 8657243,
+          "recommendations": 1121
+        },
+        {
+          "token": 3787,
+          "item_id": 6184168,
+          "recommendations": 1034
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.8028700856778602,
+      "overlap_with_reference_at10": 0.5596753356175924,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.0027911324786324787,
+          "ci95": [
+            -0.004736035990918804,
+            -0.0009787952390491465
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.002370075613812962,
+          "ci95": [
+            -0.003395659142975949,
+            -0.001402639128991494
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.004203272855616605,
+          "ci95": [
+            -0.0063332790798611115,
+            -0.0020832170758928576
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.0027823160877682384,
+          "ci95": [
+            -0.003776735406309516,
+            -0.0018591366536241357
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.781391088035889,
+          "original_context_ratio": 0.781391088035889,
+          "predicted_capped_seconds": 142.6922902688384,
+          "duration_seconds": 184.951171875,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.115234375,
+          "kl_to_reference": 0.2793288137036143,
+          "auditor_ratio": 0.7762782034369593
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.8035380338260438,
+          "original_context_ratio": 0.7775484981975751,
+          "predicted_capped_seconds": 145.32093469798565,
+          "duration_seconds": 184.4921875,
+          "repeat_in_rollout": 0.095703125,
+          "seen_in_real_history": 0.119140625,
+          "kl_to_reference": 0.20388640478631714,
+          "auditor_ratio": 0.7900257767032599
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.8195415093505289,
+          "original_context_ratio": 0.7824356993078254,
+          "predicted_capped_seconds": 148.92918346449733,
+          "duration_seconds": 184.111328125,
+          "repeat_in_rollout": 0.138671875,
+          "seen_in_real_history": 0.09375,
+          "kl_to_reference": 0.19070640154768626,
+          "auditor_ratio": 0.8005293097958202
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.8249587583268294,
+          "original_context_ratio": 0.7753039025847102,
+          "predicted_capped_seconds": 148.82443722896278,
+          "duration_seconds": 182.6171875,
+          "repeat_in_rollout": 0.154296875,
+          "seen_in_real_history": 0.095703125,
+          "kl_to_reference": 0.1873803048058562,
+          "auditor_ratio": 0.8182647719440865
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.837077752687037,
+          "original_context_ratio": 0.7788715389178833,
+          "predicted_capped_seconds": 151.29709919914603,
+          "duration_seconds": 183.203125,
+          "repeat_in_rollout": 0.18359375,
+          "seen_in_real_history": 0.091796875,
+          "kl_to_reference": 0.1844375319321898,
+          "auditor_ratio": 0.8259772266901564
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.3190055894114807,
+      "discounted_rollout_time_return": 2.075423488371524,
+      "step5_context_score_shift": 0.05820621376915369
+    },
+    "rl_time_b0.1_h5_s11": {
+      "recall@10": 0.039244062429712095,
+      "recall@10_known": 0.11009497650420068,
+      "ndcg@10": 0.021509392251281383,
+      "ndcg@10_known": 0.060631285681757956,
+      "recall@20": 0.05458087995094574,
+      "recall@20_known": 0.15255415276402864,
+      "ndcg@20": 0.025379274590417333,
+      "ndcg@20_known": 0.07136825302902201,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.795075145534383,
+      "predicted_capped_seconds_at10": 189.69970593827725,
+      "normalized_time_reward_at10": 0.6541369167017711,
+      "mean_duration_seconds": 247.56096703988123,
+      "median_duration_seconds": 240.0,
+      "train_popularity": 443.5847653336462,
+      "previously_listened_fraction": 0.12361276091052086,
+      "catalog_coverage_at10": 0.788,
+      "top10_items_exposure_share": 0.2008931079031624,
+      "recommendation_entropy": 6.487553543362443,
+      "between_user_overlap_at10": 0.05228161668839635,
+      "top_items": [
+        {
+          "token": 2821,
+          "item_id": 1019351,
+          "recommendations": 6920
+        },
+        {
+          "token": 1046,
+          "item_id": 5221255,
+          "recommendations": 5554
+        },
+        {
+          "token": 2434,
+          "item_id": 918538,
+          "recommendations": 5022
+        },
+        {
+          "token": 2795,
+          "item_id": 8125459,
+          "recommendations": 4032
+        },
+        {
+          "token": 2893,
+          "item_id": 368089,
+          "recommendations": 3251
+        },
+        {
+          "token": 3770,
+          "item_id": 2304290,
+          "recommendations": 2474
+        },
+        {
+          "token": 2132,
+          "item_id": 6514009,
+          "recommendations": 2470
+        },
+        {
+          "token": 3645,
+          "item_id": 2468390,
+          "recommendations": 2287
+        },
+        {
+          "token": 79,
+          "item_id": 2317630,
+          "recommendations": 1993
+        },
+        {
+          "token": 3714,
+          "item_id": 3664722,
+          "recommendations": 1762
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7459837991820315,
+      "overlap_with_reference_at10": 0.32936583721844637,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.007336587024087025,
+          "ci95": [
+            -0.009680338621539279,
+            -0.005002698695903879
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.005516239064331604,
+          "ci95": [
+            -0.006882855705322776,
+            -0.004095424992987084
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.009998052971942775,
+          "ci95": [
+            -0.012498051807133839,
+            -0.007614107079567608
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.00620504916243355,
+          "ci95": [
+            -0.007512457268213378,
+            -0.004881565586863598
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.7815186921070563,
+          "original_context_ratio": 0.7815186921070563,
+          "predicted_capped_seconds": 182.02275802195072,
+          "duration_seconds": 239.609375,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.087890625,
+          "kl_to_reference": 1.5690043029899243,
+          "auditor_ratio": 0.7222047823743196
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.8025293727550888,
+          "original_context_ratio": 0.7742470981429506,
+          "predicted_capped_seconds": 193.32075307518244,
+          "duration_seconds": 256.9140625,
+          "repeat_in_rollout": 0.11328125,
+          "seen_in_real_history": 0.08203125,
+          "kl_to_reference": 0.5660474751202855,
+          "auditor_ratio": 0.7562739487402723
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.8188168074411806,
+          "original_context_ratio": 0.7792117599892663,
+          "predicted_capped_seconds": 196.9627424404025,
+          "duration_seconds": 252.9296875,
+          "repeat_in_rollout": 0.29296875,
+          "seen_in_real_history": 0.06640625,
+          "kl_to_reference": 0.5317025732801994,
+          "auditor_ratio": 0.792015795406769
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.8149043800658546,
+          "original_context_ratio": 0.7725384622899583,
+          "predicted_capped_seconds": 198.34840585291386,
+          "duration_seconds": 260.517578125,
+          "repeat_in_rollout": 0.353515625,
+          "seen_in_real_history": 0.060546875,
+          "kl_to_reference": 0.4925805378006771,
+          "auditor_ratio": 0.7881967255088966
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.8259209074167302,
+          "original_context_ratio": 0.7743665708403569,
+          "predicted_capped_seconds": 203.69363993033767,
+          "duration_seconds": 262.4609375,
+          "repeat_in_rollout": 0.390625,
+          "seen_in_real_history": 0.0703125,
+          "kl_to_reference": 0.48387414583703503,
+          "auditor_ratio": 0.7978569466649788
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.302988742038117,
+      "discounted_rollout_time_return": 2.7372091110048613,
+      "step5_context_score_shift": 0.051554336576373316
+    },
+    "rl_balanced_b0.1_h5_s11": {
+      "recall@10": 0.03985170131860099,
+      "recall@10_known": 0.11207874638406509,
+      "ndcg@10": 0.022117003195151048,
+      "ndcg@10_known": 0.06315857266619294,
+      "recall@20": 0.05582870981205685,
+      "recall@20_known": 0.15744819153200262,
+      "ndcg@20": 0.026131697377681434,
+      "ndcg@20_known": 0.07451734392461135,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.7968968949473535,
+      "predicted_capped_seconds_at10": 188.2346014272994,
+      "normalized_time_reward_at10": 0.6490848316957147,
+      "mean_duration_seconds": 243.71024705312607,
+      "median_duration_seconds": 240.0,
+      "train_popularity": 458.1618494311709,
+      "previously_listened_fraction": 0.13239839090524474,
+      "catalog_coverage_at10": 0.7934,
+      "top10_items_exposure_share": 0.14267820030331965,
+      "recommendation_entropy": 6.775004887251921,
+      "between_user_overlap_at10": 0.03129074315514994,
+      "top_items": [
+        {
+          "token": 2821,
+          "item_id": 1019351,
+          "recommendations": 4457
+        },
+        {
+          "token": 1046,
+          "item_id": 5221255,
+          "recommendations": 3356
+        },
+        {
+          "token": 2795,
+          "item_id": 8125459,
+          "recommendations": 3214
+        },
+        {
+          "token": 2434,
+          "item_id": 918538,
+          "recommendations": 2994
+        },
+        {
+          "token": 2132,
+          "item_id": 6514009,
+          "recommendations": 2688
+        },
+        {
+          "token": 2893,
+          "item_id": 368089,
+          "recommendations": 2019
+        },
+        {
+          "token": 849,
+          "item_id": 951729,
+          "recommendations": 1851
+        },
+        {
+          "token": 33,
+          "item_id": 2766576,
+          "recommendations": 1690
+        },
+        {
+          "token": 3770,
+          "item_id": 2304290,
+          "recommendations": 1646
+        },
+        {
+          "token": 1964,
+          "item_id": 6930949,
+          "recommendations": 1486
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7518666197362357,
+      "overlap_with_reference_at10": 0.37190361175082853,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.006728948135198136,
+          "ci95": [
+            -0.008853218179390054,
+            -0.00450882047240497
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.00490862812046194,
+          "ci95": [
+            -0.006218278632590682,
+            -0.0035650815791016103
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.008750223110831663,
+          "ci95": [
+            -0.01113305062022681,
+            -0.0063785373317137295
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.005452626375169452,
+          "ci95": [
+            -0.00666616010433279,
+            -0.004192909516245113
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      },
+      "rollout": [
+        {
+          "step": 1,
+          "users": 512,
+          "predicted_ratio": 0.7718038215680281,
+          "original_context_ratio": 0.7718038215680281,
+          "predicted_capped_seconds": 173.43483608961105,
+          "duration_seconds": 230.3515625,
+          "repeat_in_rollout": 0.0,
+          "seen_in_real_history": 0.091796875,
+          "kl_to_reference": 0.8230855078290915,
+          "auditor_ratio": 0.7379692595095548
+        },
+        {
+          "step": 2,
+          "users": 512,
+          "predicted_ratio": 0.7779633370810188,
+          "original_context_ratio": 0.7619536160455027,
+          "predicted_capped_seconds": 180.9314975105226,
+          "duration_seconds": 241.533203125,
+          "repeat_in_rollout": 0.056640625,
+          "seen_in_real_history": 0.0859375,
+          "kl_to_reference": 0.4769771488427068,
+          "auditor_ratio": 0.7454672683234094
+        },
+        {
+          "step": 3,
+          "users": 512,
+          "predicted_ratio": 0.7868746502572321,
+          "original_context_ratio": 0.7656127740410739,
+          "predicted_capped_seconds": 184.92077968083322,
+          "duration_seconds": 242.2265625,
+          "repeat_in_rollout": 0.173828125,
+          "seen_in_real_history": 0.0546875,
+          "kl_to_reference": 0.4598478671978228,
+          "auditor_ratio": 0.76557915918238
+        },
+        {
+          "step": 4,
+          "users": 512,
+          "predicted_ratio": 0.7925494773808168,
+          "original_context_ratio": 0.7595065218192758,
+          "predicted_capped_seconds": 188.64773859083652,
+          "duration_seconds": 249.27734375,
+          "repeat_in_rollout": 0.20703125,
+          "seen_in_real_history": 0.060546875,
+          "kl_to_reference": 0.4327389714489982,
+          "auditor_ratio": 0.7741792631277349
+        },
+        {
+          "step": 5,
+          "users": 512,
+          "predicted_ratio": 0.7994809847004944,
+          "original_context_ratio": 0.7701722263300326,
+          "predicted_capped_seconds": 192.16623029485345,
+          "duration_seconds": 250.185546875,
+          "repeat_in_rollout": 0.25390625,
+          "seen_in_real_history": 0.072265625,
+          "kl_to_reference": 0.43565471817510115,
+          "auditor_ratio": 0.7657852958946023
+        }
+      ],
+      "discounted_rollout_ratio_return": 3.211647334721913,
+      "discounted_rollout_time_return": 2.5850464845507917,
+      "step5_context_score_shift": 0.029308758370461874
+    },
+    "rerank_weight0": {
+      "recall@10": 0.04658064945379913,
+      "recall@10_known": 0.13714181061591985,
+      "ndcg@10": 0.027025631315612985,
+      "ndcg@10_known": 0.0793164071601636,
+      "recall@20": 0.06457893292288851,
+      "recall@20_known": 0.19091130888482372,
+      "ndcg@20": 0.03158432375285089,
+      "ndcg@20_known": 0.09290836715506177,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.778251985676043,
+      "predicted_capped_seconds_at10": 148.1857254665659,
+      "normalized_time_reward_at10": 0.5109852616592394,
+      "mean_duration_seconds": 193.33875123222978,
+      "median_duration_seconds": 190.0,
+      "train_popularity": 590.0177795906058,
+      "previously_listened_fraction": 0.19414845915887288,
+      "catalog_coverage_at10": 0.906,
+      "top10_items_exposure_share": 0.06661236870190418,
+      "recommendation_entropy": 7.520465230413185,
+      "between_user_overlap_at10": 0.011668839634941329,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 2877
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1560
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 1255
+        },
+        {
+          "token": 15,
+          "item_id": 1846252,
+          "recommendations": 1120
+        },
+        {
+          "token": 3,
+          "item_id": 5463340,
+          "recommendations": 974
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 928
+        },
+        {
+          "token": 19,
+          "item_id": 5436843,
+          "recommendations": 876
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 788
+        },
+        {
+          "token": 60,
+          "item_id": 5252571,
+          "recommendations": 753
+        },
+        {
+          "token": 2677,
+          "item_id": 7641873,
+          "recommendations": 728
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7653888502555577,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      }
+    },
+    "rerank_weight1": {
+      "recall@10": 0.0470146772315769,
+      "recall@10_known": 0.1406231052574355,
+      "ndcg@10": 0.02701358409224297,
+      "ndcg@10_known": 0.07968195312497278,
+      "recall@20": 0.06414490514511074,
+      "recall@20_known": 0.18877962460027142,
+      "ndcg@20": 0.031341646071166,
+      "ndcg@20_known": 0.0917994237414111,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.8090933116893604,
+      "predicted_capped_seconds_at10": 153.76712968838024,
+      "normalized_time_reward_at10": 0.5302314824861513,
+      "mean_duration_seconds": 192.48721371027477,
+      "median_duration_seconds": 190.0,
+      "train_popularity": 582.5161542953374,
+      "previously_listened_fraction": 0.19219861505170832,
+      "catalog_coverage_at10": 0.9014,
+      "top10_items_exposure_share": 0.06575296298376677,
+      "recommendation_entropy": 7.506643214504134,
+      "between_user_overlap_at10": 0.011734028683181226,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 2897
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1545
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 1241
+        },
+        {
+          "token": 15,
+          "item_id": 1846252,
+          "recommendations": 1094
+        },
+        {
+          "token": 19,
+          "item_id": 5436843,
+          "recommendations": 929
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 902
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 820
+        },
+        {
+          "token": 2677,
+          "item_id": 7641873,
+          "recommendations": 773
+        },
+        {
+          "token": 97,
+          "item_id": 8538001,
+          "recommendations": 759
+        },
+        {
+          "token": 4428,
+          "item_id": 546236,
+          "recommendations": 746
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.7814387831191559,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": 0.0004340277777777778,
+          "ci95": [
+            -0.00043402777777777775,
+            0.0013020833333333333
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -1.204722337002019e-05,
+          "ci95": [
+            -0.00036845814381712157,
+            0.0003677933160693791
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.00043402777777777775,
+          "ci95": [
+            -0.0013020833333333333,
+            0.0004340277777777778
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.00024267768168488636,
+          "ci95": [
+            -0.0005857700713160584,
+            8.97244142962953e-05
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      }
+    },
+    "rerank_weight3": {
+      "recall@10": 0.04496139197516665,
+      "recall@10_known": 0.1337212774423805,
+      "ndcg@10": 0.02584891884439879,
+      "ndcg@10_known": 0.07632230549326999,
+      "recall@20": 0.06389533917288852,
+      "recall@20_known": 0.18638634022313613,
+      "ndcg@20": 0.030611191195860227,
+      "ndcg@20_known": 0.08951548663692767,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.8473934718391988,
+      "predicted_capped_seconds_at10": 159.9196392372167,
+      "normalized_time_reward_at10": 0.5514470326449388,
+      "mean_duration_seconds": 190.6626023515669,
+      "median_duration_seconds": 190.0,
+      "train_popularity": 561.8629464246114,
+      "previously_listened_fraction": 0.1861813778614676,
+      "catalog_coverage_at10": 0.88,
+      "top10_items_exposure_share": 0.06219176543279223,
+      "recommendation_entropy": 7.480766430324238,
+      "between_user_overlap_at10": 0.011408083441981747,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 2288
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 1453
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 1158
+        },
+        {
+          "token": 15,
+          "item_id": 1846252,
+          "recommendations": 985
+        },
+        {
+          "token": 19,
+          "item_id": 5436843,
+          "recommendations": 934
+        },
+        {
+          "token": 97,
+          "item_id": 8538001,
+          "recommendations": 930
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 876
+        },
+        {
+          "token": 4428,
+          "item_id": 546236,
+          "recommendations": 818
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 818
+        },
+        {
+          "token": 2677,
+          "item_id": 7641873,
+          "recommendations": 812
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.8021548175982076,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.0016192574786324787,
+          "ci95": [
+            -0.0032301682692307695,
+            -5.425347222222224e-05
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.0011767124712141989,
+          "ci95": [
+            -0.0018704384008746873,
+            -0.0004749485476158727
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.0006835937499999998,
+          "ci95": [
+            -0.0022569444444444442,
+            0.0008138020833333334
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.0009731325569906604,
+          "ci95": [
+            -0.0016184141926086095,
+            -0.0003763749169864849
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      }
+    },
+    "rerank_weight10": {
+      "recall@10": 0.040595415184230974,
+      "recall@10_known": 0.1175079668565608,
+      "ndcg@10": 0.022450810071420618,
+      "ndcg@10_known": 0.06626068310677545,
+      "recall@20": 0.05736757018109814,
+      "recall@20_known": 0.16976781632789445,
+      "ndcg@20": 0.026704709160468146,
+      "ndcg@20_known": 0.0795064985546823,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.8973837648688642,
+      "predicted_capped_seconds_at10": 166.72333431114393,
+      "normalized_time_reward_at10": 0.5749080504663365,
+      "mean_duration_seconds": 187.22603933982904,
+      "median_duration_seconds": 185.0,
+      "train_popularity": 500.78565275439587,
+      "previously_listened_fraction": 0.160002621662655,
+      "catalog_coverage_at10": 0.8132,
+      "top10_items_exposure_share": 0.057580183115205304,
+      "recommendation_entropy": 7.383743863259934,
+      "between_user_overlap_at10": 0.010104302477183833,
+      "top_items": [
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 1504
+        },
+        {
+          "token": 890,
+          "item_id": 6678692,
+          "recommendations": 1240
+        },
+        {
+          "token": 97,
+          "item_id": 8538001,
+          "recommendations": 1153
+        },
+        {
+          "token": 2834,
+          "item_id": 7503494,
+          "recommendations": 970
+        },
+        {
+          "token": 29,
+          "item_id": 6155741,
+          "recommendations": 954
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 954
+        },
+        {
+          "token": 4428,
+          "item_id": 546236,
+          "recommendations": 904
+        },
+        {
+          "token": 1046,
+          "item_id": 5221255,
+          "recommendations": 884
+        },
+        {
+          "token": 58,
+          "item_id": 3542184,
+          "recommendations": 858
+        },
+        {
+          "token": 2677,
+          "item_id": 7641873,
+          "recommendations": 830
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.8356986447541876,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.0059852342695681515,
+          "ci95": [
+            -0.008372387047345928,
+            -0.0037464164153874274
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.00457482124419237,
+          "ci95": [
+            -0.005903725484148974,
+            -0.003328514198267072
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.007211362741790374,
+          "ci95": [
+            -0.010092036512806456,
+            -0.004526228808198381
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.004879614592382745,
+          "ci95": [
+            -0.00626567554178913,
+            -0.003623015631970722
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      }
+    },
+    "popularity": {
+      "recall@10": 0.007544088084795321,
+      "recall@10_known": 0.018861172857450415,
+      "ndcg@10": 0.003121105427134143,
+      "ndcg@10_known": 0.00783336647824645,
+      "recall@20": 0.01195670382553606,
+      "recall@20_known": 0.029134744671227147,
+      "ndcg@20": 0.004220604185926651,
+      "ndcg@20_known": 0.010380490953215431,
+      "examples": 17803,
+      "users": 768,
+      "predicted_ratio_at10": 0.7050760755584218,
+      "predicted_capped_seconds_at10": 118.12670412816162,
+      "normalized_time_reward_at10": 0.4073334627435284,
+      "mean_duration_seconds": 168.5,
+      "median_duration_seconds": 165.0,
+      "train_popularity": 2670.5,
+      "previously_listened_fraction": 0.03805923129319511,
+      "catalog_coverage_at10": 0.002,
+      "top10_items_exposure_share": 1.0,
+      "recommendation_entropy": 2.3025850929940455,
+      "between_user_overlap_at10": 1.0,
+      "top_items": [
+        {
+          "token": 8,
+          "item_id": 3033749,
+          "recommendations": 17803
+        },
+        {
+          "token": 2,
+          "item_id": 5635052,
+          "recommendations": 17803
+        },
+        {
+          "token": 3,
+          "item_id": 5463340,
+          "recommendations": 17803
+        },
+        {
+          "token": 4,
+          "item_id": 8213481,
+          "recommendations": 17803
+        },
+        {
+          "token": 5,
+          "item_id": 2859641,
+          "recommendations": 17803
+        },
+        {
+          "token": 6,
+          "item_id": 6901374,
+          "recommendations": 17803
+        },
+        {
+          "token": 7,
+          "item_id": 906358,
+          "recommendations": 17803
+        },
+        {
+          "token": 9,
+          "item_id": 5862961,
+          "recommendations": 17803
+        },
+        {
+          "token": 10,
+          "item_id": 6853370,
+          "recommendations": 17803
+        },
+        {
+          "token": 11,
+          "item_id": 9378983,
+          "recommendations": 17803
+        }
+      ],
+      "auditor_predicted_ratio_at10": 0.691719243728798,
+      "paired_comparison": {
+        "recall@10": {
+          "difference": -0.039036561369003804,
+          "ci95": [
+            -0.04513247711489899,
+            -0.03363642244257479
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@10": {
+          "difference": -0.023904525888478842,
+          "ci95": [
+            -0.027595050459537886,
+            -0.020520919833919637
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "recall@20": {
+          "difference": -0.05262222909735245,
+          "ci95": [
+            -0.05957449449688348,
+            -0.04648604749923109
+          ],
+          "unit": "user",
+          "resamples": 2000
+        },
+        "ndcg@20": {
+          "difference": -0.02736371956692424,
+          "ci95": [
+            -0.031296876121634974,
+            -0.02389448594572338
+          ],
+          "unit": "user",
+          "resamples": 2000
+        }
+      }
+    }
+  },
+  "reward_model": "reward_s11",
+  "auditor": "reward_s22",
+  "interpretation": "Предсказанная награда не является измеренным откликом на новую политику.",
+  "completed": true
+}

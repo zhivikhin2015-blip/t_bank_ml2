@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "development_only": true,
+  "holdout_outcomes_read": false,
+  "models": {
+    "baseline_s11": {
+      "records": 120,
+      "finite_rewards": true,
+      "steps": 5
+    },
+    "rerank_ratio_w10": {
+      "records": 120,
+      "finite_rewards": true,
+      "steps": 5
+    },
+    "analytic_ratio_b0.1": {
+      "records": 120,
+      "finite_rewards": true,
+      "steps": 5
+    },
+    "rl_balanced_b1_h5_s11": {
+      "records": 120,
+      "finite_rewards": true,
+      "steps": 5
+    }
+  }
+}

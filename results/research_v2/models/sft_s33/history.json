@@ -1,0 +1,100 @@
+[
+  {
+    "step": 100,
+    "loss": 5.137634754180908,
+    "training_seconds": 2.9622692108387128,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.0
+  },
+  {
+    "step": 200,
+    "loss": 5.976826190948486,
+    "training_seconds": 5.860282754409127,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.06340337498113513
+  },
+  {
+    "step": 300,
+    "loss": 5.707169055938721,
+    "training_seconds": 8.733642582781613,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.1279020420042798
+  },
+  {
+    "step": 400,
+    "loss": 6.1342854499816895,
+    "training_seconds": 11.564980573020875,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.19528133398853242
+  },
+  {
+    "step": 500,
+    "loss": 6.403149604797363,
+    "training_seconds": 14.414614447159693,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.26016841700766236
+  },
+  {
+    "step": 600,
+    "loss": 6.093317031860352,
+    "training_seconds": 17.684815370943397,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.32653312594629824
+  },
+  {
+    "step": 700,
+    "loss": 5.961878299713135,
+    "training_seconds": 20.634684161748737,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.3991687089437619
+  },
+  {
+    "step": 800,
+    "loss": 5.1326189041137695,
+    "training_seconds": 23.922371205640957,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.46911337587516755
+  },
+  {
+    "step": 900,
+    "loss": 5.771280765533447,
+    "training_seconds": 26.93864066596143,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.534041958861053
+  },
+  {
+    "step": 1000,
+    "loss": 5.720456123352051,
+    "training_seconds": 30.01102161896415,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.6032962918980047
+  },
+  {
+    "step": 1100,
+    "loss": 5.715775966644287,
+    "training_seconds": 32.88208940741606,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.6736973759252578
+  },
+  {
+    "step": 1200,
+    "loss": 6.1458611488342285,
+    "training_seconds": 36.26755894778762,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.742991417995654
+  },
+  {
+    "step": 1300,
+    "loss": 5.9453206062316895,
+    "training_seconds": 39.89833790319972,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.8229920429876074
+  },
+  {
+    "step": 1400,
+    "loss": 6.258090972900391,
+    "training_seconds": 43.41505110624712,
+    "evaluation_seconds": 0.0,
+    "checkpoint_seconds": 0.8967924179742113
+  }
+]

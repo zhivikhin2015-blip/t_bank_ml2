@@ -1,0 +1,18 @@
+{
+  "ratio": {
+    "name": "rl_ratio_b0.1_h1_s11",
+    "beta": 0.1,
+    "horizon": 1,
+    "constraint_satisfied": true,
+    "metric": "predicted_ratio_at10"
+  },
+  "time": {
+    "name": "rl_time_b1_h1_s11",
+    "beta": 1.0,
+    "horizon": 1,
+    "constraint_satisfied": true,
+    "metric": "normalized_time_reward_at10"
+  },
+  "rerank_weight": 3.0,
+  "protocol_sha256": "b3f6f98077307c8a41f4941f5df694cc653a94db28700ee68ecf14e9ed7aeb07"
+}

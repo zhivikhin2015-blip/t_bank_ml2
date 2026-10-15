@@ -1,0 +1,139 @@
+{
+  "device": "mps",
+  "torch": "2.14.1",
+  "threads": 4,
+  "source_sha256": "629804ce10d0be4322f4e53c3def4e65ccef28826d3df9a4d7cd395fb4ef99dc",
+  "frozen_sha256": "9185818108772fb30171f584b3c144dcf0f893c29d0c288325a367d1e7fa3ad8",
+  "backbone_max_error": 0.0,
+  "equivalence": {
+    "baseline": {
+      "max_logits_error": 0.0,
+      "top20_positions_matching": 1.0
+    },
+    "rl_ratio": {
+      "max_logits_error": 0.0,
+      "top20_positions_matching": 1.0
+    },
+    "rl_time": {
+      "max_logits_error": 0.0,
+      "top20_positions_matching": 1.0
+    }
+  },
+  "measurements": {
+    "baseline_legacy_batch1": {
+      "median_seconds": 0.0038785835495218635,
+      "min_seconds": 0.0034440000308677554,
+      "max_seconds": 0.0071735839592292905,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_ratio_legacy_batch1": {
+      "median_seconds": 0.005456312501337379,
+      "min_seconds": 0.0034489580430090427,
+      "max_seconds": 0.006507750018499792,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_time_legacy_batch1": {
+      "median_seconds": 0.005255291936919093,
+      "min_seconds": 0.0047467079712077975,
+      "max_seconds": 0.006041291984729469,
+      "measured": 20,
+      "warmup": 5
+    },
+    "baseline_batch1": {
+      "median_seconds": 0.003363229043316096,
+      "min_seconds": 0.003245375002734363,
+      "max_seconds": 0.013936292030848563,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_ratio_batch1": {
+      "median_seconds": 0.003296812472399324,
+      "min_seconds": 0.0032227500341832638,
+      "max_seconds": 0.005395625019446015,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_time_batch1": {
+      "median_seconds": 0.0032918539945967495,
+      "min_seconds": 0.003234208095818758,
+      "max_seconds": 0.005394415929913521,
+      "measured": 20,
+      "warmup": 5
+    },
+    "analytic_ratio_batch1": {
+      "median_seconds": 0.004727541992906481,
+      "min_seconds": 0.004141499986872077,
+      "max_seconds": 0.006408249959349632,
+      "measured": 20,
+      "warmup": 5
+    },
+    "analytic_time_batch1": {
+      "median_seconds": 0.004111271002329886,
+      "min_seconds": 0.0040278329979628325,
+      "max_seconds": 0.004640124971047044,
+      "measured": 20,
+      "warmup": 5
+    },
+    "baseline_legacy_batch32": {
+      "median_seconds": 0.005743395944591612,
+      "min_seconds": 0.00565400009509176,
+      "max_seconds": 0.006290541961789131,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_ratio_legacy_batch32": {
+      "median_seconds": 0.005826063046697527,
+      "min_seconds": 0.0056487079709768295,
+      "max_seconds": 0.007000791956670582,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_time_legacy_batch32": {
+      "median_seconds": 0.005717375024687499,
+      "min_seconds": 0.005618374911136925,
+      "max_seconds": 0.006349915987811983,
+      "measured": 20,
+      "warmup": 5
+    },
+    "baseline_batch32": {
+      "median_seconds": 0.004812999977730215,
+      "min_seconds": 0.004738999996334314,
+      "max_seconds": 0.005717208026908338,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_ratio_batch32": {
+      "median_seconds": 0.004784791497513652,
+      "min_seconds": 0.0047076670452952385,
+      "max_seconds": 0.00533316598739475,
+      "measured": 20,
+      "warmup": 5
+    },
+    "rl_time_batch32": {
+      "median_seconds": 0.004873167024925351,
+      "min_seconds": 0.004748541978187859,
+      "max_seconds": 0.0055911249946802855,
+      "measured": 20,
+      "warmup": 5
+    },
+    "analytic_ratio_batch32": {
+      "median_seconds": 0.016427604481577873,
+      "min_seconds": 0.013899999903514981,
+      "max_seconds": 0.019588208058848977,
+      "measured": 20,
+      "warmup": 5
+    },
+    "analytic_time_batch32": {
+      "median_seconds": 0.01905668748077005,
+      "min_seconds": 0.017214042018167675,
+      "max_seconds": 0.02077670907601714,
+      "measured": 20,
+      "warmup": 5
+    }
+  },
+  "scope": "Warm-cache model plus top20 inference on fixed C contexts; excludes ranking-quality metrics, loading, networking and live-service overhead.",
+  "analytic_encoding": "One shared frozen reference/reward Transformer, justified by exact weight identity",
+  "parameters_changed": false
+}

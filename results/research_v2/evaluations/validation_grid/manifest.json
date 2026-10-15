@@ -1,0 +1,269 @@
+{
+  "fingerprint": {
+    "split": "policy_val",
+    "data": "716e72647a2acc204be8b91d9433cb9c80d8e31c2733b461af7da786ca3dc5e2",
+    "code": {
+      "research_v2/core.py": "68e9b3339d97502ac90a6ad4716828018a82f9d5abb6351873289431c4a2e879",
+      "research_v2/evaluate.py": "cb074f522eb518c5278c699b010a95d189747e393303e3331eb2b9deca756fdd",
+      "research_v2/metrics.py": "cd6396680beb3689a0e8b1b78f68d7ab94643880937b5947099340bd152220b9",
+      "research_v2/protocol.json": "4d87b1a7d2acabdde4099cd36010b70cb5b2c71ea1c78d8ddfae359bab5fa27f",
+      "experiment.py": "a956f2d71025a50331d8a89c659e01515be8587bc335537df00836e50fb9fe86"
+    },
+    "reward": "55353ba928f9ef240a202e5a6592183a710f8b7a1188119a87c626a77710caee",
+    "auditor": "95ee7854f4d5b435dd7fb60366bb12b472075f0d90fcd3c9bd7eb7b38d034ddb",
+    "descriptors": [
+      {
+        "name": "baseline_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "actor": "output/baseline_s11/best.pt"
+      },
+      {
+        "name": "rl_ratio_b0_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0,
+        "actor": "output/research_v2/models/rl_ratio_b0_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_ratio_b0.1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.1,
+        "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_ratio_b1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 1,
+        "actor": "output/research_v2/models/rl_ratio_b1_h1_s11/best.pt"
+      },
+      {
+        "name": "analytic_ratio_b0.1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.1
+      },
+      {
+        "name": "analytic_ratio_b1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 1
+      },
+      {
+        "name": "rerank_ratio_w0",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 0
+      },
+      {
+        "name": "rerank_ratio_w1",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 1
+      },
+      {
+        "name": "rerank_ratio_w3",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 3
+      },
+      {
+        "name": "rerank_ratio_w10",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 10
+      },
+      {
+        "name": "rl_time_b0_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0,
+        "actor": "output/research_v2/models/rl_time_b0_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_time_b0.1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.1,
+        "actor": "output/research_v2/models/rl_time_b0.1_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_time_b1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 1,
+        "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+      },
+      {
+        "name": "analytic_time_b0.1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.1
+      },
+      {
+        "name": "analytic_time_b1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 1
+      },
+      {
+        "name": "rerank_time_w0",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 0
+      },
+      {
+        "name": "rerank_time_w1",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 1
+      },
+      {
+        "name": "rerank_time_w3",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 3
+      },
+      {
+        "name": "rerank_time_w10",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 10
+      },
+      {
+        "name": "popularity",
+        "kind": "popularity",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0
+      }
+    ],
+    "actor_hashes": {
+      "output/baseline_s11/best.pt": "a72566288ffc89db4d420db951fbde10fd8214e2c1d274b430d1654466462d3b",
+      "output/research_v2/models/rl_ratio_b0_h1_s11/best.pt": "199e9bd0661ba0b9670800c6201d234c2189e696489d21372ce7ccc93f44a3b1",
+      "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt": "dd9a39854d0c7baaf8a9979ffdd4e471fa77f6415b3e88a091b506075e51e318",
+      "output/research_v2/models/rl_ratio_b1_h1_s11/best.pt": "dab38638c55f98225505b3f4ee87e82d67e0e0b0d03a11c6298538b1437f3b76",
+      "output/research_v2/models/rl_time_b0_h1_s11/best.pt": "fdb779618b0721e88de0b35586fb93cfe5fea3619d4924a46bd923ebb4f9a7fd",
+      "output/research_v2/models/rl_time_b0.1_h1_s11/best.pt": "3fbee03d9cfff1acaba6283754886902318fe9ec94ee3809463e2d3470e5f618",
+      "output/research_v2/models/rl_time_b1_h1_s11/best.pt": "b141b400e84791882dd561004ac3be4b026f70af92b2e34028c4f578585fe6f0"
+    },
+    "reference_hashes": {
+      "output/baseline_s11/best.pt": "a72566288ffc89db4d420db951fbde10fd8214e2c1d274b430d1654466462d3b"
+    }
+  },
+  "completed_models": {
+    "baseline_s11": {
+      "baseline_s11.npz": "ba0958f6e2f9006d9fe843d06ca990881c69b6e5afe9e9af7128860f850f4e77",
+      "baseline_s11.json": "4f4607682556a8a142de09deb6a4a4d6e4d5cf23ee232c553d533e7d151153f6"
+    },
+    "rl_ratio_b0_h1_s11": {
+      "rl_ratio_b0_h1_s11.npz": "81c8769ab562b82aeab9ceac78e1dd74966af8439cc60ad0b310ca2e2f90213f",
+      "rl_ratio_b0_h1_s11.json": "1c2dcb7b38f8bfad7dfe7ac8f617771ee0e4689cf6ea3bb4ee4d6efaa5ff4db8"
+    },
+    "rl_ratio_b0.1_h1_s11": {
+      "rl_ratio_b0.1_h1_s11.npz": "b0561f7bd330681b2fbc2d2ddabf66bd24f05ed2392dacba7248d86b03c0251d",
+      "rl_ratio_b0.1_h1_s11.json": "31c6b3808e1a6e5f3244a87732591c37f4b9d850cb6824d967861c9bb52c4434"
+    },
+    "rl_ratio_b1_h1_s11": {
+      "rl_ratio_b1_h1_s11.npz": "d62eb3704629f31ee1f8f192244f399ace1fd5fe17b61f314045f753d6380a35",
+      "rl_ratio_b1_h1_s11.json": "870a19e328ea53f677be746ad927548155881f617b7e7261a2fa49427e9dca92"
+    },
+    "analytic_ratio_b0.1": {
+      "analytic_ratio_b0.1.npz": "90881f320f2931437f4f976beae58353b83d72c728951118749d46c0390450bc",
+      "analytic_ratio_b0.1.json": "e28b3e480c164f0f0217bef15e67622fa51a8ef3117ff2b6bb56455b99e81787"
+    },
+    "analytic_ratio_b1": {
+      "analytic_ratio_b1.npz": "1668aaf6cebe830b62b99e1766121b2e7ce37972cc59b1e5a3abbc46a550d422",
+      "analytic_ratio_b1.json": "a1f589399380d20ad7ea768e216966c2bc53837fe74cbacb7fa7184bfb2a7f51"
+    },
+    "rerank_ratio_w0": {
+      "rerank_ratio_w0.npz": "2cb1ad5ce4c40d5bf2493ade10097270d1cb58f0261dc54d4ff1f10a8fb9f26f",
+      "rerank_ratio_w0.json": "9cd0f48ef06970ca33381274e1a01d1322cbe44dfb98fc8ec6e8d2c797e1254b"
+    },
+    "rerank_ratio_w1": {
+      "rerank_ratio_w1.npz": "1c7aada96645a0c5c9a53e4bd64da2e97ac4ebc630e78440c65df6b9c6edb504",
+      "rerank_ratio_w1.json": "2a4b2cb556397bb7aefebcd13c4fb7adb10fbc2444ecc170eca07e795a4f672a"
+    },
+    "rerank_ratio_w3": {
+      "rerank_ratio_w3.npz": "ee9cb582e00ab08c60e369efeefcdd104d5abb844e6dcbc849f9e82126c8df03",
+      "rerank_ratio_w3.json": "1ec5e44f6dd0eae45bcbb98b2f2ac60ab75361567bb6a8aad7e9b197c31e25e5"
+    },
+    "rerank_ratio_w10": {
+      "rerank_ratio_w10.npz": "112c7dd8cfeb41bb4ba385f9e38adfe1a5a69c02d048002402867b65d9c1d5a0",
+      "rerank_ratio_w10.json": "13b2a6e315fe4f3c73a098170502215cd1d62ce5991d7416beb231de382efd9c"
+    },
+    "rl_time_b0_h1_s11": {
+      "rl_time_b0_h1_s11.npz": "c1e2c70dcb00ba985c8cc127930c9d9f6d9a2aabbe50f7785ba30270ced6b7e2",
+      "rl_time_b0_h1_s11.json": "b7737b535688e093b15c67ff4efb8eaba5aeaf4da0939c48ef89e05a7a7536e8"
+    },
+    "rl_time_b0.1_h1_s11": {
+      "rl_time_b0.1_h1_s11.npz": "fc13b62d2566aaf996161150d11719f277d5b0e6506e8583c8003a77373f67c6",
+      "rl_time_b0.1_h1_s11.json": "14cfc1eb6640795dbf83b9a203531960a8a6fb21ae792faa43fe3bd965cbc044"
+    },
+    "rl_time_b1_h1_s11": {
+      "rl_time_b1_h1_s11.npz": "b27a58f16fdd7aced4065a700550d974901e669163215616de2908c00c87ed09",
+      "rl_time_b1_h1_s11.json": "17c5c9c2a6025c0f29f788454fd1d63a38bd36e913fda2a8fcc8cba6265d4ba5"
+    },
+    "analytic_time_b0.1": {
+      "analytic_time_b0.1.npz": "cbf883af837788d09a8e24afd4366c8bbbd5ff9eca2248010e4bbb16a8c98ba9",
+      "analytic_time_b0.1.json": "165f4e1c2e2b0bcf17c6e38a5574e750c2888a5e31de98ed516c623520760a5f"
+    },
+    "analytic_time_b1": {
+      "analytic_time_b1.npz": "4d4b81ba639c1ea7f06cba2d918f61a3a31a12f37078066e71f617a51ac75f84",
+      "analytic_time_b1.json": "8cb6860449dacacd1dc2f482902ac82f71f6f807156386788a5b876765d6163d"
+    },
+    "rerank_time_w0": {
+      "rerank_time_w0.npz": "8ad5003d39ad939fb0244595f853726d15aca8cdf81b5fe0b8673b5f08528d50",
+      "rerank_time_w0.json": "830cb14358db78d66e670c88cbd1357f64c9fa35a7e8e5007180a8987799b7f1"
+    },
+    "rerank_time_w1": {
+      "rerank_time_w1.npz": "7af6599568efbf97d2ee04f87dd7c7d35cfae26eac7f79ba9bee0ae9d72f48f2",
+      "rerank_time_w1.json": "fb338cb830e0a2a0ee304934d0f23957228ae33de42d6f5ce8a44c7dd0fc24b5"
+    },
+    "rerank_time_w3": {
+      "rerank_time_w3.npz": "628a8e4180f1329b48fa62ccbc23b567a10378c02822e43872b4fa400fd58132",
+      "rerank_time_w3.json": "238c2ebe9909dcd1783249515349a449927f1196d31f876b41397972a92c5ceb"
+    },
+    "rerank_time_w10": {
+      "rerank_time_w10.npz": "5f19a034852ab94eb80105066ffd8c8445cfe6accfd9ea254ffce47872725c49",
+      "rerank_time_w10.json": "669defc6e73e0b628d097f115f0b2492801a30e7b1a710a95a1ef767a21fb73e"
+    },
+    "popularity": {
+      "popularity.npz": "f0a107a5a60b53583ed1f186884ebf00fa23b18e7ca803c195c1eddcd28e987d",
+      "popularity.json": "eeb9299fd7b3a959ae3731070d3c104acf4788dc7a311ae1750b3a6d106c7c84"
+    }
+  },
+  "completed": true,
+  "results_sha256": "a721d9d686576edee32886cfeff817f9692b82771486a162bf9b65c80f895306",
+  "reward_predictions_sha256": "ed0fd2a923e17306556057558bf66f3cecaf92918224f2a38a8f986898a7de97"
+}

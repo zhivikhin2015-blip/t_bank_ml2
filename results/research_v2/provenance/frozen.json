@@ -1,0 +1,756 @@
+{
+  "descriptors": [
+    {
+      "name": "baseline_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/baseline_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0,
+      "actor": "output/research_v2/models/rl_ratio_b0_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0.1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_ratio_b1_h1_s11/best.pt"
+    },
+    {
+      "name": "analytic_ratio_b0.1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1
+    },
+    {
+      "name": "analytic_ratio_b1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 1
+    },
+    {
+      "name": "rl_time_b0_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0,
+      "actor": "output/research_v2/models/rl_time_b0_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_time_b0.1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_time_b0.1_h1_s11/best.pt"
+    },
+    {
+      "name": "rl_time_b1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+    },
+    {
+      "name": "analytic_time_b0.1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.1
+    },
+    {
+      "name": "analytic_time_b1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1
+    },
+    {
+      "name": "popularity",
+      "kind": "popularity",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0
+    },
+    {
+      "name": "rerank_ratio_w10",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "weight": 10
+    },
+    {
+      "name": "rerank_time_w3",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.0,
+      "weight": 3
+    },
+    {
+      "name": "baseline_s22",
+      "kind": "actor",
+      "seed": 22,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/baseline_s22/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0.1_h1_s22",
+      "kind": "actor",
+      "seed": 22,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s22/best.pt"
+    },
+    {
+      "name": "rl_time_b1_h1_s22",
+      "kind": "actor",
+      "seed": 22,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h1_s22/best.pt"
+    },
+    {
+      "name": "baseline_s33",
+      "kind": "actor",
+      "seed": 33,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/baseline_s33/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0.1_h1_s33",
+      "kind": "actor",
+      "seed": 33,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s33/best.pt"
+    },
+    {
+      "name": "rl_time_b1_h1_s33",
+      "kind": "actor",
+      "seed": 33,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h1_s33/best.pt"
+    },
+    {
+      "name": "sft_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/research_v2/models/sft_s11/best.pt"
+    },
+    {
+      "name": "sft_s22",
+      "kind": "actor",
+      "seed": 22,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/research_v2/models/sft_s22/best.pt"
+    },
+    {
+      "name": "sft_s33",
+      "kind": "actor",
+      "seed": 33,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/research_v2/models/sft_s33/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0.1_h5_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h5_s11/best.pt",
+      "budget_role": [
+        "full_updates"
+      ]
+    },
+    {
+      "name": "rl_ratio_b0.1_h5_s11_budget_step00200",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h5_s11/stages/step00200.pt",
+      "budget_role": [
+        "action_matched"
+      ],
+      "h1_target_training_seconds": 37.7964263742324,
+      "h5_training_seconds": 73.73873712634668
+    },
+    {
+      "name": "rl_ratio_b0.1_h5_s11_budget_step00100",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h5_s11/stages/step00100.pt",
+      "budget_role": [
+        "time_matched"
+      ],
+      "h1_target_training_seconds": 37.7964263742324,
+      "h5_training_seconds": 38.17117021267768
+    },
+    {
+      "name": "rl_time_b1_h5_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h5_s11/best.pt",
+      "budget_role": [
+        "full_updates"
+      ]
+    },
+    {
+      "name": "rl_time_b1_h5_s11_budget_step00200",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h5_s11/stages/step00200.pt",
+      "budget_role": [
+        "action_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 63.31248541176319
+    },
+    {
+      "name": "rl_time_b1_h5_s11_budget_step00100",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h5_s11/stages/step00100.pt",
+      "budget_role": [
+        "time_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 30.831442579859868
+    },
+    {
+      "name": "rl_balanced_b1_h5_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "balanced",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_balanced_b1_h5_s11/best.pt",
+      "budget_role": [
+        "full_updates"
+      ]
+    },
+    {
+      "name": "rl_balanced_b1_h5_s11_budget_step00200",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "balanced",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_balanced_b1_h5_s11/stages/step00200.pt",
+      "budget_role": [
+        "action_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 61.51995195355266
+    },
+    {
+      "name": "rl_balanced_b1_h5_s11_budget_step00100",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "balanced",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_balanced_b1_h5_s11/stages/step00100.pt",
+      "budget_role": [
+        "time_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 31.03720566618722
+    }
+  ],
+  "rollout_descriptors": [
+    {
+      "name": "baseline_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/baseline_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0.1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+    },
+    {
+      "name": "rerank_ratio_w10",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "weight": 10
+    },
+    {
+      "name": "analytic_ratio_b0.1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1
+    },
+    {
+      "name": "rl_time_b1_h1_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+    },
+    {
+      "name": "rerank_time_w3",
+      "kind": "rerank",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 0.0,
+      "weight": 3
+    },
+    {
+      "name": "analytic_time_b1",
+      "kind": "analytic",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1
+    },
+    {
+      "name": "sft_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.0,
+      "actor": "output/research_v2/models/sft_s11/best.pt"
+    },
+    {
+      "name": "rl_ratio_b0.1_h5_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h5_s11/best.pt",
+      "budget_role": [
+        "full_updates"
+      ]
+    },
+    {
+      "name": "rl_ratio_b0.1_h5_s11_budget_step00200",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h5_s11/stages/step00200.pt",
+      "budget_role": [
+        "action_matched"
+      ],
+      "h1_target_training_seconds": 37.7964263742324,
+      "h5_training_seconds": 73.73873712634668
+    },
+    {
+      "name": "rl_ratio_b0.1_h5_s11_budget_step00100",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "ratio",
+      "beta": 0.1,
+      "actor": "output/research_v2/models/rl_ratio_b0.1_h5_s11/stages/step00100.pt",
+      "budget_role": [
+        "time_matched"
+      ],
+      "h1_target_training_seconds": 37.7964263742324,
+      "h5_training_seconds": 38.17117021267768
+    },
+    {
+      "name": "rl_time_b1_h5_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h5_s11/best.pt",
+      "budget_role": [
+        "full_updates"
+      ]
+    },
+    {
+      "name": "rl_time_b1_h5_s11_budget_step00200",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h5_s11/stages/step00200.pt",
+      "budget_role": [
+        "action_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 63.31248541176319
+    },
+    {
+      "name": "rl_time_b1_h5_s11_budget_step00100",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "time",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_time_b1_h5_s11/stages/step00100.pt",
+      "budget_role": [
+        "time_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 30.831442579859868
+    },
+    {
+      "name": "rl_balanced_b1_h5_s11",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "balanced",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_balanced_b1_h5_s11/best.pt",
+      "budget_role": [
+        "full_updates"
+      ]
+    },
+    {
+      "name": "rl_balanced_b1_h5_s11_budget_step00200",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "balanced",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_balanced_b1_h5_s11/stages/step00200.pt",
+      "budget_role": [
+        "action_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 61.51995195355266
+    },
+    {
+      "name": "rl_balanced_b1_h5_s11_budget_step00100",
+      "kind": "actor",
+      "seed": 11,
+      "reward_type": "balanced",
+      "beta": 1,
+      "actor": "output/research_v2/models/rl_balanced_b1_h5_s11/stages/step00100.pt",
+      "budget_role": [
+        "time_matched"
+      ],
+      "h1_target_training_seconds": 39.52944349311292,
+      "h5_training_seconds": 31.03720566618722
+    }
+  ],
+  "sources": {
+    "experiment.py": "a956f2d71025a50331d8a89c659e01515be8587bc335537df00836e50fb9fe86",
+    "requirements.txt": "e1d87d7146177f3c9b373c307a16c44ab0f5dbe1503ee5b05b65060e701b4d88",
+    "research_v2/__init__.py": "4bff1bbb6aef75582d6b5d1613fd94a0dfc53b532f8c8f990f32a633ba1e5de7",
+    "research_v2/audit.py": "f76d6eb0bf390865806d5578b73a8409828c97ebf740fec9c208bede69c73260",
+    "research_v2/benchmark.py": "d2643ade7510cc00b385e832ad8bfce548a84930a64c38f8a321aa12327c2d99",
+    "research_v2/bootstrap.py": "8d0bdaa7e010deb4c59e74333b728c1c348d2b4395bff9de316a764433fbc4b7",
+    "research_v2/core.py": "68e9b3339d97502ac90a6ad4716828018a82f9d5abb6351873289431c4a2e879",
+    "research_v2/data.py": "3370ec11adbcfc5cfe9f17c4ca129d6daa2a8a6082ce0c5d9d4e60e0203aaf0c",
+    "research_v2/evaluate.py": "cb074f522eb518c5278c699b010a95d189747e393303e3331eb2b9deca756fdd",
+    "research_v2/metrics.py": "cd6396680beb3689a0e8b1b78f68d7ab94643880937b5947099340bd152220b9",
+    "research_v2/protocol.json": "4d87b1a7d2acabdde4099cd36010b70cb5b2c71ea1c78d8ddfae359bab5fa27f",
+    "research_v2/report.py": "166061e32a3c53bf658171373588d753bb39307bc42c57a48630bc25f1e48cff",
+    "research_v2/retention.py": "e9c209e8bce9142923192a54ef060a9be54fdd0229649936d547e4b3b8037057",
+    "research_v2/rollout.py": "3c4d48b6ddadc020384987a5d140ae8f5ab061b32dc0722ba07e6b5cea32ef28",
+    "research_v2/run.py": "8faeeac6670ea59e8539482f96dec75817aeb32acaca98865433c50fbc99d3ad",
+    "research_v2/tests.py": "ec86005fe4210ec206a5491db0e81f3fab5d784248dcf10c72e15f82a5e6d5b1",
+    "research_v2/train.py": "e44f45de22fa8e1b28b1a18ffc8c8ee0822744dc76ee2e51572b3f508dd06966"
+  },
+  "artifacts": {
+    "output/baseline_s11/best.pt": "a72566288ffc89db4d420db951fbde10fd8214e2c1d274b430d1654466462d3b",
+    "output/research_v2/models/rl_ratio_b0_h1_s11/best.pt": "199e9bd0661ba0b9670800c6201d234c2189e696489d21372ce7ccc93f44a3b1",
+    "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt": "dd9a39854d0c7baaf8a9979ffdd4e471fa77f6415b3e88a091b506075e51e318",
+    "output/research_v2/models/rl_ratio_b1_h1_s11/best.pt": "dab38638c55f98225505b3f4ee87e82d67e0e0b0d03a11c6298538b1437f3b76",
+    "output/research_v2/models/rl_time_b0_h1_s11/best.pt": "fdb779618b0721e88de0b35586fb93cfe5fea3619d4924a46bd923ebb4f9a7fd",
+    "output/research_v2/models/rl_time_b0.1_h1_s11/best.pt": "3fbee03d9cfff1acaba6283754886902318fe9ec94ee3809463e2d3470e5f618",
+    "output/research_v2/models/rl_time_b1_h1_s11/best.pt": "b141b400e84791882dd561004ac3be4b026f70af92b2e34028c4f578585fe6f0",
+    "output/baseline_s22/best.pt": "b9ce963177f06ca6fc992d376026931edd59d0ba276c1858df58bf7cc7196a4c",
+    "output/research_v2/models/rl_ratio_b0.1_h1_s22/best.pt": "2e82a07c63e93195cf339d28669c8b30f59480b191c698081c189bafb0d67790",
+    "output/research_v2/models/rl_time_b1_h1_s22/best.pt": "03655684dfc8e43386b68e4bcc3bf0beee115aae3fa9d57d23c27497883e7095",
+    "output/baseline_s33/best.pt": "44c814928097a35f44321b38bb45f2d18237072baca94dad7dd111b010fd341e",
+    "output/research_v2/models/rl_ratio_b0.1_h1_s33/best.pt": "54644a6a389cce80024582bb2d92f80b55b9b74aa7ec0c986ec7847c713514b9",
+    "output/research_v2/models/rl_time_b1_h1_s33/best.pt": "2a32a49d605c5b93d0876a760c4cf99330d70e27592f5bfc438ef5c979ae67ab",
+    "output/research_v2/models/sft_s11/best.pt": "67b960418768aaf6876c845eefe49969a845c4a545bc07d68f097ee601dd17f7",
+    "output/research_v2/models/sft_s22/best.pt": "fc41d74c8f12825ac169169fc87afe0ea4c192d764981ac2eb99aed7edc9780d",
+    "output/research_v2/models/sft_s33/best.pt": "7c4885b34aeecb7c5e0ef14db4e6fbd0ee93ffd6b5f1fa6212b42e9a34ad77bf",
+    "output/research_v2/models/rl_ratio_b0.1_h5_s11/best.pt": "e4143e7f8bcb6f0b33b3d2ce6a12aa1631c5deda9b5992911965343af472ae5f",
+    "output/research_v2/models/rl_ratio_b0.1_h5_s11/stages/step00200.pt": "22b7ab30b8651dc675da6ab3aa559def192b443cce28873644d5fc0221445be4",
+    "output/research_v2/models/rl_ratio_b0.1_h5_s11/stages/step00100.pt": "e56c040d95e87a4c580877488bd859c0e91020cc908a424f3adfabf26dc89592",
+    "output/research_v2/models/rl_time_b1_h5_s11/best.pt": "39e6c8979273c946718cdd217a82fc62b3ea2807e14454224a6e352ef2a5619a",
+    "output/research_v2/models/rl_time_b1_h5_s11/stages/step00200.pt": "5c506f4a3bba355ef03c2efcdce51c23fe2ea8aa8eefd76752faca6aa6bd6aee",
+    "output/research_v2/models/rl_time_b1_h5_s11/stages/step00100.pt": "46a28547d5b80e1c61c4f61d388af1ecb1c2b4164bf77d20aaf4292e801537f8",
+    "output/research_v2/models/rl_balanced_b1_h5_s11/best.pt": "d51bd1e131f2cc46ba576e3fa7616240cf57971ba3a0095059d87fa6624457fe",
+    "output/research_v2/models/rl_balanced_b1_h5_s11/stages/step00200.pt": "9a552e4c2e9c308631fbc1e4fd4c30c0b8331bb5039a54f74e3d6d4b739edf69",
+    "output/research_v2/models/rl_balanced_b1_h5_s11/stages/step00100.pt": "1685355bdcb8d137c99f4614ba88bc1fdd8aab133c4caff55f0d02243829d166",
+    "output/research_v2/models/reward_history_duration_s11/calibrated.pt": "55353ba928f9ef240a202e5a6592183a710f8b7a1188119a87c626a77710caee",
+    "output/research_v2/models/reward_history_duration_s22/calibrated.pt": "95ee7854f4d5b435dd7fb60366bb12b472075f0d90fcd3c9bd7eb7b38d034ddb",
+    "output/research_v2/reward_selection.json": "7c52ceafb7e24fb54ead5769244fd190b284cc689285598e7df63bb15ce97b35",
+    "output/research_v2/policy_selection.json": "afcd27699b16e0bf67b5ffa690c73b982910343acf8663face562c2ed2f8128a",
+    "output/research_v2/training_selection.json": "4cb0668ea9f2d2365f0752badcd243b6b3bc8e5f52084ff198abb51820c8927c",
+    "output/research_v2/sft_budgets.json": "76dc35f5d43c2c156d57f2df21c3c1ccb7d6e988b3f8578682bd2bc406ff9240",
+    "output/research_v2/benchmark.json": "304ebf4b67870010cf9febb8b8bf49a2d70242f263b69f3c3bf572715f2394ac",
+    "output/research_v2/scientific_checks.json": "9838d5b3aac986703ad8d5e26ba7c4e1df02d6e5365722dcb1099651c18978e3",
+    "output/research_v2/preflight.json": "db5a266e553f000d5df816d3a1b4132b925863e28a3343d5614ee37ed6ed90c0",
+    "output/research_v2/retention_diagnostics.json": "3b2ea4e20883e361f14b6b0e08951d9f87bcccadfc39e06c25989719d9d4cf0e",
+    "output/listens.parquet": "eed9cbd094af1e189507d2f8132a0dc9653b90e65480125c7cdccd601e0592d1",
+    "output/research_v2/train.npz": "c614cad818b5b471dc92e783042741d322bdc2edbdac88e342a14179d544a978",
+    "output/research_v2/policy_val.npz": "716e72647a2acc204be8b91d9433cb9c80d8e31c2733b461af7da786ca3dc5e2",
+    "output/research_v2/catalog.npz": "bc307840f6075df63057e7f011a226a858a54968a50473ccd5a09492ee27b39f",
+    "output/research_v2/reward_select.npz": "3b34ca6ac6dd46f6db572b7160fbec9a026a8f01474cc8fcab60573385a2c4ea",
+    "output/research_v2/reward_calibrate.npz": "fcd2353204875230831320c3fac6169e9baee83e39dd006245072baa1ef53316",
+    "output/research_v2/reward_baselines.npz": "d426da4e07144455e64b0bde19cce7d758c47cb4b3037c92c4ba9d58d592c39c",
+    "output/research_v2/holdout_reservation.json": "150a67ea77849784ca42063c74c23d3b18988eb35a835dd223d01ec660592b5a",
+    "output/research_v2/locked_protocol.json": "e9354c0dca8622d3d3028051c435621cd79497eef6525e3ba189c1485ce6ec83"
+  },
+  "data_manifest_sha256": "841e1edbae033fd4afa295c3c34a082f6c2c2cca1c5d107f01711a3d019fb7d8",
+  "reward_path": "output/research_v2/models/reward_history_duration_s11/calibrated.pt",
+  "auditor_path": "output/research_v2/models/reward_history_duration_s22/calibrated.pt",
+  "holdout_scope": "unseen users, same D time window; no new temporal replication",
+  "selection": {
+    "ratio": {
+      "descriptor": {
+        "name": "rl_ratio_b0.1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.1,
+        "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+      },
+      "constraint_satisfied": true,
+      "selection_metric": "policy_expected_ratio",
+      "selection_split": "C"
+    },
+    "time": {
+      "descriptor": {
+        "name": "rl_time_b1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 1,
+        "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+      },
+      "constraint_satisfied": true,
+      "selection_metric": "policy_expected_time_reward",
+      "selection_split": "C"
+    },
+    "rerank_ratio": {
+      "descriptor": {
+        "name": "rerank_ratio_w10",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 10
+      },
+      "constraint_satisfied": true,
+      "selection_split": "C"
+    },
+    "rerank_time": {
+      "descriptor": {
+        "name": "rerank_time_w3",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 3
+      },
+      "constraint_satisfied": true,
+      "selection_split": "C"
+    },
+    "reward_gate": {
+      "mse_improvement_supported_on_C": true,
+      "mse_difference_ci95": [
+        -0.008056823754550801,
+        -0.0028117877198284976
+      ],
+      "reward_changed_after_C": false,
+      "interpretation": "RL surrogate diagnostic if superiority unsupported"
+    },
+    "validation_descriptors": [
+      {
+        "name": "baseline_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "actor": "output/baseline_s11/best.pt"
+      },
+      {
+        "name": "rl_ratio_b0_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0,
+        "actor": "output/research_v2/models/rl_ratio_b0_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_ratio_b0.1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.1,
+        "actor": "output/research_v2/models/rl_ratio_b0.1_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_ratio_b1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 1,
+        "actor": "output/research_v2/models/rl_ratio_b1_h1_s11/best.pt"
+      },
+      {
+        "name": "analytic_ratio_b0.1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.1
+      },
+      {
+        "name": "analytic_ratio_b1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 1
+      },
+      {
+        "name": "rerank_ratio_w0",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 0
+      },
+      {
+        "name": "rerank_ratio_w1",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 1
+      },
+      {
+        "name": "rerank_ratio_w3",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 3
+      },
+      {
+        "name": "rerank_ratio_w10",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0,
+        "weight": 10
+      },
+      {
+        "name": "rl_time_b0_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0,
+        "actor": "output/research_v2/models/rl_time_b0_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_time_b0.1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.1,
+        "actor": "output/research_v2/models/rl_time_b0.1_h1_s11/best.pt"
+      },
+      {
+        "name": "rl_time_b1_h1_s11",
+        "kind": "actor",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 1,
+        "actor": "output/research_v2/models/rl_time_b1_h1_s11/best.pt"
+      },
+      {
+        "name": "analytic_time_b0.1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.1
+      },
+      {
+        "name": "analytic_time_b1",
+        "kind": "analytic",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 1
+      },
+      {
+        "name": "rerank_time_w0",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 0
+      },
+      {
+        "name": "rerank_time_w1",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 1
+      },
+      {
+        "name": "rerank_time_w3",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 3
+      },
+      {
+        "name": "rerank_time_w10",
+        "kind": "rerank",
+        "seed": 11,
+        "reward_type": "time",
+        "beta": 0.0,
+        "weight": 10
+      },
+      {
+        "name": "popularity",
+        "kind": "popularity",
+        "seed": 11,
+        "reward_type": "ratio",
+        "beta": 0.0
+      }
+    ]
+  }
+}

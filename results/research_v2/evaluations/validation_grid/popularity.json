@@ -1,0 +1,108 @@
+{
+  "recall@10": 0.007544088084795321,
+  "ndcg@10": 0.003121105427134143,
+  "recall@20": 0.01195670382553606,
+  "ndcg@20": 0.004220604185926651,
+  "examples": 17803,
+  "users": 768,
+  "slices": {
+    "known": {
+      "examples": 6043,
+      "users": 724,
+      "recall@10": 0.018861172857450415,
+      "ndcg@10": 0.00783336647824645,
+      "recall@20": 0.029134744671227147,
+      "ndcg@20": 0.010380490953215431
+    },
+    "positive_ratio_gt50": {
+      "examples": 12329,
+      "users": 758,
+      "recall@10": 0.008467027791107975,
+      "ndcg@10": 0.003443947760847692,
+      "recall@20": 0.013198842745010849,
+      "ndcg@20": 0.004618193559895002
+    },
+    "nonpositive_ratio_le50": {
+      "examples": 5474,
+      "users": 722,
+      "recall@10": 0.005318236944835317,
+      "ndcg@10": 0.00245980551664475,
+      "recall@20": 0.010460750045226862,
+      "ndcg@20": 0.0037347362671102066
+    },
+    "organic": {
+      "examples": 8938,
+      "users": 676,
+      "recall@10": 0.010847154330512766,
+      "ndcg@10": 0.004556984228457386,
+      "recall@20": 0.01571841808758934,
+      "ndcg@20": 0.005764747153289696
+    },
+    "nonorganic": {
+      "examples": 8865,
+      "users": 656,
+      "recall@10": 0.002996367975246275,
+      "ndcg@10": 0.0012809566819052608,
+      "recall@20": 0.0066254640358494234,
+      "ndcg@20": 0.002183594391150532
+    },
+    "short": {
+      "examples": 2513,
+      "users": 631,
+      "recall@10": 0.022486990910128787,
+      "ndcg@10": 0.010623287731498872,
+      "recall@20": 0.03742737276810176,
+      "ndcg@20": 0.014211136868120885
+    },
+    "long": {
+      "examples": 222,
+      "users": 169,
+      "recall@10": 0.0,
+      "ndcg@10": 0.0,
+      "recall@20": 0.0,
+      "ndcg@20": 0.0
+    },
+    "popular": {
+      "examples": 1883,
+      "users": 551,
+      "recall@10": 0.06551860947611989,
+      "ndcg@10": 0.02663067687093879,
+      "recall@20": 0.1037725515413142,
+      "ndcg@20": 0.03606888777306614
+    },
+    "rare": {
+      "examples": 1609,
+      "users": 612,
+      "recall@10": 0.0,
+      "ndcg@10": 0.0,
+      "recall@20": 0.0,
+      "ndcg@20": 0.0
+    }
+  },
+  "oracle_catalog_recall_ceiling": 0.3363690618742808,
+  "predicted_ratio_at10": 0.7390477854913552,
+  "duration_limited_seconds_at10": 124.43453327071633,
+  "mean_duration_seconds_at10": 168.5,
+  "mean_popularity_at10": 2670.5,
+  "seen_in_history_at10": 0.03805923129319511,
+  "catalog_coverage_at10": 0.002,
+  "top10_items_exposure_share": 1.0,
+  "recommendation_entropy": 2.3025850929940455,
+  "between_user_overlap_at10": 1.0,
+  "exposure_denominator": "All event-list positions; activity weighted. Relevance/reward metrics are macro-user.",
+  "policy_expected_ratio": 0.7243605857166587,
+  "policy_expected_time_reward": 0.4845952759386655,
+  "policy_expected_auditor_ratio": 0.7197138747023321,
+  "kl_to_reference": 2.070673717123546,
+  "regularized_J": 0.7243605857166587,
+  "policy_expected_duration_limited_seconds": 140.532630022213,
+  "descriptor": {
+    "name": "popularity",
+    "kind": "popularity",
+    "seed": 11,
+    "reward_type": "ratio",
+    "beta": 0.0
+  },
+  "J_definition": "E[selected reward] - descriptor.beta * KL; compare only matching reward and beta",
+  "inference_and_metrics_seconds": 6.661932167015038
+}

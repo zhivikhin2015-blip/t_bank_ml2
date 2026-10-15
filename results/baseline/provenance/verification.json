@@ -1,0 +1,21 @@
+{
+  "device": "mps",
+  "causal_mask_max_error": 0.0,
+  "resume_max_parameter_error": 1.862645149230957e-09,
+  "manual_macro_metrics": {
+    "recall@10": 0.5,
+    "recall@10_known": 0.5,
+    "ndcg@10": 0.4077324383928644,
+    "ndcg@10_known": 0.4077324383928644,
+    "recall@20": 0.5,
+    "recall@20_known": 0.5,
+    "ndcg@20": 0.4077324383928644,
+    "ndcg@20_known": 0.4077324383928644,
+    "examples": 3,
+    "users": 2
+  },
+  "future_item_mask": "passed",
+  "temporal_boundaries": "passed",
+  "internal_tie_loss_mask_checked_against_raw": 8,
+  "test_outcomes_used": false
+}

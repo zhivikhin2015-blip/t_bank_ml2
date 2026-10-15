@@ -1,0 +1,4 @@
+{
+  "reason": "All-position NIP initially did not exclude tied timestamps inside windows; corrected before RL and before test evaluation.",
+  "test_metrics_accessed": false
+}

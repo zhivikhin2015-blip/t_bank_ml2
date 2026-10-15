@@ -1,0 +1,18 @@
+{
+  "status": "diagnostic",
+  "comparison": "R3 vs R2, H5, step5 repeat",
+  "models": [
+    "rl_balanced_b1_h5_s11",
+    "rl_time_b1_h5_s11"
+  ],
+  "difference": -0.009765625,
+  "ci95": [
+    -0.014322916666666664,
+    -0.005208333333333332
+  ],
+  "users": 256,
+  "unit": "user",
+  "factor": 1.0,
+  "resamples": 2000,
+  "scope": "fixed period and fitted weights"
+}
